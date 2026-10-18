@@ -54,7 +54,7 @@ export default function StepCards() {
               <img
                 src="/images/mascot-enigma.webp"
                 alt="Enigma Isle explorer mascot"
-                className="hidden xl:block absolute -left-28 2xl:-left-40 bottom-0 w-[26rem] 2xl:w-[30rem] h-auto object-contain drop-shadow-xl select-none pointer-events-none z-20"
+                className="hidden xl:block absolute left-0 bottom-0 -translate-x-[100px] w-52 2xl:w-60 h-auto object-contain drop-shadow-xl select-none pointer-events-none z-20"
                 width={1369}
                 height={1679}
               />
@@ -63,7 +63,7 @@ export default function StepCards() {
               <img
                 src="/images/treasure-chest.webp"
                 alt="Island treasure chest"
-                className="hidden xl:block absolute -right-20 2xl:-right-28 bottom-0 w-48 2xl:w-56 h-auto object-contain drop-shadow-xl select-none pointer-events-none z-20 -scale-x-100 rotate-[8deg] origin-bottom"
+                className="hidden xl:block absolute right-0 bottom-0 translate-x-[100px] w-44 2xl:w-52 h-auto object-contain drop-shadow-xl select-none pointer-events-none z-20 -scale-x-100 rotate-[8deg] origin-bottom"
                 width={1712}
                 height={1685}
               />
@@ -87,7 +87,7 @@ export default function StepCards() {
             </div>
 
             {/* 4 Expedition Stone Tablets Row */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:mx-28 2xl:mx-36">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Tablet 1: Value Scaling (Task 8: removed cycle steps span) */}
               <div className="bg-[#FFFDF9] rounded-3xl p-6 sm:p-7 border-2 border-[#E8D5B5] shadow-md flex flex-col justify-between space-y-6">
                 <div className="space-y-2.5">

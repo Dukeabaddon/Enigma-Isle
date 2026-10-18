@@ -41,7 +41,9 @@ test.describe('Enigma Isle E2E and Visual Verification', () => {
     expect(ciphertext.length).toBeGreaterThan(0);
 
     // 3. Decrypt interaction and scroll skin
-    // Toggle to Decrypt mode
+    // Mode alternate lives in hover dropdown on primary CTA
+    await page.locator('#workbench').scrollIntoViewIfNeeded();
+    await page.locator('button[aria-label="Encrypt"]').hover();
     await page.click('button[data-testid="cipher-toggle"]');
     await page.fill('#message-input', ciphertext);
     await page.click('button[aria-label="Decrypt"]');

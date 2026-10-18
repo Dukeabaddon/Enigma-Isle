@@ -72,10 +72,14 @@ export default function HeroWorkbench() {
       {/* Section 1 — Hero only. Art paints into SEAM. Never re-add wave clipPath. */}
       <section
         id="workbench"
-        className="relative w-full overflow-hidden min-h-[100dvh] flex flex-col"
-        style={{ backgroundColor: SEAM }}
+        className="relative w-full overflow-hidden min-h-[135dvh] flex flex-col"
+        style={{ backgroundColor: '#ece0c8' }}
       >
-        <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
+        {/* Extended sky band (#ece0c8 from island art top); island plate fills bottom 100dvh full width */}
+        <div
+          className="absolute inset-x-0 bottom-0 h-[100dvh] w-full pointer-events-none select-none z-0 overflow-hidden"
+          style={{ backgroundColor: SEAM }}
+        >
           <div
             className="absolute inset-0 bg-cover bg-bottom max-sm:hidden"
             style={{ backgroundImage: `url('/images/hero-island.webp')` }}
@@ -84,7 +88,7 @@ export default function HeroWorkbench() {
             className="absolute inset-0 bg-cover bg-bottom sm:hidden"
             style={{ backgroundImage: `url('/images/hero-island-mobile.webp')` }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/20 to-transparent" />
         </div>
 
         {/* Title + input pushed down from sticky nav */}
