@@ -1,6 +1,6 @@
-import { useLayoutEffect, useRef, useState, type ReactNode } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from 'react';
 import { X, ArrowRight, CornerDownRight } from 'lucide-react';
-import { LetterEncryptTrace, LetterDecryptTrace } from '@/lib/cipher';
+import { CIPHER_GRID, LetterEncryptTrace, LetterDecryptTrace } from '@/lib/cipher';
 
 interface StepsModalProps {
   isOpen: boolean;
@@ -166,7 +166,18 @@ export default function StepsModal({
 
                 <StepCard accent="encrypt" title="Step 4 · Finisher path">
                   <p>Up 1 → left 1 → up 1 → right 2 on the grid.</p>
-                  <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+                  <GridTraversalAnimation
+                    accent="encrypt"
+                    path={[
+                      currentEncryptTrace.step3_letter,
+                      currentEncryptTrace.step4_moves.up1,
+                      currentEncryptTrace.step4_moves.left1,
+                      currentEncryptTrace.step4_moves.up2,
+                      currentEncryptTrace.outputChar,
+                    ]}
+                    labels={['Start', 'Up 1', 'Left 1', 'Up 1', 'Right 2 (Cipher)']}
+                  />
+                  <div className="mt-2.5 grid grid-cols-2 gap-2 sm:grid-cols-4">
                     <MiniCell label="Up 1" value={currentEncryptTrace.step4_moves.up1} />
                     <MiniCell label="Left 1" value={currentEncryptTrace.step4_moves.left1} />
                     <MiniCell label="Up 1" value={currentEncryptTrace.step4_moves.up2} />
@@ -187,7 +198,18 @@ export default function StepsModal({
                     Reverse path from <strong>{currentDecryptTrace.inputChar}</strong>: left 2 →
                     down 1 → right 1 → down 1.
                   </p>
-                  <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+                  <GridTraversalAnimation
+                    accent="decrypt"
+                    path={[
+                      currentDecryptTrace.inputChar,
+                      currentDecryptTrace.step1_inverseMoves.left2,
+                      currentDecryptTrace.step1_inverseMoves.down1,
+                      currentDecryptTrace.step1_inverseMoves.right1,
+                      currentDecryptTrace.step1_letter,
+                    ]}
+                    labels={['Start', 'Left 2', 'Down 1', 'Right 1', 'Down 1 (Restore)']}
+                  />
+                  <div className="mt-2.5 grid grid-cols-2 gap-2 sm:grid-cols-4">
                     <MiniCell label="Left 2" value={currentDecryptTrace.step1_inverseMoves.left2} />
                     <MiniCell label="Down 1" value={currentDecryptTrace.step1_inverseMoves.down1} />
                     <MiniCell label="Right 1" value={currentDecryptTrace.step1_inverseMoves.right1} />
@@ -295,6 +317,109 @@ function MiniCell({
     <div className={`rounded-lg border p-2 text-center font-mono ${hi}`}>
       <div className="text-[10px] text-[#7a4a22]">{label}</div>
       <div className="text-sm font-bold text-[#3d220f]">{value}</div>
+    </div>
+  );
+}
+
+function GridTraversalAnimation({
+  path,
+  labels,
+  accent = 'encrypt',
+}: {
+  path: string[];
+  labels: string[];
+  accent?: 'encrypt' | 'decrypt';
+}) {
+  const [activeStep, setActiveStep] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveStep((s) => (s + 1) % path.length);
+    }, 1200);
+    return () => clearInterval(interval);
+  }, [path.length]);
+
+  const activeChar = path[activeStep];
+  const activeLabel = labels[activeStep] || '';
+
+  const activeColor =
+    accent === 'encrypt'
+      ? 'bg-[#D4A017] text-white ring-2 ring-[#D4A017]/60 shadow-md font-black scale-110 z-10 border border-[#8C640C]'
+      : 'bg-[#2F8F6B] text-white ring-2 ring-[#2F8F6B]/60 shadow-md font-black scale-110 z-10 border border-[#1F6B4F]';
+
+  const visitedColor =
+    accent === 'encrypt'
+      ? 'bg-[#D4A017]/25 text-[#8C640C] font-bold border border-[#D4A017]/40'
+      : 'bg-[#2F8F6B]/25 text-[#1F6B4F] font-bold border border-[#2F8F6B]/40';
+
+  return (
+    <div className="mt-3 flex flex-col items-center gap-2.5 rounded-xl border border-[#5c3310]/15 bg-[#fffef0]/90 p-3 sm:p-4">
+      {/* Current Animated Status Indicator */}
+      <div className="flex items-center gap-2 text-xs font-mono">
+        <span className="text-[#7a4a22]">Traversal Step {activeStep + 1}/{path.length}:</span>
+        <span className={`px-2 py-0.5 rounded font-bold text-xs ${
+          accent === 'encrypt' ? 'bg-[#D4A017]/20 text-[#8C640C]' : 'bg-[#2F8F6B]/20 text-[#1F6B4F]'
+        }`}>
+          {activeLabel}: <strong className="text-[#3d220f] font-black text-sm">{activeChar}</strong>
+        </span>
+      </div>
+
+      {/* 5-Column Grid Display (26 Letters) */}
+      <div className="grid grid-cols-5 gap-1 font-mono text-xs">
+        {CIPHER_GRID.map((row, rIdx) =>
+          [0, 1, 2, 3, 4].map((cIdx) => {
+            const char = row[cIdx];
+            if (!char) {
+              return (
+                <div
+                  key={`empty-${rIdx}-${cIdx}`}
+                  className="w-7 h-7 sm:w-8 sm:h-8 rounded bg-[#5c3310]/[0.03] border border-[#5c3310]/[0.08] flex items-center justify-center text-[#5c3310]/20 text-[9px]"
+                >
+                  ·
+                </div>
+              );
+            }
+            const isCurrent = char === activeChar;
+            const visitedIdx = path.slice(0, activeStep + 1).lastIndexOf(char);
+            const isVisited = visitedIdx !== -1;
+
+            return (
+              <div
+                key={`grid-${char}`}
+                className={`w-7 h-7 sm:w-8 sm:h-8 rounded flex items-center justify-center transition-all ${
+                  isCurrent
+                    ? activeColor
+                    : isVisited
+                    ? visitedColor
+                    : 'bg-white text-[#4a2c14]/70 border border-[#5c3310]/15'
+                }`}
+              >
+                {char}
+              </div>
+            );
+          })
+        )}
+      </div>
+
+      {/* Step Sequence Pills */}
+      <div className="flex flex-wrap items-center justify-center gap-1.5 text-[10px] font-mono mt-1">
+        {path.map((char, idx) => (
+          <button
+            key={`step-${idx}`}
+            type="button"
+            onClick={() => setActiveStep(idx)}
+            className={`px-2 py-0.5 rounded transition-all cursor-pointer ${
+              idx === activeStep
+                ? accent === 'encrypt'
+                  ? 'bg-[#D4A017] text-white font-bold shadow-xs'
+                  : 'bg-[#2F8F6B] text-white font-bold shadow-xs'
+                : 'bg-[#5c3310]/8 text-[#4a2c14] hover:bg-[#5c3310]/15'
+            }`}
+          >
+            {labels[idx] ? `${labels[idx]}: ` : ''}{char}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

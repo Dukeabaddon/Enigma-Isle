@@ -282,7 +282,7 @@ export default function StepCards() {
                   Reverse Vectors
                 </h3>
                 <p className="text-sm text-ink-muted leading-relaxed font-medium">
-                  Applies the exact inverse vectors: left 2 (traversing K) → down 1 → right 1 → down 1 across boundaries.
+                  Applies the exact inverse vectors: left 2 → down 1 → right 1 → down 1 across boundaries.
                 </p>
               </div>
 

@@ -56,25 +56,25 @@ export default function ResultExpand({
             <div className="relative z-10 max-w-2xl mx-auto w-full space-y-4">
               {/* Parchment Paper Card */}
               <div id="cipher-result" className="relative parchment-paper p-6 sm:p-8 bg-[#FFFDF7] text-ink shadow-2xl scroll-mt-28">
-                {/* Result header */}
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-ink/10">
-                  <div className="space-y-1">
-                    <span className="text-[11px] font-black uppercase tracking-widest text-[#B8860B] block">
+                {/* Result header (Moat d8683416: centered font-display subheading) */}
+                <div className="flex flex-col items-center justify-center text-center gap-3 pb-5 border-b border-ink/10">
+                  <div className="space-y-1.5 w-full">
+                    <h3 className="font-display font-extrabold text-sm sm:text-base uppercase tracking-wider text-[#B8860B] block text-center">
                       {mode === 'encrypt' ? 'Ciphertext Result (Upper A–Z)' : 'Decrypted Plaintext'}
-                    </span>
-                    <div className="font-mono text-2xl sm:text-3xl font-black tracking-[0.25em] sm:tracking-[0.3em] text-ink break-all select-all">
+                    </h3>
+                    <div className="font-mono text-2xl sm:text-4xl font-black tracking-[0.25em] sm:tracking-[0.3em] text-ink break-all select-all text-center">
                       {activeResult}
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2 self-start sm:self-center shrink-0">
+                  <div className="flex items-center justify-center gap-2 pt-1">
                     <button
                       type="button"
                       onClick={handleCopy}
-                      className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-ink text-white font-bold text-xs hover:bg-ink/80 transition-all shadow-md active:scale-95 min-h-[44px]"
+                      className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-ink text-white font-bold text-xs hover:bg-ink/80 transition-all shadow-md active:scale-95 min-h-[44px]"
                     >
                       {copied ? <Check className="w-4 h-4 text-[#D4A017]" /> : <Copy className="w-4 h-4" />}
-                      {copied ? 'Copied!' : 'Copy'}
+                      {copied ? 'Copied!' : 'Copy Result'}
                     </button>
                   </div>
                 </div>
