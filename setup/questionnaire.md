@@ -10,7 +10,7 @@ Use during **01-discovery** when requirements are incomplete. Answers should lan
 | Q2 | Decrypt requirement | **B** — invertible variant of grid cipher |
 | Q3 | Stack | **A** — Vite + React + TS + Tailwind + Framer Motion; client-side cipher |
 
-## Open (grill Aaron)
+## Open (grill open items)
 
 | ID | Question | Notes |
 |----|----------|-------|

@@ -1,7 +1,7 @@
 <div align="center">
 
 <p>
-  <img src="docs/assets/enigma-isle-banner.svg" alt="Enigma Isle — tropical cipher adventure landing" width="100%" />
+  <img src="docs/assets/enigma-isle-banner.png" alt="Enigma Isle — tropical cipher adventure landing" width="100%" />
 </p>
 
 # Enigma Isle
@@ -21,11 +21,11 @@
 
 <br/>
 
-[Features](#features) · [Quick start](#quick-start) · [Stack](#stack) · [Project structure](#project-structure) · [Cipher note](#cipher-note) · [Deploy](#deploy) · [FAQ](#faq) · [Related](#related)
+[Features](#features) · [Quick start](#quick-start) · [Stack](#stack) · [Project structure](#project-structure) · [Cipher note](#cipher-note) · [Deploy](#deploy) · [FAQ](#faq)
 
 <br/>
 
-<code>git clone https://github.com/Dukeabaddon/Enigma-Isle.git && cd Enigma-Isle && npm install && npm run dev</code>
+<code>git clone &lt;this-repo&gt; && cd Enigma-Isle && npm install && npm run dev</code>
 
 </div>
 
@@ -64,7 +64,7 @@
 | Area | What you get |
 |------|----------------|
 | **Motion** | Framer Motion with reduced-motion respect |
-| **Assets** | WebP hero plates, parchment, mascot, treasure chest |
+| **Assets** | WebP-only art (`public/images/*.webp`) — hero, dirt, strata, parchment, mascot, footer |
 | **Quality** | Vitest cipher tests · Playwright desktop + mobile E2E |
 | **Host target** | Static Vite build → Vercel |
 
@@ -75,7 +75,7 @@
 **Requirements:** Node.js 20+ (LTS recommended), npm 10+
 
 ```bash
-git clone https://github.com/Dukeabaddon/Enigma-Isle.git
+git clone <this-repo>
 cd Enigma-Isle
 npm install
 npm run dev          # http://localhost:5173
@@ -115,11 +115,9 @@ Locked in [decisions/001-stack-vite-react-ts.md](decisions/001-stack-vite-react-
 
 ## Project structure
 
-Human-facing ICM layout (agent-only paths omitted):
-
 ```
 enigma/
-├── docs/                 Plan, build notes, README banner assets
+├── docs/assets/          README banner (SVG source + PNG for GitHub)
 ├── public/images/        WebP island / UI art
 ├── src/
 │   ├── components/       Nav, hero, journey cards, footer
@@ -129,19 +127,18 @@ enigma/
 │   ├── 01-discovery/     Research + references
 │   ├── 02-design/        IA, tokens, section specs
 │   ├── 03-cipher-spec/   Formal algorithm + test vectors
-│   ├── 04-build/         Implementation output + screenshots
+│   ├── 04-build/         Implementation notes
 │   └── 05-polish/        Motion, a11y, deploy polish
 ├── decisions/            Numbered ADRs (stack, brand, cipher, hero seam)
-├── design-system/        Tokens and theme
-├── setup/                Questionnaire intake
-└── shared/               Grill summary — locked product choices
+└── design-system/        Tokens and theme
 ```
 
-Entry points for people and agents:
+Entry points:
 
 - [CONTEXT.md](CONTEXT.md) — goals, hero UX, stage status  
-- [CLAUDE.md](CLAUDE.md) — five ICM layers + agent triggers  
-- [shared/grill-summary.md](shared/grill-summary.md) — locked decisions snapshot  
+- [decisions/](decisions/) — numbered architecture decisions  
+
+Private agent notes (`docs/PLAN.md`, build logs, QA shots, prompts) stay local and are gitignored.
 
 ---
 
@@ -149,7 +146,7 @@ Entry points for people and agents:
 
 The algorithm is documented in [stages/03-cipher-spec/output/cipher-spec.md](stages/03-cipher-spec/output/cipher-spec.md):
 
-- Letters **A–Z** only (normalized, uppercase output).
+- Letters **A–Z** only (normalized, uppercase output); spaces preserved.
 - **Step 1–2:** Bijective cyclic walk (×18 step count from letter value).
 - **Step 3–4:** 5-column grid shifts and directional return path — tuned so **encrypt ↔ decrypt** inverts under defined wrap rules (see [decisions/002-cipher-invertible-variant.md](decisions/002-cipher-invertible-variant.md)).
 
@@ -172,7 +169,7 @@ npm run build
 | Install | `npm install` |
 | Build command | `npm run build` |
 
-Host target: **Vercel** (see [CONTEXT.md](CONTEXT.md)). No secrets required — cipher runs entirely in the browser.
+Host target: **Vercel**. No secrets required — cipher runs entirely in the browser.
 
 ---
 
@@ -189,39 +186,26 @@ No. Encryption and decryption run in the browser from <code>src/lib/cipher/</cod
 <summary><b>Why “invertible” instead of “secure”?</b></summary>
 <br/>
 
-The course goal is a working **encrypt and decrypt** pair with a explainable grid story. Security properties (entropy, keys, side channels) are out of scope; the README callout above applies.
+The course goal is a working <strong>encrypt and decrypt</strong> pair with an explainable grid story. Security properties (entropy, keys, side channels) are out of scope; the README callout above applies.
 </details>
 
 <details>
 <summary><b>What is ICM?</b></summary>
 <br/>
 
-<strong>Interpretable Context Methodology</strong> — project context is staged under <code>stages/</code>, <code>decisions/</code>, and <code>shared/</code> so humans and agents can resume work without re-deriving the whole plan from chat history.
+<strong>Interpretable Context Methodology</strong> — project context is staged under <code>stages/</code> and <code>decisions/</code> so humans and agents can resume work without re-deriving the whole plan from chat history.
 </details>
 
 <details>
-<summary><b>Playwright is not an npm script — intentional?</b></summary>
+<summary><b>Why PNG banner instead of SVG?</b></summary>
 <br/>
 
-Yes for now. E2E lives under <code>e2e/</code> with <code>playwright.config.ts</code>; run <code>npm run test:e2e</code> after <code>npx playwright install</code>. Unit tests use <code>npm test</code> (Vitest).
+GitHub’s image proxy (Camo) often strips or fails SVG in READMEs. Vector source lives at <code>docs/assets/enigma-isle-banner.svg</code>; the README embeds the rasterized PNG.
 </details>
-
----
-
-## Related
-
-| Project | Relationship |
-|---------|----------------|
-| [Gate-MCP](https://github.com/Dukeabaddon/Gate-MCP) | Context compression gateway used while building with AI assistants |
-| [specter](https://github.com/Dukeabaddon/specter) | Author’s open-source tooling (README structure inspiration) |
 
 ---
 
 <div align="center">
-
-### Star history
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Dukeabaddon/Enigma-Isle&type=Date)](https://star-history.com/#Dukeabaddon/Enigma-Isle&Date)
 
 **Enigma Isle** — college final · island scroll · teachable cipher · client-side only.
 

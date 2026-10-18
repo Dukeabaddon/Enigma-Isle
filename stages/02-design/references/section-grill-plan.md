@@ -2,7 +2,6 @@
 
 **Goal:** Lock IA → per-section parts → design tokens → AI asset prompts.  
 **Capture:** `brainstorms/2026-10-17-college-cipher-landing.md`  
-**Obsidian:** `10_Projects/Enigma/`
 
 ## Order of grilling
 

@@ -1,7 +1,7 @@
-# Cipher step audit (Aaron diagrams)
+# Cipher step audit (diagrams)
 
 **Refs:** `encrypt-1.png` … `encrypt-4.png`  
-**Goal:** Explain issues without rewriting Aaron’s story.
+**Goal:** Explain issues without rewriting the story.
 
 ## Your 4 encrypt steps (as drawn)
 
@@ -24,7 +24,7 @@
 
 ### 1) ×18 — clarified (Q8b)
 
-**Aaron’s model (correct intent):**
+**the model (correct intent):**
 - B → 2 → `2×18=36`
 - From **B**, walk right 36 times: B→C→D→E→F→… → landing letter
 - 36 is a **step count**, not a new letter code.
@@ -43,7 +43,7 @@ If right-walk is on a **26-letter cycle** (after Z → A; after E → F):
 - Cols B–E have **5** letters each → down 5 = back to start (**no change** for those cols).
 - Your E example: E→J→O→T→Y→E — ends on E.
 - Col A (6 letters: A,F,K,P,U,Z): down 5 **does** move.
-- **Keep as Aaron designed.** Teach wrap in S3; note identity on 5-cols if asked.
+- **Keep as designed.** Teach wrap in S3; note identity on 5-cols if asked.
 
 ### 3) Typo in Step 3 note
 
@@ -58,7 +58,7 @@ If right-walk is on a **26-letter cycle** (after Z → A; after E → F):
 | **3** | n/a | Same column only |
 | **4** | **Same row** wrap (P←→T) | **Same column** (U↔P) |
 
-**Worked example (Aaron):** U → up P → left T → up O → right×2 L  
+**Worked example:** U → up P → left T → up O → right×2 L  
 Ref: `encrypt-4-example-U.png`
 
 **Z left/right (Q11=A):** stay on Z.  

@@ -6,7 +6,7 @@ Grill requirements and align success metrics before design.
 
 | Input | Source |
 |-------|--------|
-| Course goal | Aaron / syllabus (if any) |
+| Course goal | course syllabus (if any) |
 | Grill log | `brainstorms/2026-10-17-college-cipher-landing.md` |
 | Questionnaire | `setup/questionnaire.md` |
 | Prior decisions | `decisions/`, `shared/grill-summary.md` |
@@ -18,7 +18,7 @@ Grill requirements and align success metrics before design.
 | 1 | Confirm closed Q1–Q3; list open Q4–Q10 in `DELEGATE-PLAN.md` |
 | 2 | Document hero + cipher teaching intent |
 | 3 | Flag risks (invertibility, scroll art scope) |
-| 4 | Write discovery brief to `output/` when Aaron signs off |
+| 4 | Write discovery brief to `output/` when signed off |
 
 ## Outputs
 

@@ -2,7 +2,7 @@
 
 - Status: accepted
 - Date: 2026-10-17
-- Owner: Aaron
+- Owner: project
 
 ## Context
 - Need public name + visual direction for college landing.

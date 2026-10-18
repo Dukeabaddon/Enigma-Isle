@@ -59,7 +59,7 @@ export default function ResultExpand({
             <div
               className="absolute inset-0"
               style={{
-                backgroundImage: `url('/images/strata.jpeg')`,
+                backgroundImage: `url('/images/strata.webp')`,
                 backgroundSize: `auto ${DIRT_H}px`,
                 backgroundPosition: 'center top',
                 backgroundRepeat: 'repeat-x',

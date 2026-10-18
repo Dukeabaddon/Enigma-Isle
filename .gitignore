@@ -1,4 +1,3 @@
-
 !.env.example
 !stages/*/output/.gitkeep
 # Agent / AI tooling (do not ship)
@@ -30,13 +29,19 @@ DELEGATE-PLAN.md
 brainstorms/
 coverage/
 dist/
+docs/ASSET-DROP.md
 docs/Build Log.md
+docs/DRAWBRIDGE-SETUP.md
+docs/PLAN.md
 docs/prompts/
 graphify-out/
 node_modules/
 playwright-report/
-public/images/hero-dirt.backup.webp
+public/images/*.backup.webp
+public/images/*.jpeg
+public/images/*.jpg
+public/images/*.raw.*
 shared/grill-summary.md
+shots/
 stages/*/output/*
 test-results/
-public/images/strata.raw.jpeg

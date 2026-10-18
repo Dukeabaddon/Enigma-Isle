@@ -1,4 +1,4 @@
-# 004 — Hero seam via painted brown + WebP-only Aaron assets
+# 004 — Hero seam via painted brown + WebP-only assets
 
 **Status:** Accepted  
 **Date:** 2026-10-18  
@@ -32,7 +32,7 @@ Hero→S2 looked like a leaf cutout: CSS wave `clipPath` + island art that did n
 ## Consequences
 
 - Smoother S1→S2 join; less clip-path maintenance.
-- Aaron regenerates art when seam fails — do not reintroduce wave clip as the fix.
+- Regenerate art when seam fails — do not reintroduce wave clip as the fix.
 - Cleanup must grep `src/` before deleting images.
 
 ## Alternatives rejected

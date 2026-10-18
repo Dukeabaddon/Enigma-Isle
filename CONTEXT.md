@@ -41,7 +41,6 @@ See `decisions/`, `.context/decisions.md`, `shared/grill-summary.md`.
 1. ICM stage CONTEXT + grill-summary  
 2. GateMCP (`gate_init` / compress / search)  
 3. graphify for structural map (`graphify update .` after edits)  
-4. Obsidian mirror: `10_Projects/Enigma/docs/`  
 
 ## References
 

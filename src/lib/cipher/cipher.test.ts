@@ -11,7 +11,7 @@ describe('Enigma Isle Cipher', () => {
     }
   });
 
-  it('matches Aaron worked example for Step 4 on U -> L', () => {
+  it('matches worked example for Step 4 on U -> L', () => {
     // When U is passed to Step 4 finisher:
     // U -> up P -> left T -> up O -> right2 L
     const trace = encryptCharacter('U');
@@ -39,12 +39,12 @@ describe('Enigma Isle Cipher', () => {
     expect(decrypted.text).toBe('HELLO WORLD ');
   });
 
-  it('round-trips phrases with spaces (e.g. aaron mecate ito)', () => {
-    const phrase = 'aaron mecate ito';
+  it('round-trips phrases with spaces (e.g. hello island map)', () => {
+    const phrase = 'hello island map';
     const enc = encryptText(phrase);
     expect(enc.text.split(' ')).toHaveLength(3);
     const dec = decryptText(enc.text);
-    expect(dec.text).toBe('AARON MECATE ITO');
+    expect(dec.text).toBe('HELLO ISLAND MAP');
   });
 
   it('accurately roundtrips sample words', () => {
