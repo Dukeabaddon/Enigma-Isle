@@ -9,7 +9,7 @@ export default function TryAgain() {
   };
 
   return (
-    <section className="relative bg-gradient-to-b from-[#EDF5F1] via-[#eaddbf] to-[#eaddbf] py-20 sm:py-28 px-4 sm:px-6 overflow-hidden text-center seam-paint-cream">
+    <section className="relative bg-gradient-to-b from-[#EDF5F1] via-[#eaddbf] to-[#eaddbf] py-20 sm:py-28 px-4 sm:px-6 overflow-hidden text-center">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 sm:w-[500px] sm:h-[500px] bg-[#eaddbf]/90 rounded-full blur-3xl pointer-events-none" />
 
       <h2 className="sr-only">Interactive Cipher Workbench — Unlock the Island Cipher</h2>
@@ -18,7 +18,7 @@ export default function TryAgain() {
         <img
           src="/images/woodboard-workbench.webp"
           alt="Interactive Cipher Workbench — Unlock the Island Cipher"
-          className="w-full h-auto drop-shadow-2xl select-none"
+          className="w-full h-auto drop-shadow-xl sm:drop-shadow-2xl select-none"
           width={2126}
           height={1652}
         />

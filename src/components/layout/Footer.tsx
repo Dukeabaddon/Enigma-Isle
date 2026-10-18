@@ -7,8 +7,11 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#0f1911] text-white/80 overflow-hidden">
-      {/* Island on cream sky; bottom blends into footer dark (kills hairline) */}
-      <div className="relative w-full overflow-hidden leading-none select-none bg-[#eaddbf] seam-overlap -mb-px border-b border-[#0f1911]">
+      {/*
+        Island plate — cream only (no dark border/fade).
+        9603382 border-b #0f1911 + bottom gradient re-drew the hairlines.
+      */}
+      <div className="relative w-full overflow-hidden leading-none select-none bg-[#eaddbf] seam-overlap">
         <img
           src="/images/footer-island.webp"
           alt=""
@@ -16,17 +19,18 @@ export default function Footer() {
           width={3392}
           height={1248}
         />
+        {/* Soft cream at image TOP only — blend into TryAgain, no dark paint */}
         <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 h-6 z-[1]"
+          className="pointer-events-none absolute inset-x-0 top-0 h-4 z-[1]"
           style={{
             background:
-              'linear-gradient(to bottom, transparent 0%, #0f1911 85%)',
+              'linear-gradient(to bottom, #eaddbf 0%, transparent 100%)',
           }}
           aria-hidden
         />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full -mt-px pt-10 pb-12 space-y-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full pt-10 pb-12 space-y-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 items-start">
           <div className="md:col-span-7 space-y-4">
             <div className="flex items-center gap-3">
