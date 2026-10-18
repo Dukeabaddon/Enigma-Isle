@@ -1,32 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Enigma Isle">
-  <!-- Solid flat banner  no outlines, no photo-AI texture -->
-  <rect width="1280" height="640" fill="#ECE0C8"/>
-  <!-- sun -->
-  <circle cx="1040" cy="120" r="64" fill="#D4A017"/>
-  <!-- far hills -->
-  <ellipse cx="320" cy="360" rx="280" ry="90" fill="#7A9E6E"/>
-  <ellipse cx="720" cy="380" rx="340" ry="100" fill="#6B8F5F"/>
-  <ellipse cx="1100" cy="370" rx="220" ry="80" fill="#7A9E6E"/>
-  <!-- ocean -->
-  <rect y="400" width="1280" height="120" fill="#3D8B8F"/>
-  <rect y="500" width="1280" height="40" fill="#2F7377"/>
-  <!-- sand -->
-  <rect y="540" width="1280" height="100" fill="#C4A574"/>
-  <!-- palm left -->
-  <rect x="160" y="280" width="18" height="280" rx="4" fill="#5C4033"/>
-  <ellipse cx="120" cy="270" rx="70" ry="28" fill="#2F6B3A" transform="rotate(-25 120 270)"/>
-  <ellipse cx="200" cy="260" rx="70" ry="28" fill="#2F6B3A" transform="rotate(25 200 260)"/>
-  <ellipse cx="168" cy="240" rx="60" ry="24" fill="#3A8A4A"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-label="Enigma Isle">
+  <!-- Flat solid SVG banner — no strokes, no photo texture, no AI gradients -->
+  <rect width="1280" height="480" fill="#ECE0C8"/>
+
+  <!-- sun disk -->
+  <circle cx="1080" cy="88" r="52" fill="#D4A017"/>
+
+  <!-- far land masses (solid) -->
+  <path fill="#8FB07A" d="M0 250 C180 210 320 230 480 248 C640 266 780 220 960 240 C1100 254 1200 248 1280 236 L1280 320 L0 320 Z"/>
+  <path fill="#6B8F5F" d="M0 280 C220 260 400 300 620 290 C850 278 1000 310 1280 300 L1280 360 L0 360 Z"/>
+
+  <!-- ocean bands -->
+  <rect y="320" width="1280" height="70" fill="#3D8B8F"/>
+  <rect y="380" width="1280" height="36" fill="#2F7377"/>
+
+  <!-- sand / dirt shore -->
+  <rect y="416" width="1280" height="64" fill="#35231B"/>
+
+  <!-- palm left (solid geometry) -->
+  <rect x="148" y="170" width="16" height="200" rx="3" fill="#5C4033"/>
+  <ellipse cx="110" cy="168" rx="64" ry="22" fill="#2F6B3A" transform="rotate(-28 110 168)"/>
+  <ellipse cx="190" cy="158" rx="64" ry="22" fill="#2F6B3A" transform="rotate(28 190 158)"/>
+  <ellipse cx="156" cy="140" rx="52" ry="20" fill="#3A8A4A"/>
+
   <!-- palm right -->
-  <rect x="1080" y="300" width="18" height="260" rx="4" fill="#5C4033"/>
-  <ellipse cx="1040" cy="290" rx="70" ry="28" fill="#2F6B3A" transform="rotate(-30 1040 290)"/>
-  <ellipse cx="1120" cy="280" rx="70" ry="28" fill="#2F6B3A" transform="rotate(30 1120 280)"/>
-  <ellipse cx="1088" cy="260" rx="58" ry="24" fill="#3A8A4A"/>
-  <!-- key mark -->
-  <circle cx="640" cy="300" r="36" fill="#35231B"/>
-  <rect x="628" y="300" width="24" height="56" rx="6" fill="#35231B"/>
-  <rect x="620" y="340" width="40" height="12" rx="4" fill="#D4A017"/>
+  <rect x="1116" y="190" width="16" height="180" rx="3" fill="#5C4033"/>
+  <ellipse cx="1078" cy="186" rx="64" ry="22" fill="#2F6B3A" transform="rotate(-32 1078 186)"/>
+  <ellipse cx="1158" cy="176" rx="64" ry="22" fill="#2F6B3A" transform="rotate(32 1158 176)"/>
+  <ellipse cx="1124" cy="158" rx="50" ry="18" fill="#3A8A4A"/>
+
+  <!-- brand mark: solid key in dirt disk -->
+  <circle cx="640" cy="210" r="44" fill="#35231B"/>
+  <circle cx="640" cy="198" r="14" fill="#D4A017"/>
+  <rect x="632" y="208" width="16" height="40" rx="4" fill="#D4A017"/>
+  <rect x="624" y="236" width="32" height="10" rx="3" fill="#ECE0C8"/>
+
   <!-- wordmark -->
-  <text x="640" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#1C1B18" letter-spacing="8">ENIGMA ISLE</text>
-  <text x="640" y="520" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" font-weight="600" fill="#35231B" letter-spacing="4">CLIENT-SIDE CIPHER LANDING</text>
+  <text x="640" y="320" text-anchor="middle" font-family="Georgia, 'Times New Roman', Times, serif" font-size="64" font-weight="700" fill="#1C1B18" letter-spacing="10">ENIGMA ISLE</text>
+  <text x="640" y="358" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#5C4033" letter-spacing="6">CLIENT-SIDE TEACHING CIPHER</text>
 </svg>
