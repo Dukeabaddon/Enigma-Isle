@@ -2,39 +2,33 @@
 
 **Updated:** 2026-10-18  
 **Full capture:** `brainstorms/2026-10-17-college-cipher-landing.md`  
-**Builder prompts:** paste in chat when needed (spent one-time `docs/prompts/` cleared)
+**ADRs:** `decisions/` · log `.context/decisions.md` · state `.context/state.md`  
+**Plan:** `docs/PLAN.md`
 
 ## Product
 
 - One-page cipher landing · beauty + working encrypt/decrypt
-- Voice: **normal English**; island = **visuals only** (Q6=D) — no lagoon myth walls
+- Voice: **normal English**; island = **visuals only** (Q6=D)
 
-## Visual direction (mentor + Aaron)
+## Visual / assets (2026-10-18)
 
-- Hero illustration strong — **keep**; light polish only
-- Below hero currently “cream SaaS cards” — **must redesign** into journey atmospheres
-- Navbar: stop generic SaaS; theme without killing usability
-- Organic section transitions; distinct encrypt vs decrypt environments
-- Footer: not black template / tech soup
+- Hero plates: `hero-island.webp` + `hero-island-mobile.webp` (Aaron)
+- Seam: art grades to S2 brown `#3c2820` — **no CSS wave clip** → ADR 004
+- WebP-only in `public/images/`; delete masters after convert
+- Also live: nav-icon, hero-dirt, woodboard, treasure-chest, mascot, footer-island, parchment-border
+- Footer: island silhouette; clear English (no jargon chips)
+- CTA: woodboard + real Try Cipher button
 
-## Stack / assets
+## Stack
 
 - Vite + React + TS + Tailwind + Framer Motion
-- UI: shadcn + Lucide as needed; **ui-ux-pro-max** required for builders
-- Aaron WebPs: `nav-icon.webp`, `hero-island.webp`, `hero-dirt.webp`, `hero-island-mobile.webp`
-
-## Cipher
-
-- 4-step invertible client TS — do not break
-
-## Hosting
-
-- Vercel
+- shadcn + Lucide; builders: ui-ux-pro-max
+- Cipher: 4-step invertible client TS — do not break
+- Host: Vercel
 
 ## Next
 
-1. Visual pass — Antigravity claims complete (Aaron review screenshots)  
-2. **Moat Wave 3:** 15 open → `docs/prompts/BUILDER-MOAT-WAVE3.md`  
-3. Generate wood CTA sign via `wood-sign-cta-prompt.json`  
-4. `graphify update .` after Wave 3  
-5. Vercel when Aaron signs  
+1. Aaron QA hero seam (desktop + mobile)
+2. Moat: process any new notes; honest status sync
+3. Stage `05-polish` + Vercel when signed
+4. `graphify update .` after structural edits · Obsidian Build Log

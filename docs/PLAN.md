@@ -1,14 +1,17 @@
-# Architecture plan (short)
+# Architecture + action plan
 
-One-page **React** app; no backend. Cipher is a pure TS module imported by the hero demo and teaching sections.
+One-page **React** app; no backend. Cipher is pure TS.  
+**Stage:** `04-build` live · next `05-polish` + Vercel.
 
 ## Layers
 
 ```
 ┌─────────────────────────────────────────┐
-│  App (sections, scroll, Framer Motion)   │
+│  App (Nav, sections, Framer Motion)      │
 ├─────────────────────────────────────────┤
-│  HeroCipher UI (input, yellow/green key) │
+│  HeroWorkbench + ResultExpand + Modal    │
+├─────────────────────────────────────────┤
+│  About / StepCards / TryAgain / Footer   │
 ├─────────────────────────────────────────┤
 │  cipher/ (encrypt, decrypt, grid utils)  │
 └─────────────────────────────────────────┘
@@ -16,33 +19,38 @@ One-page **React** app; no backend. Cipher is a pure TS module imported by the h
 
 ## Data flow
 
-1. User text + mode (encrypt | decrypt) + optional key params (TBD in spec).
-2. `cipher` returns result string + optional step trace for teaching UI.
-3. No network calls for crypto.
+1. User text + mode (encrypt | decrypt).
+2. `cipher` returns result + step trace.
+3. No network for crypto.
 
-## Suggested `src/` layout (build phase)
+## Asset policy (2026-10-18)
 
-| Path | Role |
-|------|------|
-| `src/lib/cipher/` | Grid, steps, invertible math |
-| `src/lib/cipher/__tests__/` | Vectors from stage 03 |
-| `src/components/HeroCipher.tsx` | Wide input + dual keys |
-| `src/components/sections/` | How-it-works, encrypt/decrypt walkthrough |
-| `src/components/ScrollScene.tsx` | Parallax / landscape layers |
+- Production: **WebP only** in `public/images/`.
+- Hero seam: **painted** into `#3c2820` — **no** CSS wave clip.
+- Canonical map: `decisions/004-hero-seam-webp-assets.md`.
 
-## Static assets
+## Action plan (current)
 
-Scroll art (Q8) → `public/` or inline SVG components depending on grill answer.
+| Priority | Item | Owner |
+|----------|------|--------|
+| P0 | Visual QA new hero web + mobile vs S2 brown | Aaron |
+| P0 | Process new Moat notes; no false “done” | Builder |
+| P1 | Encrypt↔decrypt / section transition polish | Builder |
+| P1 | Footer solid seam + wave-mask notes if reopened | Builder |
+| P2 | `05-polish` a11y + reduced-motion | Builder |
+| P2 | Vercel production deploy | Aaron sign-off |
+| Always | `graphify update .` after structural edits | Agent |
+| Always | Obsidian Build Log / Decisions mirror | Agent |
 
 ## Build & deploy
 
 - `vite build` → static `dist/`
-- Host on choice from Q10; env vars likely none (client-only).
+- Host: **Vercel**
+- Workflow: ICM stages · Gate compress · graphify · Obsidian `10_Projects/Enigma/`
 
-## Dependencies (when scaffolded)
+## References
 
-- `react`, `react-dom`, `typescript`, `vite`
-- `tailwindcss`, `postcss`, `autoprefixer`
-- `framer-motion`
-
-No `package.json` until stage `04-build`.
+- Decisions: `decisions/` + `.context/decisions.md`
+- Grill lock: `shared/grill-summary.md`
+- Delegate: `DELEGATE-PLAN.md`
+- State: `.context/state.md`

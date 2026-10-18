@@ -1,28 +1,31 @@
-# Project context — Enigma landing
+# Project context — Enigma Isle
 
 ## Identity
 
 | Field | Value |
 |-------|--------|
-| **Name** | Enigma (repo); public site name TBD |
-| **Course** | College final — custom cipher demo + teaching sections |
-| **Success** | Beautiful standout UI + working encrypt/decrypt (Aaron taste > minimal rubric) |
+| **Name** | Enigma Isle |
+| **Course** | College final — invertible cipher demo + teaching sections |
+| **Success** | Beautiful standout UI + working encrypt/decrypt |
 
-## Locked decisions (2026-10-17)
+## Locked decisions
 
-- **Q2=B:** Keep grid + directional-step **spirit**; tweak math for **invertible** encrypt↔decrypt.
-- **Q3=A:** Vite, React, TypeScript, Tailwind, Framer Motion; cipher client-side.
+| ID | Decision |
+|----|----------|
+| ADR 001 | Vite + React + TS + Tailwind + Framer; client cipher |
+| ADR 002 | Invertible grid/directional variant |
+| ADR 003 | Brand Enigma Isle |
+| ADR 004 | Hero painted seam `#3c2820`; no CSS wave; WebP-only assets |
+| Q6=D | Island visuals; clear English copy |
+| Host | Vercel |
 
-See `decisions/` and `shared/grill-summary.md`.
+See `decisions/`, `.context/decisions.md`, `shared/grill-summary.md`.
 
-## Hero UX (locked)
+## Hero UX
 
-- Wide input + key button.
-- **Yellow** = encrypt; **Green** = decrypt.
-
-## Theme lean (not locked)
-
-Adventure / pirate / island treasure; SnapTrips-like flat illustration + scroll landscape morphs.
+- Wide input; yellow encrypt / green decrypt (single visible control + switch).
+- White fade over island; result expands into dirt strata.
+- Island art blends to S2 brown — **no wave clip**.
 
 ## Stage pipeline
 
@@ -30,16 +33,17 @@ Adventure / pirate / island treasure; SnapTrips-like flat illustration + scroll 
 01-discovery → 02-design → 03-cipher-spec → 04-build → 05-polish
 ```
 
-| Stage | Focus |
-|-------|--------|
-| 01-discovery | Grill, requirements, rubric alignment |
-| 02-design | Sections, layout, visual direction |
-| 03-cipher-spec | Invertible algorithm + teaching steps |
-| 04-build | Implement site |
-| 05-polish | Motion, a11y, performance |
+**Active:** `04-build` · **Next:** polish + deploy  
+**State:** `.context/state.md` · **Plan:** `docs/PLAN.md`
+
+## Workflow (always)
+
+1. ICM stage CONTEXT + grill-summary  
+2. GateMCP (`gate_init` / compress / search)  
+3. graphify for structural map (`graphify update .` after edits)  
+4. Obsidian mirror: `10_Projects/Enigma/docs/`  
 
 ## References
 
-- Grill capture: `brainstorms/2026-10-17-college-cipher-landing.md` (gitignored; local only)
-- Architecture sketch: `docs/PLAN.md`
-- Remaining grill: `DELEGATE-PLAN.md`
+- Grill: `brainstorms/2026-10-17-college-cipher-landing.md`
+- Delegate: `DELEGATE-PLAN.md`

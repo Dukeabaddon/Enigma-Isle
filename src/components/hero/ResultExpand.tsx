@@ -30,7 +30,7 @@ export default function ResultExpand({
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const SEAM = '#3c2820';
+  const SEAM = '#342319';
 
   return (
     <AnimatePresence>
@@ -45,19 +45,19 @@ export default function ResultExpand({
           className="relative w-full overflow-hidden scroll-mt-20"
           style={{ backgroundColor: SEAM }}
         >
-          {/* Dirt strata — appears cleanly below the Section 1 wave cut */}
+          {/* Dirt strata below hero — no wave; seam matches island art bottom */}
           <div
             className="w-full bg-repeat-x py-12 sm:py-16 px-4 sm:px-6 relative flex flex-col justify-center"
             style={{
-              backgroundImage: `url('/images/hero-dirt.webp'), radial-gradient(circle at 20% 80%, rgba(90,60,45,0.4) 0%, transparent 40%), radial-gradient(circle at 80% 90%, rgba(70,45,30,0.5) 0%, transparent 45%)`,
-              backgroundSize: 'auto 260px, 100% 100%, 100% 100%',
-              backgroundPosition: 'top center, center, center',
+              backgroundImage: `linear-gradient(to bottom, ${SEAM} 0%, ${SEAM} 20px, transparent 70px), url('/images/hero-dirt.webp'), radial-gradient(circle at 20% 80%, rgba(90,60,45,0.4) 0%, transparent 40%), radial-gradient(circle at 80% 90%, rgba(70,45,30,0.5) 0%, transparent 45%)`,
+              backgroundSize: '100% 70px, auto 260px, 100% 100%, 100% 100%',
+              backgroundPosition: 'top center, top center, center, center',
               backgroundColor: SEAM,
             }}
           >
             <div
               className="absolute inset-0 pointer-events-none"
-              style={{ backgroundColor: 'rgba(60, 40, 32, 0.35)' }}
+              style={{ backgroundColor: 'rgba(52, 35, 25, 0.35)' }}
             />
 
             <div className="relative z-10 max-w-2xl mx-auto w-full space-y-4">

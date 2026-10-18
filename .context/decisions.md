@@ -10,6 +10,16 @@ Chronological running log (decide skill style). Canonical detail in `decisions/N
 - **Hero UX:** Wide input + key; yellow encrypt, green decrypt (grill capture).
 - **Q4 — Brand:** Island explorer + **Enigma Isle** → `decisions/003-brand-enigma-isle.md`.
 
-## Pending
+## 2026-10-18
 
-See `DELEGATE-PLAN.md` for open grill items (palette, sections, motion, scroll art, charset, hosting).
+- **Hero seam / assets:** Painted brown; **no CSS wave clip**; WebP-only; sky headroom; ground-level trees → `decisions/004-hero-seam-webp-assets.md`.
+- **Seam hex (measured):** `#342319` (art bottom avg). Island opacity 100%. S2 solid top band. Result = sibling section below hero (not inside S1).
+- **Voice Q6=D:** Island = visuals; clear English copy (no lore walls) — see `shared/grill-summary.md`.
+- **UI kit:** shadcn + Lucide; builders use ui-ux-pro-max.
+- **Hosting:** Vercel.
+- **CTA:** Woodboard + real HTML Try Cipher; treasure chest accent.
+- **Spent prompts:** Cleared `docs/prompts/` one-shots; paste in chat when needed.
+
+## Pending / next
+
+See `docs/PLAN.md` Action plan + `DELEGATE-PLAN.md`. Moat queue: re-check `.moat/` each session.

@@ -4,8 +4,8 @@ import { useCipher } from '@/hooks/useCipher';
 import ResultExpand from './ResultExpand';
 import StepsModal from './StepsModal';
 
-/** Seam brown — exact hex requested by Aaron in Moat Task 100 */
-const SEAM = '#3c2820';
+/** Seam brown — measured hero-island bottom; ADR 004. NO CSS wave clip. */
+const SEAM = '#342319';
 
 export default function HeroWorkbench() {
   const {
@@ -69,25 +69,13 @@ export default function HeroWorkbench() {
 
   return (
     <>
-      {/* Hidden SVG Definition for Smooth Responsive Wave Clip-Path applied to island plate */}
-      <svg width="0" height="0" className="absolute pointer-events-none" aria-hidden="true">
-        <defs>
-          <clipPath id="hero-island-wave-cut" clipPathUnits="objectBoundingBox">
-            <path d="M 0,0 L 1,0 L 1,0.92 C 0.85,0.97 0.70,0.92 0.52,0.96 C 0.35,1.0 0.18,0.92 0,0.94 Z" />
-          </clipPath>
-        </defs>
-      </svg>
-
-      {/* Section 1 — Hero Workbench (120dvh with wave cut at bottom into #3c2820 dirt ground) */}
+      {/* Section 1 — Hero only. Art paints into SEAM. Never re-add wave clipPath. */}
       <section
         id="workbench"
-        className="relative w-full overflow-hidden min-h-[120dvh] flex flex-col justify-between"
+        className="relative w-full overflow-hidden min-h-[100dvh] flex flex-col"
         style={{ backgroundColor: SEAM }}
       >
-        <div
-          className="absolute top-0 left-0 right-0 h-[120dvh] pointer-events-none select-none z-0 overflow-hidden"
-          style={{ clipPath: 'url(#hero-island-wave-cut)' }}
-        >
+        <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-bottom max-sm:hidden"
             style={{ backgroundImage: `url('/images/hero-island.webp')` }}
