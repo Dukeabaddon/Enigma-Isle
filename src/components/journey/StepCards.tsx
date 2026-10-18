@@ -32,13 +32,12 @@ export default function StepCards() {
   const dropStep = tick % 5;
 
   return (
-    <div className="w-full">
-      {/* S3 — How Encryption Works on Dirt Ground (Moat a8d1d1a2) */}
-      <div className="w-full bg-[#3c2820] px-3 sm:px-6 lg:px-8 pb-10 sm:pb-16 relative">
-        <section
-          id="encrypt-journey"
-          className="relative bg-[#FAF4E8] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-3xl sm:rounded-[36px] shadow-2xl border border-[#D4A017]/20"
-        >
+    <div className="w-full bg-[#3c2820]">
+      {/* S3 — How Encryption Works (100% screen width, rounded-t corners on dirt - Moat 04b0bae8 & bb6c8989) */}
+      <section
+        id="encrypt-journey"
+        className="relative w-full bg-[#FAF4E8] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px] shadow-2xl"
+      >
           <div className="max-w-6xl mx-auto relative z-10">
             {/* Simplified Centered Header (Tasks 5 & 6) */}
             <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
@@ -239,9 +238,7 @@ export default function StepCards() {
           </div>
         </div>
 
-        </section>
-
-        {/* Organic Coastal River Transition from Dirt Ground into Mint Decryption Chambers (Moat fab8251a) */}
+        {/* Organic Coastal River Transition into Mint Decryption Chambers (Moat fab8251a) */}
         <div className="absolute bottom-0 inset-x-0 w-full overflow-hidden leading-none pointer-events-none z-10 -mb-1">
           <svg
             className="w-full h-8 sm:h-14 text-[#EDF5F1]"
@@ -252,7 +249,7 @@ export default function StepCards() {
             <path d="M0,0 C200,80 400,-20 600,50 C800,120 1000,20 1200,60 L1200,120 L0,120 Z" />
           </svg>
         </div>
-      </div>
+      </section>
 
       {/* S4 — How Decryption Works (Tasks 13, 14, 15, 16, 17, 18) */}
       <section
