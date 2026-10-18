@@ -70,55 +70,49 @@ export default function HeroWorkbench() {
       {/* Section 1 — Hero only. Never re-add wave clipPath. */}
       <section
         id="workbench"
-        className="relative w-full overflow-x-hidden overflow-y-visible min-h-[135dvh] flex flex-col"
+        className="relative w-full overflow-hidden min-h-[135dvh] flex flex-col"
         style={{ backgroundColor: '#ece0c8' }}
       >
-        {/* Full-bleed island: bottom of art (brown dirt) pins to section bottom */}
+        {/* Full-bleed island — bg-cover fills plate (100% auto left a hard sky cut) */}
         <div
           className="absolute inset-0 w-full pointer-events-none select-none z-0 overflow-hidden"
           style={{
             background:
-              'linear-gradient(to bottom, #ece0c8 0%, #ece0c8 55%, #35231b 100%)',
+              'linear-gradient(to bottom, #ece0c8 0%, #ece0c8 45%, #35231b 100%)',
           }}
         >
           <div
-            className="absolute inset-0 max-sm:hidden"
+            className="absolute inset-0 bg-cover bg-bottom max-sm:hidden"
             style={{
               backgroundImage: `url('/images/hero-island.webp')`,
-              backgroundSize: '100% auto',
-              backgroundPosition: 'center bottom',
-              backgroundRepeat: 'no-repeat',
-              WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 14%)',
-              maskImage: 'linear-gradient(to bottom, transparent 0%, black 14%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 22%)',
+              maskImage: 'linear-gradient(to bottom, transparent 0%, black 22%)',
             }}
           />
           <div
-            className="absolute inset-0 sm:hidden"
+            className="absolute inset-0 bg-cover bg-bottom sm:hidden"
             style={{
               backgroundImage: `url('/images/hero-island-mobile.webp')`,
-              backgroundSize: '100% auto',
-              backgroundPosition: 'center bottom',
-              backgroundRepeat: 'no-repeat',
-              WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 14%)',
-              maskImage: 'linear-gradient(to bottom, transparent 0%, black 14%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 22%)',
+              maskImage: 'linear-gradient(to bottom, transparent 0%, black 22%)',
             }}
           />
           {/* Plate-top cream fade — soft sky join */}
           <div
-            className="absolute inset-x-0 top-0 h-36 sm:h-44 pointer-events-none"
+            className="absolute inset-x-0 top-0 h-44 sm:h-52 pointer-events-none"
             style={{
-              background: 'linear-gradient(to bottom, #ece0c8 0%, transparent 100%)',
+              background: 'linear-gradient(to bottom, #ece0c8 0%, rgba(236,224,200,0.85) 35%, transparent 100%)',
             }}
             aria-hidden
           />
         </div>
 
-        {/* Soft sky veil: cream → warm white → transparent through top 50% of section */}
+        {/* Soft sky veil: cream → transparent through top 50% */}
         <div
           className="absolute inset-0 z-[1] pointer-events-none"
           style={{
             background:
-              'linear-gradient(to bottom, #ece0c8 0%, rgba(236,224,200,0.75) 18%, rgba(255,250,240,0.35) 35%, transparent 50%)',
+              'linear-gradient(to bottom, #ece0c8 0%, rgba(236,224,200,0.8) 20%, rgba(255,250,240,0.35) 38%, transparent 55%)',
           }}
           aria-hidden
         />

@@ -7,9 +7,9 @@ import Footer from './components/layout/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-ink selection:bg-encrypt/20">
+    <div className="min-h-screen flex flex-col overflow-x-hidden bg-white text-ink selection:bg-encrypt/20">
       <Nav />
-      <main className="flex-1">
+      <main className="flex-1 overflow-x-hidden">
         <HeroWorkbench />
         <AboutSection />
         <StepCards />

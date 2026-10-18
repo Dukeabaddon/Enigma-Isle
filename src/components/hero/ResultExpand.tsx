@@ -63,15 +63,30 @@ export default function ResultExpand({
             }}
             aria-hidden
           />
+          {/* Low-opacity brown wash — top → 80% of strata (matches island brown handoff) */}
+          <div
+            className="absolute inset-x-0 pointer-events-none z-[2]"
+            style={{
+              top: -35,
+              height: (DIRT_H + 35) * 0.8,
+              background: `linear-gradient(
+                to bottom,
+                rgba(53, 35, 27, 1) 0%,
+                rgba(53, 35, 27, 0.5) 50%,
+                rgba(53, 35, 27, 0) 100%
+              )`,
+            }}
+            aria-hidden
+          />
           {/* Exact color lip — grass join */}
           <div
-            className="absolute inset-x-0 h-3 pointer-events-none z-[2]"
+            className="absolute inset-x-0 h-3 pointer-events-none z-[3]"
             style={{ top: -35, backgroundColor: BG_TOP }}
             aria-hidden
           />
           {/* Top join veil — #35231b → transparent over strata */}
           <div
-            className="absolute inset-x-0 h-20 sm:h-24 pointer-events-none z-[2]"
+            className="absolute inset-x-0 h-20 sm:h-24 pointer-events-none z-[3]"
             style={{
               top: -35,
               background: `linear-gradient(to bottom, ${BG_TOP} 0%, transparent 100%)`,

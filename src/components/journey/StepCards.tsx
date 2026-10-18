@@ -36,17 +36,8 @@ export default function StepCards() {
       {/* S3 — How Encryption Works: rounded top+bottom on dirt; slightly darker cream so radius reads */}
       <section
         id="encrypt-journey"
-        className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-24 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-visible rounded-t-3xl sm:rounded-t-[40px] rounded-b-3xl sm:rounded-b-[40px] shadow-2xl mb-6"
+        className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-24 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-x-hidden overflow-y-visible rounded-t-3xl sm:rounded-t-[40px] rounded-b-3xl sm:rounded-b-[40px] shadow-2xl mb-6"
       >
-          {/* Ibong Adarna — top-left corner of encryption section */}
-          <img
-            src="/images/adarna.webp"
-            alt="Ibong Adarna on a branch"
-            className="pointer-events-none absolute left-0 top-0 z-20 w-36 sm:w-44 lg:w-52 xl:w-60 h-auto select-none object-contain drop-shadow-lg -translate-x-1 -translate-y-2"
-            width={1649}
-            height={2277}
-          />
-
           {/* Desktop flanks — section-absolute so max-w grid cannot clip */}
           <img
             src="/images/mascot-enigma.webp"
@@ -256,6 +247,15 @@ export default function StepCards() {
         id="decrypt-journey"
         className="relative bg-[#EDF5F1] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px]"
       >
+        {/* Ibong Adarna — top-left; clipped by overflow-hidden */}
+        <img
+          src="/images/adarna.webp"
+          alt="Ibong Adarna on a branch"
+          className="pointer-events-none absolute left-0 top-0 z-20 w-36 sm:w-44 lg:w-52 xl:w-60 h-auto select-none object-contain drop-shadow-lg"
+          width={1649}
+          height={2277}
+        />
+
         <div className="max-w-6xl mx-auto relative z-10">
           {/* Simplified Header (Tasks 13 & 15: no badge, simplified title) */}
           <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">

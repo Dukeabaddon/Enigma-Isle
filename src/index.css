@@ -22,10 +22,15 @@
 }
 
 @layer base {
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     background-color: var(--color-page);
     color: var(--color-ink);
     font-family: var(--font-sans);
+    overflow-x: hidden;
   }
 }
 
