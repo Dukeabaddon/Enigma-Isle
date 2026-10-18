@@ -1,7 +1,7 @@
 {
   "e2e/enigma.spec.ts": {
-    "mtime": 1792313706.8665738,
-    "ast_hash": "517dce0039b7bd4c6ce0b5b804781202",
+    "mtime": 1792319773.0914388,
+    "ast_hash": "d66e09b6fb4dc91399b8f20c33b426d5",
     "semantic_hash": ""
   },
   "package.json": {
@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "src/components/about/AboutSection.tsx": {
-    "mtime": 1792317981.605983,
-    "ast_hash": "d01f1a5d2f124af8aff2695ee9e96969",
+    "mtime": 1792319690.7837555,
+    "ast_hash": "9c610d7721fd7589680c111b638de885",
     "semantic_hash": ""
   },
   "src/components/close/TryAgain.tsx": {
@@ -35,13 +35,13 @@
     "semantic_hash": ""
   },
   "src/components/hero/HeroWorkbench.tsx": {
-    "mtime": 1792317966.653838,
-    "ast_hash": "a433f0ea09b6a3f72fedbc99e9ea667c",
+    "mtime": 1792319727.013216,
+    "ast_hash": "4f966cca7b081929488c912af0d3ecb3",
     "semantic_hash": ""
   },
   "src/components/hero/ResultExpand.tsx": {
-    "mtime": 1792318038.49659,
-    "ast_hash": "514172b32569bd4158a6426aaa24e43c",
+    "mtime": 1792319710.3680873,
+    "ast_hash": "a04c902703312d5b496f6e2272d3ec1a",
     "semantic_hash": ""
   },
   "src/components/hero/StepsModal.tsx": {
@@ -50,13 +50,13 @@
     "semantic_hash": ""
   },
   "src/components/journey/StepCards.tsx": {
-    "mtime": 1792318087.3225543,
-    "ast_hash": "339173cda96f2c126825ce04e43a488b",
+    "mtime": 1792319806.227562,
+    "ast_hash": "3173db21eefa361cb48c23499a3b4af6",
     "semantic_hash": ""
   },
   "src/components/layout/Footer.tsx": {
-    "mtime": 1792316506.660911,
-    "ast_hash": "591090e6168e4adc28558391805f4a20",
+    "mtime": 1792319655.1550293,
+    "ast_hash": "f86167df329d3396843b783be07152de",
     "semantic_hash": ""
   },
   "src/components/layout/Nav.tsx": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1792313663.1902232,
-    "ast_hash": "422f1042716fd85e59ec76579096e12f",
+    "mtime": 1792319635.71518,
+    "ast_hash": "d1c4eabddaa9e74b7f23af229aa4802e",
     "semantic_hash": ""
   },
   "setup/questionnaire.md": {
@@ -205,8 +205,8 @@
     "semantic_hash": ""
   },
   "shared/grill-summary.md": {
-    "mtime": 1792316970.312646,
-    "ast_hash": "b915d8175438b41cb3473b86a053a73e",
+    "mtime": 1792319136.2000625,
+    "ast_hash": "777977767853620ae400d1df0f0ab9f3",
     "semantic_hash": ""
   },
   "stages/01-discovery/CONTEXT.md": {
@@ -275,37 +275,37 @@
     "semantic_hash": ""
   },
   "shots/01-hero-white-fade.png": {
-    "mtime": 1792318124.9247758,
+    "mtime": 1792319843.5937433,
     "ast_hash": "dabf4eed193de559dff44c301f8211d5",
     "semantic_hash": ""
   },
   "shots/02-hero-encrypt-expand.png": {
-    "mtime": 1792318125.843734,
+    "mtime": 1792319843.5942097,
     "ast_hash": "064d103b3abe0062f8c772f83894012c",
     "semantic_hash": ""
   },
   "shots/03-hero-decrypt.png": {
-    "mtime": 1792318126.7109323,
-    "ast_hash": "ec66cb795350fa9243ca2c9b9970cc81",
+    "mtime": 1792319843.5946515,
+    "ast_hash": "5212a906746cf0286b8157486bbe91f1",
     "semantic_hash": ""
   },
   "shots/04-about-abcd.png": {
-    "mtime": 1792318127.3842754,
-    "ast_hash": "f7776ba86794a24dfcb1735276e70168",
+    "mtime": 1792319843.5952172,
+    "ast_hash": "18f229d0aaedbb8a4e0d3df096742f82",
     "semantic_hash": ""
   },
   "shots/05-encrypt-cards.png": {
-    "mtime": 1792318128.003959,
-    "ast_hash": "0fdc336cf29b3af5a80e95f076b5e4c0",
+    "mtime": 1792319843.5965483,
+    "ast_hash": "03170c43b413afa8530148d6ef81260b",
     "semantic_hash": ""
   },
   "shots/06-decrypt-cards.png": {
-    "mtime": 1792318128.5645432,
-    "ast_hash": "334809accc15aa48a8f6cf99aae17b1d",
+    "mtime": 1792319843.5977225,
+    "ast_hash": "df082126dee2838b4e0d27ba84839760",
     "semantic_hash": ""
   },
   "shots/07-mobile-hero.png": {
-    "mtime": 1792318130.3014557,
+    "mtime": 1792319843.5980585,
     "ast_hash": "2476215a06a76123d69bfb3ff518a959",
     "semantic_hash": ""
   },
@@ -960,8 +960,8 @@
     "semantic_hash": ""
   },
   ".moat/moat-tasks-detail.json": {
-    "mtime": 1792318145.9274042,
-    "ast_hash": "68668d54400c2d657d9296182e6bb814",
+    "mtime": 1792319849.201757,
+    "ast_hash": "447d7a4adf2dd3cc29f9ef81475520ad",
     "semantic_hash": ""
   },
   "vercel.json": {
@@ -1550,13 +1550,13 @@
     "semantic_hash": ""
   },
   ".moat/moat-tasks.md": {
-    "mtime": 1792318157.3691697,
-    "ast_hash": "39b701a6455f686965e305986cfdd501",
+    "mtime": 1792319878.2950003,
+    "ast_hash": "d668d1539e4fe307685a7aa989726349",
     "semantic_hash": ""
   },
   "docs/Build Log.md": {
-    "mtime": 1792316974.4904764,
-    "ast_hash": "a5dbbf710b8650aca43fc363d36ffad4",
+    "mtime": 1792318187.0187912,
+    "ast_hash": "a7476e19c65c776971637953eabeec8c",
     "semantic_hash": ""
   },
   "docs/DRAWBRIDGE-SETUP.md": {
@@ -1610,8 +1610,8 @@
     "semantic_hash": ""
   },
   "shots/08-island-footer.png": {
-    "mtime": 1792318129.0818605,
-    "ast_hash": "07e52a9cc8090509e210ccd48d7a5d30",
+    "mtime": 1792319843.5983965,
+    "ast_hash": "88e445f11bd994533a546c3146bc38a0",
     "semantic_hash": ""
   },
   "public/images/hero-dirt.webp": {
@@ -1634,36 +1634,6 @@
     "ast_hash": "56631c5542510af64843d32b5c2334e4",
     "semantic_hash": ""
   },
-  "docs/prompts/BUILDER-VISUAL-PASS.md": {
-    "mtime": 1792316106.9762871,
-    "ast_hash": "5617992535c9aff19dc3c688f4b692c1",
-    "semantic_hash": ""
-  },
-  "docs/prompts/BUILDER-MASCOT-WOODBOARD.md": {
-    "mtime": 1792317735.5189488,
-    "ast_hash": "e4b887b7a2cb78e32148acb85bd2d625",
-    "semantic_hash": ""
-  },
-  "docs/prompts/BUILDER-MOAT-FOLLOWUP.md": {
-    "mtime": 1792317731.034588,
-    "ast_hash": "4d3ed7202fe661d8cff17e4bccad75f1",
-    "semantic_hash": ""
-  },
-  "docs/prompts/BUILDER-MOAT-WAVE3.md": {
-    "mtime": 1792316955.3763416,
-    "ast_hash": "df3a7411db0a83f67b6033714ed5b815",
-    "semantic_hash": ""
-  },
-  "public/images/06-mascot.png": {
-    "mtime": 1792317203.653288,
-    "ast_hash": "53f5d25dd1e38949f19a75935841417b",
-    "semantic_hash": ""
-  },
-  "public/images/07-woodboard.png": {
-    "mtime": 1792317499.3214777,
-    "ast_hash": "6c48a444b183691a09c9874d324a51cd",
-    "semantic_hash": ""
-  },
   "public/images/mascot-enigma.webp": {
     "mtime": 1792317874.4592426,
     "ast_hash": "aa633d52cea9f0922068ef4ec02bd124",
@@ -1672,6 +1642,21 @@
   "public/images/woodboard-workbench.webp": {
     "mtime": 1792317879.2791235,
     "ast_hash": "af979b6a7919f87b96c865b387223478",
+    "semantic_hash": ""
+  },
+  "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md": {
+    "mtime": 1792319520.297178,
+    "ast_hash": "e2417db396020b1db0971b98bcbbd096",
+    "semantic_hash": ""
+  },
+  "public/images/footer-island.webp": {
+    "mtime": 1792319616.3473563,
+    "ast_hash": "4bcbfdfc64157b61e30743e9b895798d",
+    "semantic_hash": ""
+  },
+  "public/images/treasure-chest.webp": {
+    "mtime": 1792319620.2970448,
+    "ast_hash": "8e001cfa8b986fc5e26f49fbaa6b9677",
     "semantic_hash": ""
   }
 }

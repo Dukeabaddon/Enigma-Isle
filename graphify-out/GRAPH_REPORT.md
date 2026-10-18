@@ -1,13 +1,18 @@
 # Graph Report - enigma  (2026-10-18)
 
 ## Corpus Check
-- 286 files · ~939,050 words
+- 286 files · ~708,159 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4712 nodes · 5926 edges · 353 communities (272 shown, 81 thin omitted)
+- 4719 nodes · 5932 edges · 352 communities (271 shown, 81 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 434 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `57729e0e`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - encrypt.ts
@@ -284,7 +289,6 @@
 - main
 - destructive
 - destructive-foreground
-- 4
 - muted
 - secondary-foreground
 - primary-foreground
@@ -388,11 +392,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (353 total, 81 thin omitted)
+## Communities (352 total, 81 thin omitted)
 
 ### Community 0 - "encrypt.ts"
 Cohesion: 0.08
-Nodes (38): App(), AbcdTable(), AboutSection(), TryAgain(), HeroWorkbench(), ResultExpand(), ResultExpandProps, StepsModalProps (+30 more)
+Nodes (37): App(), AbcdTable(), AboutSection(), HeroWorkbench(), ResultExpand(), ResultExpandProps, StepsModalProps, StepCards() (+29 more)
 
 ### Community 1 - "Project context — Enigma landing"
 Cohesion: 0.05
@@ -832,7 +836,7 @@ Nodes (18): 1. Wordmark (Logotype), 2. Lettermark (Monogram), 3. Pictorial Mark 
 
 ### Community 114 - "color"
 Cohesion: 0.11
-Nodes (19): $type, $value, background, foreground, muted-foreground, primary, primary-hover, secondary (+11 more)
+Nodes (19): $type, $value, background, destructive, foreground, muted-foreground, primary-hover, secondary (+11 more)
 
 ### Community 115 - "Asset Organization Guide"
 Cohesion: 0.11
@@ -1272,7 +1276,7 @@ Nodes (3): $type, $value, 16
 
 ### Community 226 - "input"
 Cohesion: 0.29
-Nodes (8): padding-x, input, $type, $value, focus-ring, padding-x, $type, $value
+Nodes (8): padding-y, input, $type, $value, focus-ring, padding-y, $type, $value
 
 ### Community 227 - "_suggest_identities"
 Cohesion: 0.25
@@ -1331,8 +1335,8 @@ Cohesion: 0.33
 Nodes (5): References (Knowledge Base), Routing, Slides, Subcommands, When to Use
 
 ### Community 241 - "Build Log — Enigma Isle"
-Cohesion: 0.09
-Nodes (22): 2026-10-18 – Drawbridge Moat Wave 2 (Tasks 23–40 Complete), 2026-10-18 – Mascot + Woodboard Wire-up & Moat Follow-up (Tasks 41–58 Complete), 2026-10-18 — Slice 1: Full Implementation & Verification, 2026-10-18 — Slice 2: Drawbridge Moat Batch (Batch Bridge), 2026-10-18 — Slice 3: Moat Batch + Parallel Asset Race, 2026-10-18 – Visual / IA Polish Pass (Single Source Pass), Build Log — Enigma Isle, Implemented Enhancements: (+14 more)
+Cohesion: 0.07
+Nodes (29): 2026-10-18 – Drawbridge Moat Wave 2 (Tasks 23–40 Complete), 2026-10-18 – Footer Island Wire-up, Seam Refinement & Moat Tasks 59–85 Complete, 2026-10-18 – Mascot + Woodboard Wire-up & Moat Follow-up (Tasks 41–58 Complete), 2026-10-18 — Slice 1: Full Implementation & Verification, 2026-10-18 — Slice 2: Drawbridge Moat Batch (Batch Bridge), 2026-10-18 — Slice 3: Moat Batch + Parallel Asset Race, 2026-10-18 – Visual / IA Polish Pass (Single Source Pass), Build Log — Enigma Isle (+21 more)
 
 ### Community 242 - "Brand Guidelines Template"
 Cohesion: 0.40
@@ -1347,8 +1351,8 @@ Cohesion: 0.60
 Nodes (5): radius, radius, radius, $type, $value
 
 ### Community 245 - "none"
-Cohesion: 0.67
-Nodes (4): $type, $value, none, none
+Cohesion: 0.29
+Nodes (8): xl, $type, $value, none, xl, none, $type, $value
 
 ### Community 246 - "sm"
 Cohesion: 0.60
@@ -1376,7 +1380,7 @@ Nodes (5): sm, sm, sm, $type, $value
 
 ### Community 252 - "padding-y"
 Cohesion: 0.67
-Nodes (4): padding-y, padding-y, $type, $value
+Nodes (4): padding-x, padding-x, $type, $value
 
 ### Community 253 - "xl"
 Cohesion: 0.67
@@ -1384,15 +1388,15 @@ Nodes (4): xl, xl, $type, $value
 
 ### Community 254 - "none"
 Cohesion: 0.67
-Nodes (4): $type, $value, none, none
+Nodes (4): $type, $value, default, default
 
 ### Community 255 - "padding-y"
 Cohesion: 0.67
 Nodes (3): destructive-foreground, $type, $value
 
 ### Community 256 - "xl"
-Cohesion: 0.67
-Nodes (4): xl, xl, $type, $value
+Cohesion: 0.50
+Nodes (3): Builder — Antigravity AUDIT + PROPOSE ONLY (AUTHORITATIVE), End, PROMPT
 
 ### Community 257 - "md"
 Cohesion: 0.67
@@ -1416,7 +1420,7 @@ Nodes (3): $type, $value, 8
 
 ### Community 264 - "destructive"
 Cohesion: 0.67
-Nodes (3): destructive, $type, $value
+Nodes (3): primary, $type, $value
 
 ### Community 265 - "16"
 Cohesion: 0.67
@@ -1424,7 +1428,7 @@ Nodes (3): $type, $value, 16
 
 ### Community 266 - "1"
 Cohesion: 0.67
-Nodes (3): $type, $value, 1
+Nodes (3): $type, $value, 6
 
 ### Community 267 - "3"
 Cohesion: 0.67
@@ -1446,10 +1450,6 @@ Nodes (3): destructive, $type, $value
 Cohesion: 0.67
 Nodes (3): destructive-foreground, $type, $value
 
-### Community 276 - "4"
-Cohesion: 0.50
-Nodes (3): Antigravity Candidate Assets — Enigma Isle, Assets Generated, Canonical Drop Locations
-
 ### Community 277 - "muted"
 Cohesion: 0.67
 Nodes (3): muted, $type, $value
@@ -1467,7 +1467,7 @@ Cohesion: 0.67
 Nodes (3): ring, $type, $value
 
 ## Knowledge Gaps
-- **1977 isolated node(s):** `fs`, `path`, `fs`, `path`, `fs` (+1972 more)
+- **1982 isolated node(s):** `fs`, `path`, `fs`, `path`, `fs` (+1977 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **81 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 

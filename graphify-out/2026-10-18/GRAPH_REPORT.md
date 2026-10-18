@@ -1,11 +1,11 @@
 # Graph Report - enigma  (2026-10-18)
 
 ## Corpus Check
-- 289 files · ~1,131,815 words
+- 286 files · ~939,050 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4726 nodes · 5938 edges · 341 communities (260 shown, 81 thin omitted)
+- 4712 nodes · 5926 edges · 353 communities (272 shown, 81 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 434 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
 
@@ -253,8 +253,12 @@
 - Brand Guidelines Template
 - $type
 - radius
+- none
 - sm
 - Brand Guidelines Template
+- Builder — Antigravity Footer + Moat (AUTHORITATIVE)
+- 1
+- 3
 - sm
 - padding-y
 - xl
@@ -269,12 +273,20 @@
 - 3
 - 8
 - destructive
+- 16
+- 1
+- 3
 - ring
+- 8
 - .__init__
 - format_output
 - test_sync_brand_to_tokens.py
 - main
+- destructive
+- destructive-foreground
 - 4
+- muted
+- secondary-foreground
 - primary-foreground
 - ring
 - .__init__
@@ -376,7 +388,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (341 total, 81 thin omitted)
+## Communities (353 total, 81 thin omitted)
 
 ### Community 0 - "encrypt.ts"
 Cohesion: 0.08
@@ -483,12 +495,12 @@ Cohesion: 0.40
 Nodes (4): Inputs, Outputs, Process, Stage 05 — Polish
 
 ### Community 29 - "01-kimi-master-enigma-isle.md"
-Cohesion: 0.33
-Nodes (5): Asset map (Aaron), Builder — Mascot + Woodboard wire-up (AUTHORITATIVE), End, Layout cheat, PROMPT
+Cohesion: 0.20
+Nodes (10): fg, font-size, hover-bg, button, $type, $value, $type, $value (+2 more)
 
 ### Community 30 - "02-claude-refinement-enigma-isle.md"
-Cohesion: 0.33
-Nodes (5): Builder — Moat Wave 3 (AUTHORITATIVE), Done means, Hard locks, Open queue (15) — all required, Wood sign JSON (also on disk)
+Cohesion: 0.29
+Nodes (8): padding-x, input, $type, $value, focus-ring, padding-x, $type, $value
 
 ### Community 31 - "validate_data.py"
 Cohesion: 0.07
@@ -763,8 +775,8 @@ Cohesion: 0.09
 Nodes (22): $type, $value, $type, $value, $type, $value, $type, $value (+14 more)
 
 ### Community 100 - "spacing"
-Cohesion: 0.06
-Nodes (34): $type, $value, $type, $value, $type, $value, $type, $value (+26 more)
+Cohesion: 0.09
+Nodes (22): $type, $value, $type, $value, $type, $value, $type, $value (+14 more)
 
 ### Community 101 - "read_rows"
 Cohesion: 0.15
@@ -835,8 +847,8 @@ Cohesion: 0.11
 Nodes (18): 1. Wordmark (Logotype), 2. Lettermark (Monogram), 3. Pictorial Mark (Brand Mark), 4. Abstract Mark, 5. Mascot, 6. Emblem, 7. Combination Mark, Aesthetic Styles (+10 more)
 
 ### Community 118 - "color"
-Cohesion: 0.06
-Nodes (31): $type, $value, background, destructive, destructive-foreground, foreground, muted, muted-foreground (+23 more)
+Cohesion: 0.11
+Nodes (19): $type, $value, background, foreground, muted-foreground, primary, primary-hover, secondary (+11 more)
 
 ### Community 119 - "Brand Consistency Checklist"
 Cohesion: 0.11
@@ -935,8 +947,8 @@ Cohesion: 0.12
 Nodes (8): main(), Add custom font families.          Args:             fonts: Dict of font_type: [, Add custom spacing values.          Args:             spacing: Dict of name: val, Add custom breakpoints.          Args:             breakpoints: Dict of name: wi, Add plugin requirements.          Args:             plugins: List of plugin name, Get plugin recommendations based on configuration.          Returns:, Validate configuration.          Returns:             Tuple of (valid, message), Add custom colors to theme.          Args:             colors: Dict of color_nam
 
 ### Community 145 - "Antigravity task — Drawbridge Moat batch (Enigma Isle)"
-Cohesion: 0.50
-Nodes (3): Enigma Isle — Visual / IA pass (single source), PROMPT, Workflow checklist (orchestrator)
+Cohesion: 0.60
+Nodes (5): $type, $value, border, border, border
 
 ### Community 146 - "CIP Design Reference"
 Cohesion: 0.13
@@ -1047,8 +1059,8 @@ Cohesion: 0.14
 Nodes (13): Animation Tokens, Base Layer, Button Example, Component Classes, CSS Variables Setup, Dark Mode Toggle, HSL Format Benefits, shadcn/ui Alignment (+5 more)
 
 ### Community 173 - "radius"
-Cohesion: 0.13
-Nodes (22): $type, $value, lg, $type, $value, $type, $value, $type (+14 more)
+Cohesion: 0.19
+Nodes (14): $type, $value, $type, $value, $type, $value, primitive, radius (+6 more)
 
 ### Community 174 - "Layout Patterns"
 Cohesion: 0.14
@@ -1076,7 +1088,7 @@ Nodes (12): Available Styles, Color Psychology, Commands, Design Brief (Start He
 
 ### Community 180 - "design-tokens-starter.json"
 Cohesion: 0.15
-Nodes (12): $type, $value, dark, semantic, primitive, $schema, $type, $value (+4 more)
+Nodes (12): component, $type, $value, dark, semantic, $schema, $type, $value (+4 more)
 
 ### Community 181 - "validate-tokens.cjs"
 Cohesion: 0.24
@@ -1099,8 +1111,8 @@ Cohesion: 0.24
 Nodes (11): extensions, formatReport(), fs, getFiles(), main(), parseArgs(), path, patterns (+3 more)
 
 ### Community 186 - "card"
-Cohesion: 0.06
-Nodes (45): $type, $value, $type, $value, bg, fg, font-size, hover-bg (+37 more)
+Cohesion: 0.20
+Nodes (12): $type, $value, bg, bg, padding, shadow, card, bg (+4 more)
 
 ### Community 187 - ".generate_config_string"
 Cohesion: 0.20
@@ -1203,8 +1215,8 @@ Cohesion: 0.36
 Nodes (9): flattenTokens(), fs, generateCSS(), generateTailwind(), main(), parseArgs(), path, resolveReference() (+1 more)
 
 ### Community 212 - "button"
-Cohesion: 0.40
-Nodes (4): Builder — Moat follow-up + status sync (AUTHORITATIVE), End, PROMPT, Quick truth (snapshot at prompt write)
+Cohesion: 0.60
+Nodes (5): radius, radius, radius, $type, $value
 
 ### Community 213 - "duration"
 Cohesion: 0.20
@@ -1267,8 +1279,8 @@ Cohesion: 0.25
 Nodes (8): _exact_row_identity(), Suggest complete public identities so a retry can bypass score thresholds., Return non-empty public identities from ordinary and alias fields., Resolve an explicit style identity without opening generic variant ranking., Return one row whose stable public identity exactly matches the query., _row_identities(), _style_identity(), _suggest_identities()
 
 ### Community 228 - "input"
-Cohesion: 0.67
-Nodes (3): $type, $value, 2
+Cohesion: 0.60
+Nodes (5): lg, $type, $value, lg, lg
 
 ### Community 229 - "_suggest_identities"
 Cohesion: 0.25
@@ -1319,8 +1331,8 @@ Cohesion: 0.33
 Nodes (5): References (Knowledge Base), Routing, Slides, Subcommands, When to Use
 
 ### Community 241 - "Build Log — Enigma Isle"
-Cohesion: 0.10
-Nodes (19): 2026-10-18 – Drawbridge Moat Wave 2 (Tasks 23–40 Complete), 2026-10-18 — Slice 1: Full Implementation & Verification, 2026-10-18 — Slice 2: Drawbridge Moat Batch (Batch Bridge), 2026-10-18 — Slice 3: Moat Batch + Parallel Asset Race, 2026-10-18 – Visual / IA Polish Pass (Single Source Pass), 2026-10-18 — Visual pass claim + Moat Wave 3, Build Log — Enigma Isle, Implemented Enhancements: (+11 more)
+Cohesion: 0.09
+Nodes (22): 2026-10-18 – Drawbridge Moat Wave 2 (Tasks 23–40 Complete), 2026-10-18 – Mascot + Woodboard Wire-up & Moat Follow-up (Tasks 41–58 Complete), 2026-10-18 — Slice 1: Full Implementation & Verification, 2026-10-18 — Slice 2: Drawbridge Moat Batch (Batch Bridge), 2026-10-18 — Slice 3: Moat Batch + Parallel Asset Race, 2026-10-18 – Visual / IA Polish Pass (Single Source Pass), Build Log — Enigma Isle, Implemented Enhancements: (+14 more)
 
 ### Community 242 - "Brand Guidelines Template"
 Cohesion: 0.40
@@ -1328,11 +1340,15 @@ Nodes (4): Brand Guidelines Template, Document Structure, Extractable Fields, Us
 
 ### Community 243 - "$type"
 Cohesion: 0.67
-Nodes (3): $type, $value, 5
+Nodes (4): padding-y, padding-y, $type, $value
 
 ### Community 244 - "radius"
 Cohesion: 0.60
 Nodes (5): radius, radius, radius, $type, $value
+
+### Community 245 - "none"
+Cohesion: 0.67
+Nodes (4): $type, $value, none, none
 
 ### Community 246 - "sm"
 Cohesion: 0.60
@@ -1341,6 +1357,18 @@ Nodes (5): sm, sm, sm, $type, $value
 ### Community 247 - "Brand Guidelines Template"
 Cohesion: 0.40
 Nodes (4): Brand Guidelines Template, Document Structure, Extractable Fields, Usage
+
+### Community 248 - "Builder — Antigravity Footer + Moat (AUTHORITATIVE)"
+Cohesion: 0.50
+Nodes (3): Builder — Antigravity Footer + Moat (AUTHORITATIVE), End, PROMPT
+
+### Community 249 - "1"
+Cohesion: 0.67
+Nodes (3): $type, $value, 1
+
+### Community 250 - "3"
+Cohesion: 0.67
+Nodes (3): $type, $value, 3
 
 ### Community 251 - "sm"
 Cohesion: 0.60
@@ -1390,13 +1418,45 @@ Nodes (3): $type, $value, 8
 Cohesion: 0.67
 Nodes (3): destructive, $type, $value
 
+### Community 265 - "16"
+Cohesion: 0.67
+Nodes (3): $type, $value, 16
+
+### Community 266 - "1"
+Cohesion: 0.67
+Nodes (3): $type, $value, 1
+
+### Community 267 - "3"
+Cohesion: 0.67
+Nodes (3): $type, $value, 3
+
 ### Community 268 - "ring"
 Cohesion: 0.67
 Nodes (3): ring, $type, $value
 
+### Community 269 - "8"
+Cohesion: 0.67
+Nodes (3): $type, $value, 8
+
+### Community 274 - "destructive"
+Cohesion: 0.67
+Nodes (3): destructive, $type, $value
+
+### Community 275 - "destructive-foreground"
+Cohesion: 0.67
+Nodes (3): destructive-foreground, $type, $value
+
 ### Community 276 - "4"
 Cohesion: 0.50
 Nodes (3): Antigravity Candidate Assets — Enigma Isle, Assets Generated, Canonical Drop Locations
+
+### Community 277 - "muted"
+Cohesion: 0.67
+Nodes (3): muted, $type, $value
+
+### Community 278 - "secondary-foreground"
+Cohesion: 0.67
+Nodes (3): secondary-foreground, $type, $value
 
 ### Community 281 - "primary-foreground"
 Cohesion: 0.67
@@ -1407,7 +1467,7 @@ Cohesion: 0.67
 Nodes (3): ring, $type, $value
 
 ## Knowledge Gaps
-- **1986 isolated node(s):** `fs`, `path`, `fs`, `path`, `fs` (+1981 more)
+- **1977 isolated node(s):** `fs`, `path`, `fs`, `path`, `fs` (+1972 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **81 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
