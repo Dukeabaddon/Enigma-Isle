@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" fill="none">
+  <!-- Outer Compass Ring -->
+  <circle cx="18" cy="18" r="15" stroke="#D4A017" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Inner Subtle Ring -->
+  <circle cx="18" cy="18" r="11" stroke="#B8860B" stroke-width="1" stroke-dasharray="2 3" opacity="0.65" />
+
+  <!-- 8-Point Nautical Compass Points -->
+  <!-- North -->
+  <polygon points="18,4.5 19.5,14 18,12.5" fill="#D4A017" />
+  <polygon points="18,4.5 16.5,14 18,12.5" fill="#B8860B" />
+  <!-- South -->
+  <polygon points="18,31.5 19.5,22 18,23.5" fill="#B8860B" />
+  <polygon points="18,31.5 16.5,22 18,23.5" fill="#D4A017" />
+  <!-- East -->
+  <polygon points="31.5,18 22,19.5 23.5,18" fill="#D4A017" />
+  <polygon points="31.5,18 22,16.5 23.5,18" fill="#B8860B" />
+  <!-- West -->
+  <polygon points="4.5,18 14,19.5 12.5,18" fill="#B8860B" />
+  <polygon points="4.5,18 14,16.5 12.5,18" fill="#D4A017" />
+
+  <!-- Diagonal Compass Accents -->
+  <line x1="9.5" y1="9.5" x2="13" y2="13" stroke="#D4A017" stroke-width="1.25" stroke-linecap="round" />
+  <line x1="26.5" y1="9.5" x2="23" y2="13" stroke="#D4A017" stroke-width="1.25" stroke-linecap="round" />
+  <line x1="9.5" y1="26.5" x2="13" y2="23" stroke="#D4A017" stroke-width="1.25" stroke-linecap="round" />
+  <line x1="26.5" y1="26.5" x2="23" y2="23" stroke="#D4A017" stroke-width="1.25" stroke-linecap="round" />
+
+  <!-- Lower Perimeter Palm / Island Crest Curves (Teal) -->
+  <path d="M 6.5,27 C 11,24.5 14.5,27.5 18,29 C 21.5,27.5 25,24.5 29.5,27" stroke="#2F8F6B" stroke-width="1.75" stroke-linecap="round" fill="none" />
+  <path d="M 10,29.5 C 13,28 15.5,29.5 18,30.5 C 20.5,29.5 23,28 26,29.5" stroke="#2F8F6B" stroke-width="1.25" stroke-linecap="round" opacity="0.8" fill="none" />
+
+  <!-- Center Ancient Cryptographic Key & Core Bit -->
+  <circle cx="18" cy="18" r="3.25" stroke="#D4A017" stroke-width="1.75" fill="#1A1F1C" />
+  <circle cx="18" cy="18" r="1.5" fill="#D4A017" />
+  <!-- Key Bit Pin & Cross Axes -->
+  <path d="M 18,14.75 L 18,12 M 18,21.25 L 18,24 M 14.75,18 L 12,18 M 21.25,18 L 24,18" stroke="#D4A017" stroke-width="1.5" stroke-linecap="round" />
+  <rect x="19.5" y="16.75" width="2" height="2.5" rx="0.5" fill="#D4A017" />
+</svg>

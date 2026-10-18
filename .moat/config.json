@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "projectName": "enigma",
+  "createdAt": "2026-10-18T08:15:08.185Z",
+  "streaming": {
+    "enabled": true,
+    "format": "jsonl",
+    "cursorIntegration": true
+  },
+  "ui": {
+    "autoShowMoat": true,
+    "confirmBeforeSend": false
+  }
+}
