@@ -1,6 +1,6 @@
 # Moat Tasks
 
-**Total**: 97 | **To Do**: 0 | **Doing**: 0 | **Done**: 97
+**Total**: 105 | **To Do**: 0 | **Doing**: 0 | **Done**: 105
 
 ## Tasks
 
@@ -101,8 +101,16 @@
 95. [x] Background Container – "make the yeelow fade same color as : "EAE0CA"" `div.min-h-screen.bg-white > main.flex-1 > section.relative.bg-gradient-to-b:nth-child(4)`
 96. [x] Container #workbench – "make hero section, section 1 ..120 dvh or 120 screen and ..." `#workbench`
 97. [x] footer: ENIGMA ISLEAn interactive cryp – "make footer color below the isand look this : "#0f1911"" `#root > div.min-h-screen.bg-white > footer.relative.bg-[#111613]`
+98. [x] Container #encrypt-journey – "make this section corners to be rounded , while the bg be..." `#encrypt-journey`
+99. [x] Background Container – "remove the bottom wave." `div.min-h-screen.bg-white > main.flex-1 > section.relative.text-white:nth-child(2)`
+100. [x] Container #workbench – "make the brown color of the wave to use this : "#3c2820"" `#workbench`
+101. [x] p: Applies the exact inverse vect – "remove the words : traversing k" `div.bg-[#F8FCFA].rounded-3xl:nth-child(1) > div.space-y-2.5:nth-child(1) > p.text-sm.text-ink-muted`
+102. [x] span: Ciphertext Result (Upper A–Z) – "make this a sub heading and center and change font" `div.sm:flex-row.sm:items-center:nth-child(1) > div.space-y-1:nth-child(1) > span.text-[11px].font-black`
+103. [x] Colored Container – "in step 4 is it possible to like show the whole abcde tab..." `div.old-parchment-content.max-h-[92vh]:nth-child(2) > div.min-h-0.space-y-3:nth-child(3) > div.space-y-2.rounded-xl:nth-child(3)`
+104. [x] Container #encrypt-journey – "the left and right should be 100% screen width , this who..." `#encrypt-journey`
+105. [x] Colored Container – "second sction no wave brown remove the wave" `main.flex-1 > div > div.bg-[#3c2820].px-3`
 
 ---
 
-_Generated: 10/18/2026, 7:04:22 PM_
+_Generated: 10/18/2026, 7:22:54 PM_
 _Source: moat-tasks-detail.json_

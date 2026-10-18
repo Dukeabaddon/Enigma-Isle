@@ -391,7 +391,7 @@
   },
   {
     "id": "e0e34bdc-f440-4b8e-9d4c-ff5e849300bd",
-    "title": "Input (text): Carve your message\u2026",
+    "title": "Input (text): Carve your message…",
     "comment": "change the activate state not over glow or someting  like no yellow glow in the input field when active and change the default message or label in side to something else",
     "selector": "#message-input",
     "boundingRect": {
@@ -466,7 +466,7 @@
   },
   {
     "id": "35c2ccd1-95ed-4545-a4b1-ca6abf1096d1",
-    "title": "span: Motion Upward: U \u2192 A",
+    "title": "span: Motion Upward: U → A",
     "comment": "change to shift upward",
     "selector": "div.bg-white.rounded-3xl:nth-child(2) > div.rounded-2xl.bg-decrypt/5:nth-child(2) > span.text-[10px].text-decrypt-deep",
     "boundingRect": {
@@ -541,7 +541,7 @@
   },
   {
     "id": "a7325fd9-e95b-4754-a57b-9bc571b1461a",
-    "title": "footer: EIENIGMA ISLECoordinates: 08\u00b0 ",
+    "title": "footer: EIENIGMA ISLECoordinates: 08° ",
     "comment": "revise, review, rethink of other way to make this fit to our project, theme and so on, act as a professional in this type of field with 15 years of expereicne as ui developer and frontend dev",
     "selector": "#root > div.min-h-screen.bg-page > footer.relative.bg-[#1A1F1C]",
     "boundingRect": {
@@ -961,7 +961,7 @@
   },
   {
     "id": "bfcac8c7-5d04-4b8a-b32a-fe0b7103d0b7",
-    "title": "span: Full A\u2013Z Cycle Wrap",
+    "title": "span: Full A–Z Cycle Wrap",
     "comment": "remove",
     "selector": "div.bg-[#FFFDF9].rounded-3xl:nth-child(2) > div.rounded-2xl.bg-[#F6EFE2]:nth-child(2) > span.text-[11px].text-ink-muted",
     "boundingRect": {
@@ -976,7 +976,7 @@
   },
   {
     "id": "4dfd1307-184a-4174-97e2-864c33a3869a",
-    "title": "span: Cycle steps = index \u00d7 18",
+    "title": "span: Cycle steps = index × 18",
     "comment": "remove",
     "selector": "div.bg-[#FFFDF9].rounded-3xl:nth-child(1) > div.rounded-2xl.bg-[#F6EFE2]:nth-child(2) > span.text-[11px].text-ink-muted",
     "boundingRect": {
@@ -1626,5 +1626,125 @@
     "screenshotPath": "./screenshots/moat-1792321441111-iyhlt0cra.png",
     "status": "done",
     "timestamp": 1792321441152
+  },
+  {
+    "id": "a8d1d1a2-dcc0-4e54-8c93-9087b1c8c061",
+    "title": "Container #encrypt-journey",
+    "comment": "make this section corners to be rounded , while the bg behind this section is brown so like when it is rounded i can see on the edge like it is on top of dirt or so",
+    "selector": "#encrypt-journey",
+    "boundingRect": {
+      "x": 0,
+      "y": 311,
+      "w": 1670,
+      "h": 791
+    },
+    "screenshotPath": "./screenshots/moat-1792321489711-32emyzjpm.png",
+    "status": "done",
+    "timestamp": 1792321489752
+  },
+  {
+    "id": "33fc212d-e0e5-4ec8-b1bf-5b04f5cc7479",
+    "title": "Background Container",
+    "comment": "remove the bottom wave.",
+    "selector": "div.min-h-screen.bg-white > main.flex-1 > section.relative.text-white:nth-child(2)",
+    "boundingRect": {
+      "x": 0,
+      "y": -718,
+      "w": 1670,
+      "h": 1028
+    },
+    "screenshotPath": "./screenshots/moat-1792321496524-qj9ywaqds.png",
+    "status": "done",
+    "timestamp": 1792321496564
+  },
+  {
+    "id": "793f7cb8-4d42-46e2-923a-509dc0a485dc",
+    "title": "Container #workbench",
+    "comment": "make the brown color of the wave to use this \n: \"#3c2820\"",
+    "selector": "#workbench",
+    "boundingRect": {
+      "x": 0,
+      "y": -427,
+      "w": 1670,
+      "h": 934
+    },
+    "screenshotPath": "./screenshots/moat-1792321526906-9pzlx48c0.png",
+    "status": "done",
+    "timestamp": 1792321526975
+  },
+  {
+    "id": "0d1828f0-481f-4d3c-9f90-0000c428e101",
+    "title": "p: Applies the exact inverse vect",
+    "comment": "remove the words : traversing k",
+    "selector": "div.bg-[#F8FCFA].rounded-3xl:nth-child(1) > div.space-y-2.5:nth-child(1) > p.text-sm.text-ink-muted",
+    "boundingRect": {
+      "x": 289,
+      "y": 432,
+      "w": 210,
+      "h": 91
+    },
+    "screenshotPath": "./screenshots/moat-1792321674179-rsnptbgga.png",
+    "status": "done",
+    "timestamp": 1792321674207
+  },
+  {
+    "id": "d8683416-5f68-47ea-b98a-64f6ab6f44e0",
+    "title": "span: Ciphertext Result (Upper A–Z)",
+    "comment": "make this a sub heading and center and change font",
+    "selector": "div.sm:flex-row.sm:items-center:nth-child(1) > div.space-y-1:nth-child(1) > span.text-[11px].font-black",
+    "boundingRect": {
+      "x": 555,
+      "y": 408,
+      "w": 214,
+      "h": 17
+    },
+    "screenshotPath": "./screenshots/moat-1792321838250-z3k1azyv5.png",
+    "status": "done",
+    "timestamp": 1792321838277
+  },
+  {
+    "id": "fe9f8ad7-9459-4ac7-85c8-124ba7169428",
+    "title": "Colored Container",
+    "comment": "in step 4 is it possible to like show the whole abcde table and show the animation of how it traversed. is the abcde table reusable compoennt if so use that",
+    "selector": "div.old-parchment-content.max-h-[92vh]:nth-child(2) > div.min-h-0.space-y-3:nth-child(3) > div.space-y-2.rounded-xl:nth-child(3)",
+    "boundingRect": {
+      "x": 531,
+      "y": 518,
+      "w": 604,
+      "h": 141
+    },
+    "screenshotPath": "./screenshots/moat-1792321902435-vc21526w9.png",
+    "status": "done",
+    "timestamp": 1792321902485
+  },
+  {
+    "id": "04b0bae8-042c-410c-851d-8daba6907c2b",
+    "title": "Container #encrypt-journey",
+    "comment": "the left and right should be 100% screen width , this whole section",
+    "selector": "#encrypt-journey",
+    "boundingRect": {
+      "x": 32,
+      "y": 270,
+      "w": 1606,
+      "h": 793
+    },
+    "screenshotPath": "./screenshots/moat-1792322101353-a7xpbl765.png",
+    "status": "done",
+    "timestamp": 1792322101377
+  },
+  {
+    "id": "bb6c8989-1a24-4775-b01f-3d647c07bfa0",
+    "title": "Colored Container",
+    "comment": "second sction no wave brown remove the wave",
+    "selector": "main.flex-1 > div > div.bg-[#3c2820].px-3",
+    "boundingRect": {
+      "x": 0,
+      "y": -62,
+      "w": 1670,
+      "h": 857
+    },
+    "screenshotPath": "./screenshots/moat-1792322116854-2wosevfss.png",
+    "status": "done",
+    "timestamp": 1792322116880
   }
 ]
