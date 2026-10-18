@@ -7,22 +7,19 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#111613] text-white/80 overflow-hidden">
-      {/* Background Island Silhouette Plate (footer-island.webp) */}
-      <div className="absolute inset-0 z-0 pointer-events-none select-none">
-        <div
-          className="w-full h-full bg-cover bg-top bg-no-repeat"
-          style={{
-            backgroundImage: `url('/images/footer-island.webp')`,
-          }}
+      {/* Island Horizon Silhouette Plate (joins #EAE0CA from TryAgain smoothly) */}
+      <div className="relative w-full overflow-hidden leading-none select-none bg-[#EAE0CA]">
+        <img
+          src="/images/footer-island.webp"
+          alt="Enigma Isle mountain silhouette"
+          className="w-full h-auto block select-none pointer-events-none"
+          width={3392}
+          height={1248}
         />
-        {/* Soft top blend into #EAE0CA */}
-        <div className="absolute top-0 inset-x-0 h-16 bg-gradient-to-b from-[#EAE0CA] via-[#EAE0CA]/40 to-transparent" />
-        {/* Dark gradient for lower text readability */}
-        <div className="absolute bottom-0 inset-x-0 h-3/4 bg-gradient-to-t from-[#111613] via-[#111613]/90 to-transparent" />
       </div>
 
-      {/* Content strictly over the dark lower band of the art */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full pt-48 sm:pt-64 pb-12 space-y-12">
+      {/* Solid Dark Footer Section sitting cleanly below the island plate */}
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full pt-10 pb-12 space-y-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 items-start">
           {/* Brand & Overview (6 cols) */}
           <div className="md:col-span-6 space-y-4">
