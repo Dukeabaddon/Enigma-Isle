@@ -3,7 +3,8 @@ import AbcdTable from './AbcdTable';
 export default function AboutSection() {
   return (
     <section
-      className="relative text-white pt-12 pb-14 sm:pb-20 px-4 sm:px-6 overflow-hidden bg-[#342319]"
+      id="about-cipher"
+      className="relative text-white pt-12 pb-16 sm:pb-20 px-4 sm:px-6 overflow-hidden bg-[#342319]"
       style={{ backgroundColor: '#342319' }}
     >
       <div

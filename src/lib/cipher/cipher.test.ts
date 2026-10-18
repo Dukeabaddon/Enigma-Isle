@@ -29,15 +29,22 @@ describe('Enigma Isle Cipher', () => {
     expect(decrypted.text).toBe('HELLO');
   });
 
-  it('ignores spaces, digits, and punctuation', () => {
+  it('preserves spaces; strips digits and punctuation', () => {
     const raw = 'Hello, World! 2026';
     const encrypted = encryptText(raw);
-    const expected = encryptText('HELLOWORLD');
-    expect(encrypted.text).toBe(expected.text);
-    expect(encrypted.rawFilteredCount).toBe(raw.length - 'HELLOWORLD'.length);
+    expect(encrypted.rawFilteredCount).toBe(2 + 4); // comma, bang, four digits
+    expect(encrypted.text.includes(' ')).toBe(true);
 
     const decrypted = decryptText(encrypted.text);
-    expect(decrypted.text).toBe('HELLOWORLD');
+    expect(decrypted.text).toBe('HELLO WORLD ');
+  });
+
+  it('round-trips phrases with spaces (e.g. aaron mecate ito)', () => {
+    const phrase = 'aaron mecate ito';
+    const enc = encryptText(phrase);
+    expect(enc.text.split(' ')).toHaveLength(3);
+    const dec = decryptText(enc.text);
+    expect(dec.text).toBe('AARON MECATE ITO');
   });
 
   it('accurately roundtrips sample words', () => {

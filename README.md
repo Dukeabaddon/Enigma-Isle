@@ -1,7 +1,7 @@
 <div align="center">
 
 <p>
-  <img src="docs/assets/enigma-isle-banner.webp" alt="Enigma Isle — tropical cipher adventure landing" width="100%" />
+  <img src="docs/assets/enigma-isle-banner.svg" alt="Enigma Isle — tropical cipher adventure landing" width="100%" />
 </p>
 
 # Enigma Isle

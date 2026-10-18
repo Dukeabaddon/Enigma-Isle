@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Key } from 'lucide-react';
+import { ChevronsUpDown, Key } from 'lucide-react';
 import { useCipher } from '@/hooks/useCipher';
 import ResultExpand from './ResultExpand';
 import StepsModal from './StepsModal';
@@ -65,6 +65,11 @@ export default function HeroWorkbench() {
     }
   };
 
+  /** Mobile: switch mode only — never runs cipher */
+  const handleCycleMode = () => {
+    setActiveAction((prev) => (prev === 'encrypt' ? 'decrypt' : 'encrypt'));
+  };
+
   return (
     <>
       {/* Section 1 — Hero only. Never re-add wave clipPath. */}
@@ -117,7 +122,7 @@ export default function HeroWorkbench() {
           aria-hidden
         />
 
-        {/* Title + input pushed down from sticky nav */}
+        {/* Title + input — mobile: input only +35px; desktop hover switch */}
         <div className="relative z-10 max-w-4xl mx-auto w-full px-4 sm:px-6 flex flex-col items-center justify-start text-center flex-1 pt-28 sm:pt-36 md:pt-44 pb-16 sm:pb-20">
           <h1 className="font-hero text-5xl sm:text-7xl md:text-8xl tracking-wide text-ink mb-3 drop-shadow-xs">
             ENIGMA ISLE
@@ -127,7 +132,7 @@ export default function HeroWorkbench() {
             Drop in a secret phrase. Watch the island grid twist, hop, and lock your message into an unbreakable puzzle.
           </p>
 
-          <div className="w-full max-w-2xl text-left">
+          <div className="w-full max-w-2xl text-left mt-[35px] sm:mt-0">
             <label htmlFor="message-input" className="sr-only">
               Secret message
             </label>
@@ -147,10 +152,30 @@ export default function HeroWorkbench() {
                 }}
               />
 
+              {/* Mobile: chevron cycles mode only; primary runs cipher */}
+              <button
+                type="button"
+                data-testid="cipher-toggle-mobile"
+                onClick={handleCycleMode}
+                aria-label={
+                  activeAction === 'encrypt'
+                    ? 'Switch to decrypt'
+                    : 'Switch to encrypt'
+                }
+                title="Switch Encrypt / Decrypt"
+                className="sm:hidden inline-flex min-h-12 w-11 shrink-0 items-center justify-center border-l border-ink/10 text-ink/70 hover:bg-ink/5 active:bg-ink/10 transition-colors cursor-pointer"
+              >
+                <ChevronsUpDown className="h-5 w-5" aria-hidden />
+              </button>
+
               <div
                 ref={dropdownRef}
                 className="relative shrink-0 flex items-stretch"
-                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseEnter={() => {
+                  if (window.matchMedia('(hover: hover)').matches) {
+                    setDropdownOpen(true);
+                  }
+                }}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
                 {activeAction === 'encrypt' ? (
@@ -159,7 +184,7 @@ export default function HeroWorkbench() {
                     onClick={handlePrimaryClick}
                     aria-label="Encrypt"
                     title="Run Encryption"
-                    className="inline-flex min-h-12 items-center justify-center gap-1.5 rounded-r-[14px] px-6 text-xs font-bold uppercase tracking-wider bg-[#D4A017] hover:bg-[#C29012] text-white active:scale-95 transition-all shadow-none sm:min-w-[6.5rem] border-l border-ink/10 whitespace-nowrap cursor-pointer"
+                    className="inline-flex min-h-12 items-center justify-center gap-1.5 rounded-r-[14px] px-4 sm:px-6 text-xs font-bold uppercase tracking-wider bg-[#D4A017] hover:bg-[#C29012] text-white active:scale-95 transition-all shadow-none sm:min-w-[6.5rem] border-l border-ink/10 whitespace-nowrap cursor-pointer"
                   >
                     <Key className="h-4 w-4 text-white" aria-hidden />
                     <span className="font-bold">Encrypt</span>
@@ -170,15 +195,16 @@ export default function HeroWorkbench() {
                     onClick={handlePrimaryClick}
                     aria-label="Decrypt"
                     title="Run Decryption"
-                    className="inline-flex min-h-12 items-center justify-center gap-1.5 rounded-r-[14px] px-6 text-xs font-bold uppercase tracking-wider bg-[#2F8F6B] hover:bg-[#267759] text-white active:scale-95 transition-all shadow-none sm:min-w-[6.5rem] border-l border-ink/10 whitespace-nowrap cursor-pointer"
+                    className="inline-flex min-h-12 items-center justify-center gap-1.5 rounded-r-[14px] px-4 sm:px-6 text-xs font-bold uppercase tracking-wider bg-[#2F8F6B] hover:bg-[#267759] text-white active:scale-95 transition-all shadow-none sm:min-w-[6.5rem] border-l border-ink/10 whitespace-nowrap cursor-pointer"
                   >
                     <Key className="h-4 w-4 text-white" aria-hidden />
                     <span className="font-bold">Decrypt</span>
                   </button>
                 )}
 
+                {/* Desktop hover: alternate action */}
                 {dropdownOpen && (
-                  <div className="absolute right-0 top-full pt-1.5 z-30 animate-in fade-in zoom-in-95 duration-100">
+                  <div className="hidden sm:block absolute right-0 top-full pt-1.5 z-30 animate-in fade-in zoom-in-95 duration-100">
                     {activeAction === 'encrypt' ? (
                       <button
                         type="button"

@@ -7,15 +7,18 @@ import Footer from './components/layout/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col overflow-x-hidden bg-white text-ink selection:bg-encrypt/20">
+    <div className="min-h-screen flex flex-col overflow-x-hidden bg-[#342319] text-ink selection:bg-encrypt/20">
       <Nav />
       <main className="flex-1 overflow-x-hidden">
         <HeroWorkbench />
         <AboutSection />
         <StepCards />
-        <TryAgain />
+        {/* One cream plate — kills brown hairline between TryAgain ↔ footer island */}
+        <div className="bg-[#eaddbf]">
+          <TryAgain />
+          <Footer />
+        </div>
       </main>
-      <Footer />
     </div>
   );
 }

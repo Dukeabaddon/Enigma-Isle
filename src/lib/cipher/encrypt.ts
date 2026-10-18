@@ -1,4 +1,4 @@
-import { filterLetters, getLetterValue, walkRightOnCycle } from './alphabet';
+import { getLetterValue, isLetter, walkRightOnCycle } from './alphabet';
 import { moveLeft, moveRight, moveUp, shiftColumnDown5 } from './grid';
 import { CipherResult, LetterEncryptTrace } from './types';
 
@@ -39,17 +39,26 @@ export function encryptCharacter(char: string): LetterEncryptTrace {
 }
 
 export function encryptText(text: string): CipherResult {
-  const filtered = filterLetters(text);
   const traces: LetterEncryptTrace[] = [];
+  let resultText = '';
+  let rawFilteredCount = 0;
 
-  for (const char of filtered) {
-    traces.push(encryptCharacter(char));
+  // Letters map; whitespace kept in place; other chars dropped
+  for (const char of text) {
+    if (isLetter(char)) {
+      const trace = encryptCharacter(char);
+      traces.push(trace);
+      resultText += trace.outputChar;
+    } else if (/\s/.test(char)) {
+      resultText += char;
+    } else {
+      rawFilteredCount += 1;
+    }
   }
 
-  const resultText = traces.map((t) => t.outputChar).join('');
   return {
     text: resultText,
     traces,
-    rawFilteredCount: text.length - filtered.length,
+    rawFilteredCount,
   };
 }

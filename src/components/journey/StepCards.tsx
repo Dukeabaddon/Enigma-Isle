@@ -36,7 +36,7 @@ export default function StepCards() {
       {/* S3 — How Encryption Works: rounded top+bottom on dirt; slightly darker cream so radius reads */}
       <section
         id="encrypt-journey"
-        className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-24 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-x-hidden overflow-y-visible rounded-t-3xl sm:rounded-t-[40px] rounded-b-3xl sm:rounded-b-[40px] shadow-2xl mb-6"
+        className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-40 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-x-hidden overflow-y-visible rounded-t-3xl rounded-b-3xl sm:rounded-t-[40px] sm:rounded-b-[40px] shadow-2xl mb-6"
       >
           {/* Desktop flanks — section-absolute so max-w grid cannot clip */}
           <img
@@ -53,9 +53,17 @@ export default function StepCards() {
             width={1712}
             height={1685}
           />
+          {/* Mobile/Tablet: chest pinned to section bottom — +50px vs prior w-20/w-24 */}
+          <img
+            src="/images/treasure-chest.webp"
+            alt="Island treasure chest"
+            className="xl:hidden absolute right-2 bottom-2 z-20 w-[130px] sm:w-[146px] h-auto object-contain drop-shadow-md select-none pointer-events-none -scale-x-100 rotate-[8deg] origin-bottom"
+            width={1712}
+            height={1685}
+          />
 
           <div className="max-w-6xl mx-auto relative z-10">
-            <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
+            <div className="text-center max-w-2xl mx-auto mb-3 sm:mb-8 xl:mb-14 space-y-3">
               <h2 className="font-display font-black text-3xl sm:text-5xl text-ink tracking-tight">
                 How Encryption Works
               </h2>
@@ -65,21 +73,14 @@ export default function StepCards() {
             </div>
 
             <div className="relative">
-            {/* Mobile/Tablet: mascot + chest row above cards */}
-            <div className="xl:hidden flex items-end justify-between gap-3 mb-6 px-1">
+            {/* Mobile/Tablet: mascot — tight under heading; +30px size, 20px left */}
+            <div className="xl:hidden flex items-end justify-start mb-4 px-1 overflow-visible">
               <img
                 src="/images/mascot-enigma.webp"
                 alt="Enigma Isle explorer mascot"
-                className="w-24 sm:w-28 h-auto object-contain drop-shadow-md shrink-0 select-none"
+                className="w-[126px] sm:w-[142px] h-auto object-contain drop-shadow-md shrink-0 select-none -translate-x-5"
                 width={1369}
                 height={1679}
-              />
-              <img
-                src="/images/treasure-chest.webp"
-                alt="Island treasure chest"
-                className="w-20 sm:w-24 h-auto object-contain drop-shadow-md shrink-0 select-none"
-                width={1712}
-                height={1685}
               />
             </div>
 
@@ -247,18 +248,28 @@ export default function StepCards() {
         id="decrypt-journey"
         className="relative bg-[#EDF5F1] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px]"
       >
-        {/* Ibong Adarna — top-left; clipped by overflow-hidden */}
+        {/* Adarna flush left — full size; text clears via pl on mobile */}
         <img
           src="/images/adarna.webp"
           alt="Ibong Adarna on a branch"
-          className="pointer-events-none absolute left-0 top-0 z-20 w-36 sm:w-44 lg:w-52 xl:w-60 h-auto select-none object-contain drop-shadow-lg"
+          className="pointer-events-none absolute left-0 top-0 z-20 w-36 sm:w-44 lg:w-52 xl:w-60 h-auto max-w-none select-none object-contain object-left-top drop-shadow-lg"
           width={1649}
           height={2277}
         />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          {/* Simplified Header (Tasks 13 & 15: no badge, simplified title) */}
-          <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
+          {/* Mobile: text only — bird is absolute left */}
+          <div className="sm:hidden pl-[9.5rem] mb-10 space-y-2 text-left min-h-[9rem]">
+            <h2 className="font-display font-black text-3xl text-ink tracking-tight leading-tight">
+              How Decryption Works
+            </h2>
+            <p className="text-sm text-ink/80 font-medium leading-snug">
+              The inverse pipeline executes each reversal in strictly opposite order, proving mathematical bijectivity.
+            </p>
+          </div>
+
+          {/* sm+: centered header */}
+          <div className="hidden sm:block text-center max-w-2xl mx-auto mb-14 space-y-3">
             <h2 className="font-display font-black text-3xl sm:text-5xl text-ink tracking-tight">
               How Decryption Works
             </h2>

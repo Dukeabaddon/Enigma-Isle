@@ -5,10 +5,9 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-3 sm:top-5 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-5xl transition-all duration-300">
-      {/* Floating Pill Nav Shell (Matching Image 3 Reference) */}
+    <header className="fixed top-3 sm:top-5 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-5xl">
+      {/* Pill stays pill — no radius morph */}
       <div className="rounded-full bg-white/95 backdrop-blur-md border border-black/[0.08] shadow-[0_8px_30px_rgba(0,0,0,0.08)] px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
-        {/* Brand Link on the Left */}
         <a href="#workbench" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
           <img
             src="/images/nav-icon.webp"
@@ -22,7 +21,6 @@ export default function Nav() {
           </span>
         </a>
 
-        {/* Desktop Nav Links Centered */}
         <nav className="hidden md:flex items-center gap-1 lg:gap-2 text-xs font-medium text-ink/75">
           <a
             href="#workbench"
@@ -50,7 +48,6 @@ export default function Nav() {
           </a>
         </nav>
 
-        {/* Desktop Pill CTA Button on the Right */}
         <div className="hidden md:flex items-center shrink-0">
           <a
             href="#workbench"
@@ -60,59 +57,64 @@ export default function Nav() {
           </a>
         </div>
 
-        {/* Mobile Menu Toggle Button */}
         <button
           type="button"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onClick={() => setMobileMenuOpen((o) => !o)}
           className="md:hidden p-2 rounded-full text-ink hover:bg-black/5 min-h-[40px] min-w-[40px] flex items-center justify-center transition-colors"
           aria-label="Toggle navigation menu"
+          aria-expanded={mobileMenuOpen}
         >
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
 
-      {/* Mobile Nav Floating Menu Drawer */}
-      {mobileMenuOpen && (
-        <div className="md:hidden mt-2 rounded-2xl bg-white/95 backdrop-blur-md border border-black/[0.08] p-4 space-y-1 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-150">
+      {/* Absolute panel — fade/slide 200ms; no height animation */}
+      <div
+        className={`md:hidden absolute left-0 right-0 top-full mt-2 rounded-2xl bg-white/95 backdrop-blur-md border border-black/[0.08] p-4 space-y-1 shadow-2xl transition-[opacity,transform] duration-200 ease-out ${
+          mobileMenuOpen
+            ? 'opacity-100 translate-y-0 pointer-events-auto'
+            : 'opacity-0 -translate-y-1 pointer-events-none'
+        }`}
+        aria-hidden={!mobileMenuOpen}
+      >
+        <a
+          href="#workbench"
+          onClick={() => setMobileMenuOpen(false)}
+          className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
+        >
+          Workbench
+        </a>
+        <a
+          href="#table"
+          onClick={() => setMobileMenuOpen(false)}
+          className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
+        >
+          Letter Grid
+        </a>
+        <a
+          href="#encrypt-journey"
+          onClick={() => setMobileMenuOpen(false)}
+          className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
+        >
+          Encryption
+        </a>
+        <a
+          href="#decrypt-journey"
+          onClick={() => setMobileMenuOpen(false)}
+          className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
+        >
+          Decryption
+        </a>
+        <div className="pt-2">
           <a
             href="#workbench"
             onClick={() => setMobileMenuOpen(false)}
-            className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
+            className="flex items-center justify-center w-full py-2.5 rounded-full bg-[#1c1b18] text-white text-xs font-bold uppercase tracking-wider shadow-sm min-h-[44px]"
           >
-            Workbench
+            Try Cipher
           </a>
-          <a
-            href="#table"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
-          >
-            Letter Grid
-          </a>
-          <a
-            href="#encrypt-journey"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
-          >
-            Encryption
-          </a>
-          <a
-            href="#decrypt-journey"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
-          >
-            Decryption
-          </a>
-          <div className="pt-2">
-            <a
-              href="#workbench"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center w-full py-2.5 rounded-full bg-[#1c1b18] text-white text-xs font-bold uppercase tracking-wider shadow-sm min-h-[44px]"
-            >
-              Try Cipher
-            </a>
-          </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

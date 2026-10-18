@@ -7,7 +7,12 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#0f1911] text-white/80 overflow-hidden">
-      <div className="relative w-full overflow-hidden leading-none select-none bg-[#eaddbf]">
+      {/* Cream under island — mobile: 1px overlap + 2px cream cap hides subpixel hairline only */}
+      <div className="relative w-full overflow-hidden leading-none select-none bg-[#eaddbf] max-sm:-mt-px">
+        <div
+          className="sm:hidden absolute inset-x-0 top-0 h-0.5 bg-[#eaddbf] z-[1] pointer-events-none"
+          aria-hidden
+        />
         <img
           src="/images/footer-island.webp"
           alt=""

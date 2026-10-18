@@ -102,19 +102,19 @@ export default function ResultExpand({
             aria-hidden
           />
 
-          {/* Parchment low — clear air under strata */}
-          <div className="relative z-10 min-h-[110dvh] flex flex-col justify-end px-4 sm:px-6 pt-[calc(280px+6rem)] pb-20 sm:pb-28">
+          {/* Parchment — mobile: 40px under strata; desktop: deep air */}
+          <div className="relative z-10 flex flex-col justify-start sm:min-h-[110dvh] sm:justify-end px-4 sm:px-6 pt-[calc(280px+40px)] sm:pt-[calc(280px+6rem)] pb-12 sm:pb-28">
             <div className="max-w-2xl mx-auto w-full space-y-4">
               <div
                 id="cipher-result"
-                className="relative parchment-paper p-6 sm:p-8 bg-[#FFFDF7] text-ink shadow-2xl translate-y-[100px] mb-[100px]"
+                className="relative parchment-paper p-6 sm:p-8 bg-[#FFFDF7] text-ink shadow-2xl translate-y-0 mb-10 sm:translate-y-[100px] sm:mb-[100px]"
               >
                 <div className="flex flex-col items-center justify-center text-center gap-3 pb-5 border-b border-ink/10">
                   <div className="space-y-1.5 w-full">
                     <h3 className="font-display font-extrabold text-sm sm:text-base uppercase tracking-wider text-[#B8860B] block text-center">
                       {mode === 'encrypt' ? 'Ciphertext Result (Upper A–Z)' : 'Decrypted Plaintext'}
                     </h3>
-                    <div className="font-mono text-2xl sm:text-4xl font-black tracking-[0.25em] sm:tracking-[0.3em] text-ink break-all select-all text-center">
+                    <div className="font-mono text-2xl sm:text-4xl font-black tracking-[0.25em] sm:tracking-[0.3em] text-ink break-words whitespace-pre-wrap select-all text-center">
                       {activeResult}
                     </div>
                   </div>

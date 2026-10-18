@@ -1,4 +1,4 @@
-import { filterLetters, inverseWalkRightOnCycle } from './alphabet';
+import { inverseWalkRightOnCycle, isLetter } from './alphabet';
 import { moveDown, moveLeft, moveRight, shiftColumnUp5 } from './grid';
 import { DecryptResult, LetterDecryptTrace } from './types';
 
@@ -35,17 +35,26 @@ export function decryptCharacter(char: string): LetterDecryptTrace {
 }
 
 export function decryptText(text: string): DecryptResult {
-  const filtered = filterLetters(text);
   const traces: LetterDecryptTrace[] = [];
+  let resultText = '';
+  let rawFilteredCount = 0;
 
-  for (const char of filtered) {
-    traces.push(decryptCharacter(char));
+  // Letters inverse-map; whitespace kept in place; other chars dropped
+  for (const char of text) {
+    if (isLetter(char)) {
+      const trace = decryptCharacter(char);
+      traces.push(trace);
+      resultText += trace.outputChar;
+    } else if (/\s/.test(char)) {
+      resultText += char;
+    } else {
+      rawFilteredCount += 1;
+    }
   }
 
-  const resultText = traces.map((t) => t.outputChar).join('');
   return {
     text: resultText,
     traces,
-    rawFilteredCount: text.length - filtered.length,
+    rawFilteredCount,
   };
 }
