@@ -13,8 +13,8 @@ export default function App() {
         <HeroWorkbench />
         <AboutSection />
         <StepCards />
-        {/* One cream plate — kills brown hairline between TryAgain ↔ footer island */}
-        <div className="bg-[#eaddbf]">
+        {/* Cream plate overlaps decrypt 1px on mobile (subpixel seam fix) */}
+        <div className="bg-[#eaddbf] seam-overlap">
           <TryAgain />
           <Footer />
         </div>

@@ -35,6 +35,27 @@
 }
 
 @layer utilities {
+  /*
+    Mobile subpixel hairlines: fractional DPR leaves 1px gaps; parent
+    #342319 peeks through. Fix = -1px overlap + same-color 1px shadow.
+  */
+  @media (max-width: 639px) {
+    .seam-overlap {
+      margin-top: -1px;
+      position: relative;
+      z-index: 1;
+    }
+    .seam-paint-mint {
+      box-shadow: 0 1px 0 0 #edf5f1;
+    }
+    .seam-paint-cream {
+      box-shadow: 0 1px 0 0 #eaddbf;
+    }
+    .seam-paint-footer {
+      box-shadow: 0 1px 0 0 #0f1911;
+    }
+  }
+
   .parchment-paper {
     border-style: solid;
     border-width: 24px;

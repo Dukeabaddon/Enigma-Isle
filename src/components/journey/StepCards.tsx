@@ -246,20 +246,28 @@ export default function StepCards() {
       {/* S4 — How Decryption Works (Tasks 13, 14, 15, 16, 17, 18) */}
       <section
         id="decrypt-journey"
-        className="relative bg-[#EDF5F1] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px]"
+        className="relative bg-[#EDF5F1] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px] seam-paint-mint"
       >
-        {/* Adarna flush left — full size; text clears via pl on mobile */}
+        {/* Mobile: Adarna pinned top-center of section */}
         <img
           src="/images/adarna.webp"
           alt="Ibong Adarna on a branch"
-          className="pointer-events-none absolute left-0 top-0 z-20 w-36 sm:w-44 lg:w-52 xl:w-60 h-auto max-w-none select-none object-contain object-left-top drop-shadow-lg"
+          className="pointer-events-none absolute left-1/2 top-0 z-20 w-40 -translate-x-1/2 h-auto max-w-none select-none object-contain drop-shadow-lg sm:hidden"
+          width={1649}
+          height={2277}
+        />
+        {/* Desktop: Adarna flush left */}
+        <img
+          src="/images/adarna.webp"
+          alt="Ibong Adarna on a branch"
+          className="pointer-events-none absolute left-0 top-0 z-20 hidden sm:block w-44 lg:w-52 xl:w-60 h-auto max-w-none select-none object-contain object-left-top drop-shadow-lg"
           width={1649}
           height={2277}
         />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          {/* Mobile: text only — bird is absolute left */}
-          <div className="sm:hidden pl-[9.5rem] mb-10 space-y-2 text-left min-h-[9rem]">
+          {/* Mobile: text below top-centered bird */}
+          <div className="sm:hidden mb-10 pt-[11.5rem] space-y-2 text-center">
             <h2 className="font-display font-black text-3xl text-ink tracking-tight leading-tight">
               How Decryption Works
             </h2>
@@ -268,7 +276,7 @@ export default function StepCards() {
             </p>
           </div>
 
-          {/* sm+: centered header */}
+          {/* sm+: centered header + absolute Adarna */}
           <div className="hidden sm:block text-center max-w-2xl mx-auto mb-14 space-y-3">
             <h2 className="font-display font-black text-3xl sm:text-5xl text-ink tracking-tight">
               How Decryption Works
