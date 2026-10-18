@@ -50,49 +50,47 @@ export default function ResultExpand({
             background: `linear-gradient(to bottom, ${BG_TOP} 0%, ${BG_BOTTOM} 100%)`,
           }}
         >
-          {/* Strata IMAGE only — top:-35px into hero grass (not section margin) */}
+          {/* Strata band only — wash/lip/veil clipped to dirt image, not section */}
           <div
-            className="absolute inset-x-0 w-full pointer-events-none select-none z-[1]"
-            style={{
-              top: -35,
-              height: DIRT_H + 35,
-              backgroundImage: `url('/images/strata.jpeg')`,
-              backgroundSize: `auto ${DIRT_H}px`,
-              backgroundPosition: 'center top',
-              backgroundRepeat: 'repeat-x',
-            }}
+            className="absolute inset-x-0 w-full pointer-events-none select-none z-[1] overflow-hidden"
+            style={{ top: -35, height: DIRT_H + 35 }}
             aria-hidden
-          />
-          {/* Low-opacity brown wash — top → 80% of strata (matches island brown handoff) */}
-          <div
-            className="absolute inset-x-0 pointer-events-none z-[2]"
-            style={{
-              top: -35,
-              height: (DIRT_H + 35) * 0.8,
-              background: `linear-gradient(
-                to bottom,
-                rgba(53, 35, 27, 1) 0%,
-                rgba(53, 35, 27, 0.5) 50%,
-                rgba(53, 35, 27, 0) 100%
-              )`,
-            }}
-            aria-hidden
-          />
-          {/* Exact color lip — grass join */}
-          <div
-            className="absolute inset-x-0 h-3 pointer-events-none z-[3]"
-            style={{ top: -35, backgroundColor: BG_TOP }}
-            aria-hidden
-          />
-          {/* Top join veil — #35231b → transparent over strata */}
-          <div
-            className="absolute inset-x-0 h-20 sm:h-24 pointer-events-none z-[3]"
-            style={{
-              top: -35,
-              background: `linear-gradient(to bottom, ${BG_TOP} 0%, transparent 100%)`,
-            }}
-            aria-hidden
-          />
+          >
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `url('/images/strata.jpeg')`,
+                backgroundSize: `auto ${DIRT_H}px`,
+                backgroundPosition: 'center top',
+                backgroundRepeat: 'repeat-x',
+              }}
+            />
+            {/* Brown wash — inside dirt image only: 1 → 0.5 → 0 */}
+            <div
+              className="absolute inset-x-0 top-0 pointer-events-none"
+              style={{
+                height: '80%',
+                background: `linear-gradient(
+                  to bottom,
+                  rgba(53, 35, 27, 1) 0%,
+                  rgba(53, 35, 27, 0.5) 50%,
+                  rgba(53, 35, 27, 0) 100%
+                )`,
+              }}
+            />
+            {/* Exact color lip — grass join */}
+            <div
+              className="absolute inset-x-0 top-0 h-3 pointer-events-none"
+              style={{ backgroundColor: BG_TOP }}
+            />
+            {/* Top join veil — #35231b → transparent over dirt */}
+            <div
+              className="absolute inset-x-0 top-0 h-20 sm:h-24 pointer-events-none"
+              style={{
+                background: `linear-gradient(to bottom, ${BG_TOP} 0%, transparent 100%)`,
+              }}
+            />
+          </div>
           {/* Soft falloff under strata into #35231b → #33231a */}
           <div
             className="absolute inset-x-0 pointer-events-none z-[1]"
