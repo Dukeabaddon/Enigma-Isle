@@ -30,11 +30,20 @@ export default function TryAgain() {
         <button
           type="button"
           onClick={scrollToWorkbench}
-          className="absolute left-1/2 -translate-x-1/2 bottom-[14%] sm:bottom-[16%] md:bottom-[17%] inline-flex items-center justify-center gap-2 px-8 sm:px-10 py-3 sm:py-4 rounded-xl bg-gradient-to-b from-[#E5B53A] via-[#D4A017] to-[#B3830E] text-white font-display font-black text-sm sm:text-base tracking-wider uppercase shadow-[0_4px_16px_rgba(40,25,15,0.6),inset_0_1px_0_rgba(255,255,255,0.5)] border-2 border-[#7A5408] hover:brightness-105 active:scale-95 transition-all min-h-[48px] whitespace-nowrap z-20"
+          className="absolute left-1/2 -translate-x-1/2 top-[82%] -translate-y-1/2 inline-flex items-center justify-center gap-2 px-8 sm:px-10 py-3 sm:py-4 rounded-xl bg-gradient-to-b from-[#E5B53A] via-[#D4A017] to-[#B3830E] text-white font-display font-black text-sm sm:text-base tracking-wider uppercase shadow-[0_4px_16px_rgba(40,25,15,0.6),inset_0_1px_0_rgba(255,255,255,0.5)] border-2 border-[#7A5408] hover:brightness-105 active:scale-95 transition-all min-h-[48px] whitespace-nowrap z-20 cursor-pointer"
         >
           <span>Try Cipher</span>
           <ArrowUp className="w-4 h-4 sm:w-5 sm:h-5 text-white/90" />
         </button>
+
+        {/* Island Treasure Chest Accent (public/images/treasure-chest.webp) */}
+        <img
+          src="/images/treasure-chest.webp"
+          alt="Golden Island Treasure Chest"
+          className="absolute -bottom-6 -right-4 sm:-bottom-10 sm:-right-8 md:-bottom-12 md:-right-12 w-28 sm:w-40 md:w-52 h-auto drop-shadow-2xl pointer-events-none select-none z-30"
+          width={1712}
+          height={1685}
+        />
       </div>
     </section>
   );
