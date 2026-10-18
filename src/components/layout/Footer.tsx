@@ -7,8 +7,8 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#0f1911] text-white/80 overflow-hidden">
-      {/* Island: cream under + mobile seam paint into dark footer */}
-      <div className="relative w-full overflow-hidden leading-none select-none bg-[#eaddbf] seam-overlap seam-paint-footer">
+      {/* Island on cream sky; bottom blends into footer dark (kills hairline) */}
+      <div className="relative w-full overflow-hidden leading-none select-none bg-[#eaddbf] seam-overlap -mb-px border-b border-[#0f1911]">
         <img
           src="/images/footer-island.webp"
           alt=""
@@ -16,9 +16,17 @@ export default function Footer() {
           width={3392}
           height={1248}
         />
+        <div
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-6 z-[1]"
+          style={{
+            background:
+              'linear-gradient(to bottom, transparent 0%, #0f1911 85%)',
+          }}
+          aria-hidden
+        />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full pt-10 pb-12 space-y-12">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full -mt-px pt-10 pb-12 space-y-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 items-start">
           <div className="md:col-span-7 space-y-4">
             <div className="flex items-center gap-3">

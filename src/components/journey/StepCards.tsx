@@ -248,11 +248,11 @@ export default function StepCards() {
         id="decrypt-journey"
         className="relative bg-[#EDF5F1] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px] seam-paint-mint"
       >
-        {/* Mobile: Adarna pinned top-center of section */}
+        {/* Mobile: Adarna pinned top-left of section */}
         <img
           src="/images/adarna.webp"
           alt="Ibong Adarna on a branch"
-          className="pointer-events-none absolute left-1/2 top-0 z-20 w-40 -translate-x-1/2 h-auto max-w-none select-none object-contain drop-shadow-lg sm:hidden"
+          className="pointer-events-none absolute left-0 top-0 z-20 w-40 h-auto max-w-none select-none object-contain object-left-top drop-shadow-lg sm:hidden"
           width={1649}
           height={2277}
         />
