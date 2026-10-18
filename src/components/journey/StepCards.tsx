@@ -32,7 +32,7 @@ export default function StepCards() {
   const dropStep = tick % 5;
 
   return (
-    <div className="w-full bg-[#3c2820]">
+    <div className="w-full bg-[#342319]">
       {/* S3 — How Encryption Works (100% screen width, rounded-t corners on dirt - Moat 04b0bae8 & bb6c8989) */}
       <section
         id="encrypt-journey"

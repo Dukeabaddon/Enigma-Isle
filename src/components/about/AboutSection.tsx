@@ -3,15 +3,8 @@ import AbcdTable from './AbcdTable';
 export default function AboutSection() {
   return (
     <section
-      className="relative text-white pt-12 pb-14 sm:pb-20 px-4 sm:px-6 overflow-hidden bg-[#3c2820]"
-      style={{
-        backgroundColor: '#3c2820',
-        backgroundImage: `radial-gradient(circle at 15% 25%, rgba(110, 75, 55, 0.35) 0%, transparent 35%),
-                          radial-gradient(circle at 85% 75%, rgba(70, 45, 30, 0.4) 0%, transparent 40%),
-                          radial-gradient(circle at 50% 50%, rgba(95, 65, 45, 0.25) 0%, transparent 60%),
-                          radial-gradient(circle at 75% 20%, rgba(50, 30, 20, 0.35) 0%, transparent 30%),
-                          radial-gradient(circle at 25% 80%, rgba(85, 55, 38, 0.3) 0%, transparent 40%)`,
-      }}
+      className="relative text-white pt-12 pb-14 sm:pb-20 px-4 sm:px-6 overflow-hidden bg-[#342319]"
+      style={{ backgroundColor: '#342319' }}
     >
       <div
         id="table"
