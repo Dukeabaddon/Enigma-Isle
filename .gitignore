@@ -1,18 +1,43 @@
-brainstorms/
+# Dependencies & build
 node_modules/
 dist/
-stages/*/output/*
-!stages/*/output/.gitkeep
-.moat/screenshots/
-.moat/*.crswap
 playwright-report/
 test-results/
+coverage/
+*.local
 
-# Claude Code configuration
+# OS / editor junk
+.DS_Store
+**/.DS_Store
+*.crswap
+*.tiff
+*.tif
+
+# Agent / AI tooling (do not ship)
+CLAUDE.md
+AGENTS.md
+DELEGATE-PLAN.md
 .claude/
-
-# Windsurf configuration
-.windsurf/
-
-# Codex CLI configuration
+.agents/
+.cursor/
 .codex/
+.windsurf/
+.antigravity/
+.moat/
+graphify-out/
+.context/
+shared/grill-summary.md
+
+# Private / local-only notes
+brainstorms/
+docs/Build Log.md
+docs/prompts/
+
+# Design stage working outputs (keep .gitkeep)
+stages/*/output/*
+!stages/*/output/.gitkeep
+
+# Env / secrets
+.env
+.env.*
+!.env.example

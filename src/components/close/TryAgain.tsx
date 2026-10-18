@@ -9,14 +9,11 @@ export default function TryAgain() {
   };
 
   return (
-    <section className="relative bg-gradient-to-b from-[#EDF5F1] via-[#F4EBD9] to-[#EAE0CA] py-20 sm:py-28 px-4 sm:px-6 overflow-hidden text-center">
-      {/* Warm Ambient Vault Glow matching #EAE0CA (Moat c4ef20b7) */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 sm:w-[500px] sm:h-[500px] bg-[#EAE0CA]/80 rounded-full blur-3xl pointer-events-none" />
+    <section className="relative bg-gradient-to-b from-[#EDF5F1] via-[#eaddbf] to-[#eaddbf] py-20 sm:py-28 px-4 sm:px-6 overflow-hidden text-center">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 sm:w-[500px] sm:h-[500px] bg-[#eaddbf]/90 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Screen reader heading for accessibility */}
       <h2 className="sr-only">Interactive Cipher Workbench — Unlock the Island Cipher</h2>
 
-      {/* Woodboard Plaque with Painted Typography and Real Embedded Button */}
       <div className="relative max-w-lg sm:max-w-xl md:max-w-2xl mx-auto w-full">
         <img
           src="/images/woodboard-workbench.webp"
@@ -26,7 +23,6 @@ export default function TryAgain() {
           height={1652}
         />
 
-        {/* Real HTML Button Centered on the Empty Lower Planks of the Woodboard */}
         <button
           type="button"
           onClick={scrollToWorkbench}
@@ -35,15 +31,6 @@ export default function TryAgain() {
           <span>Try Cipher</span>
           <ArrowUp className="w-4 h-4 sm:w-5 sm:h-5 text-white/90" />
         </button>
-
-        {/* Island Treasure Chest Accent (public/images/treasure-chest.webp) */}
-        <img
-          src="/images/treasure-chest.webp"
-          alt="Golden Island Treasure Chest"
-          className="absolute -bottom-6 -right-4 sm:-bottom-10 sm:-right-8 md:-bottom-12 md:-right-12 w-28 sm:w-40 md:w-52 h-auto drop-shadow-2xl pointer-events-none select-none z-30"
-          width={1712}
-          height={1685}
-        />
       </div>
     </section>
   );
