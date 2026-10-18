@@ -391,7 +391,7 @@
   },
   {
     "id": "e0e34bdc-f440-4b8e-9d4c-ff5e849300bd",
-    "title": "Input (text): Carve your message…",
+    "title": "Input (text): Carve your message\u2026",
     "comment": "change the activate state not over glow or someting  like no yellow glow in the input field when active and change the default message or label in side to something else",
     "selector": "#message-input",
     "boundingRect": {
@@ -466,7 +466,7 @@
   },
   {
     "id": "35c2ccd1-95ed-4545-a4b1-ca6abf1096d1",
-    "title": "span: Motion Upward: U → A",
+    "title": "span: Motion Upward: U \u2192 A",
     "comment": "change to shift upward",
     "selector": "div.bg-white.rounded-3xl:nth-child(2) > div.rounded-2xl.bg-decrypt/5:nth-child(2) > span.text-[10px].text-decrypt-deep",
     "boundingRect": {
@@ -541,7 +541,7 @@
   },
   {
     "id": "a7325fd9-e95b-4754-a57b-9bc571b1461a",
-    "title": "footer: EIENIGMA ISLECoordinates: 08° ",
+    "title": "footer: EIENIGMA ISLECoordinates: 08\u00b0 ",
     "comment": "revise, review, rethink of other way to make this fit to our project, theme and so on, act as a professional in this type of field with 15 years of expereicne as ui developer and frontend dev",
     "selector": "#root > div.min-h-screen.bg-page > footer.relative.bg-[#1A1F1C]",
     "boundingRect": {
@@ -961,7 +961,7 @@
   },
   {
     "id": "bfcac8c7-5d04-4b8a-b32a-fe0b7103d0b7",
-    "title": "span: Full A–Z Cycle Wrap",
+    "title": "span: Full A\u2013Z Cycle Wrap",
     "comment": "remove",
     "selector": "div.bg-[#FFFDF9].rounded-3xl:nth-child(2) > div.rounded-2xl.bg-[#F6EFE2]:nth-child(2) > span.text-[11px].text-ink-muted",
     "boundingRect": {
@@ -976,7 +976,7 @@
   },
   {
     "id": "4dfd1307-184a-4174-97e2-864c33a3869a",
-    "title": "span: Cycle steps = index × 18",
+    "title": "span: Cycle steps = index \u00d7 18",
     "comment": "remove",
     "selector": "div.bg-[#FFFDF9].rounded-3xl:nth-child(1) > div.rounded-2xl.bg-[#F6EFE2]:nth-child(2) > span.text-[11px].text-ink-muted",
     "boundingRect": {
@@ -1336,7 +1336,7 @@
       "h": 495
     },
     "screenshotPath": "./screenshots/moat-1792319957384-h5bho6t3k.png",
-    "status": "to do",
+    "status": "done",
     "timestamp": 1792319957418,
     "boundingBox": {
       "xyxy": {
@@ -1376,7 +1376,7 @@
       "h": 361
     },
     "screenshotPath": "./screenshots/moat-1792320156049-44zzxmc0s.png",
-    "status": "to do",
+    "status": "done",
     "timestamp": 1792320156095,
     "boundingBox": {
       "xyxy": {
@@ -1416,7 +1416,7 @@
       "h": 168
     },
     "screenshotPath": "./screenshots/moat-1792320221898-41hmom648.png",
-    "status": "to do",
+    "status": "done",
     "timestamp": 1792320221917,
     "boundingBox": {
       "xyxy": {
@@ -1456,7 +1456,7 @@
       "h": 52
     },
     "screenshotPath": "./screenshots/moat-1792320250465-oc36repog.png",
-    "status": "to do",
+    "status": "done",
     "timestamp": 1792320250484
   },
   {
@@ -1469,7 +1469,7 @@
       "y": 0
     },
     "screenshotPath": "./screenshots/moat-1792320286564-5w46aqr9x.png",
-    "status": "to do",
+    "status": "done",
     "timestamp": 1792320286583
   },
   {
@@ -1484,7 +1484,7 @@
       "h": 236
     },
     "screenshotPath": "./screenshots/moat-1792320299707-0d94emsgq.png",
-    "status": "to do",
+    "status": "done",
     "timestamp": 1792320299734,
     "boundingBox": {
       "xyxy": {
@@ -1524,7 +1524,7 @@
       "h": 256
     },
     "screenshotPath": "./screenshots/moat-1792320366179-hebgfm0tr.png",
-    "status": "to do",
+    "status": "done",
     "timestamp": 1792320366212,
     "boundingBox": {
       "xyxy": {
@@ -1564,7 +1564,67 @@
       "h": 144
     },
     "screenshotPath": "./screenshots/moat-1792320881405-tuznibipo.png",
-    "status": "to do",
+    "status": "done",
     "timestamp": 1792320881432
+  },
+  {
+    "id": "17a068b5-1693-406b-902d-17bff42df7f3",
+    "title": "Container",
+    "comment": "make footer same color as the islan footer green at the bottom",
+    "selector": "div.min-h-screen.bg-white > footer.relative.bg-[#111613] > div.relative.z-10:nth-child(2)",
+    "boundingRect": {
+      "x": 259,
+      "y": 540,
+      "w": 1152,
+      "h": 309
+    },
+    "screenshotPath": "./screenshots/moat-1792321161725-yq48tcvuu.png",
+    "status": "done",
+    "timestamp": 1792321161752
+  },
+  {
+    "id": "c4ef20b7-d4e5-4ef2-b198-061353c97f26",
+    "title": "Background Container",
+    "comment": "make the yeelow fade same color as : \"EAE0CA\"",
+    "selector": "div.min-h-screen.bg-white > main.flex-1 > section.relative.bg-gradient-to-b:nth-child(4)",
+    "boundingRect": {
+      "x": 0,
+      "y": -402,
+      "w": 1670,
+      "h": 746
+    },
+    "screenshotPath": "./screenshots/moat-1792321201541-7k1a5x2eq.png",
+    "status": "done",
+    "timestamp": 1792321201593
+  },
+  {
+    "id": "58f3da48-ad4b-440f-bb76-e2b3c0dab242",
+    "title": "Container #workbench",
+    "comment": "make hero section, section 1 ..120 dvh or 120 screen and the cut or wave is at the bottom between 110 and 120.",
+    "selector": "#workbench",
+    "boundingRect": {
+      "x": 0,
+      "y": 65,
+      "w": 1670,
+      "h": 934
+    },
+    "screenshotPath": "./screenshots/moat-1792321307842-r6sjl5wxm.png",
+    "status": "done",
+    "timestamp": 1792321307908
+  },
+  {
+    "id": "2bfb6d29-e59f-4a6b-8806-8daf594aee6e",
+    "title": "footer: ENIGMA ISLEAn interactive cryp",
+    "comment": "make footer color below the isand look this : \"#0f1911\"",
+    "selector": "#root > div.min-h-screen.bg-white > footer.relative.bg-[#111613]",
+    "boundingRect": {
+      "x": 0,
+      "y": -75,
+      "w": 1670,
+      "h": 924
+    },
+    "screenshotPath": "./screenshots/moat-1792321441111-iyhlt0cra.png",
+    "status": "done",
+    "timestamp": 1792321441152
   }
 ]

@@ -1,6 +1,6 @@
 # Moat Tasks
 
-**Total**: 93 | **To Do**: 8 | **Doing**: 0 | **Done**: 85
+**Total**: 97 | **To Do**: 0 | **Doing**: 0 | **Done**: 97
 
 ## Tasks
 
@@ -89,16 +89,20 @@
 83. [x] span: Result – "remove" `div.relative.parchment-paper > div.mt-4.pt-3:nth-child(2) > span.text-[10px].font-mono`
 84. [x] Svg – "make this black" `div.mt-4.pt-3:nth-child(2) > button.inline-flex.items-center > svg`
 85. [x] Image: Enigma Isle Logo – "remove bg color of the container only showing the icon" `div.max-w-6xl.mx-auto > a.flex.items-center > img.h-10.w-10`
-86. [ ] Freeform Rectangle Task – "wrong. footer should not be transparent bg but solid colo..." `freeform`
-87. [ ] Freeform Rectangle Task – "reverse the wave so the one cutted out by the wave should..." `freeform`
-88. [ ] Freeform Rectangle Task – "not smooth transition between how the encryption and decr..." `freeform`
-89. [ ] Button: Encrypt – "after clicking the encrypt or decrypt, scroll to the resu..." `button[aria-label="Encrypt"]`
-90. [ ] Button: Encrypt – "when clicking the option or changing close or hide it whe..." `button[data-testid="cipher-toggle"]`
-91. [ ] Freeform Rectangle Task – "not same color or smooth. make them same" `freeform`
-92. [ ] Freeform Rectangle Task – "not smooth or so maybe follow my instructions again and a..." `freeform`
-93. [ ] Colored Container – "show the full abcd table of the path like the step 1 reve..." `div.sm:grid-cols-2.lg:grid-cols-4:nth-child(2) > div.bg-[#FFFDF9].rounded-3xl:nth-child(4) > div.rounded-2xl.bg-[#F6EFE2]:nth-child(2)`
+86. [x] Freeform Rectangle Task – "wrong. footer should not be transparent bg but solid colo..." `freeform`
+87. [x] Freeform Rectangle Task – "reverse the wave so the one cutted out by the wave should..." `freeform`
+88. [x] Freeform Rectangle Task – "not smooth transition between how the encryption and decr..." `freeform`
+89. [x] Button: Encrypt – "after clicking the encrypt or decrypt, scroll to the resu..." `button[aria-label="Encrypt"]`
+90. [x] Button: Encrypt – "when clicking the option or changing close or hide it whe..." `button[data-testid="cipher-toggle"]`
+91. [x] Freeform Rectangle Task – "not same color or smooth. make them same" `freeform`
+92. [x] Freeform Rectangle Task – "not smooth or so maybe follow my instructions again and a..." `freeform`
+93. [x] Colored Container – "show the full abcd table of the path like the step 1 reve..." `div.sm:grid-cols-2.lg:grid-cols-4:nth-child(2) > div.bg-[#FFFDF9].rounded-3xl:nth-child(4) > div.rounded-2xl.bg-[#F6EFE2]:nth-child(2)`
+94. [x] Container – "make footer same color as the islan footer green at the b..." `div.min-h-screen.bg-white > footer.relative.bg-[#111613] > div.relative.z-10:nth-child(2)`
+95. [x] Background Container – "make the yeelow fade same color as : "EAE0CA"" `div.min-h-screen.bg-white > main.flex-1 > section.relative.bg-gradient-to-b:nth-child(4)`
+96. [x] Container #workbench – "make hero section, section 1 ..120 dvh or 120 screen and ..." `#workbench`
+97. [x] footer: ENIGMA ISLEAn interactive cryp – "make footer color below the isand look this : "#0f1911"" `#root > div.min-h-screen.bg-white > footer.relative.bg-[#111613]`
 
 ---
 
-_Generated: 10/18/2026, 6:58:22 PM_
+_Generated: 10/18/2026, 7:04:22 PM_
 _Source: moat-tasks-detail.json_
