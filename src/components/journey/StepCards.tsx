@@ -33,34 +33,35 @@ export default function StepCards() {
 
   return (
     <div className="w-full">
-      {/* S3 — How Encryption Works (Tasks 4, 5, 6, 7, 8, 9, 10) */}
-      <section
-        id="encrypt-journey"
-        className="relative bg-[#FAF4E8] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden"
-      >
-        <div className="max-w-6xl mx-auto relative z-10">
-          {/* Simplified Centered Header (Tasks 5 & 6) */}
-          <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
-            <h2 className="font-display font-black text-3xl sm:text-5xl text-ink tracking-tight">
-              How Encryption Works
-            </h2>
-            <p className="text-base sm:text-lg text-ink/80 font-medium">
-              Four sequential transformations applied forward to every character. Each card illustrates a mechanical step with a live visual loop.
-            </p>
-          </div>
-
-          {/* Cards Container with Mascot Anchored on the Left Flank (Moat a4bd70cc) */}
-          <div className="relative">
-            {/* Desktop Mascot: Standing still on left edge directly adjacent to Card 1 */}
-            <div className="hidden xl:flex absolute -left-36 top-1/2 -translate-y-1/2 flex-col items-center pointer-events-none select-none z-20">
-              <img
-                src="/images/mascot-enigma.webp"
-                alt="Enigma Isle explorer mascot"
-                className="w-44 h-auto object-contain drop-shadow-xl select-none"
-                width={1369}
-                height={1679}
-              />
+      {/* S3 — How Encryption Works on Dirt Ground (Moat a8d1d1a2) */}
+      <div className="w-full bg-[#3c2820] px-3 sm:px-6 lg:px-8 pb-10 sm:pb-16 relative">
+        <section
+          id="encrypt-journey"
+          className="relative bg-[#FAF4E8] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-3xl sm:rounded-[36px] shadow-2xl border border-[#D4A017]/20"
+        >
+          <div className="max-w-6xl mx-auto relative z-10">
+            {/* Simplified Centered Header (Tasks 5 & 6) */}
+            <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
+              <h2 className="font-display font-black text-3xl sm:text-5xl text-ink tracking-tight">
+                How Encryption Works
+              </h2>
+              <p className="text-base sm:text-lg text-ink/80 font-medium">
+                Four sequential transformations applied forward to every character. Each card illustrates a mechanical step with a live visual loop.
+              </p>
             </div>
+
+            {/* Cards Container with Mascot Anchored on the Left Flank (Moat a4bd70cc) */}
+            <div className="relative">
+              {/* Desktop Mascot: Standing still on left edge directly adjacent to Card 1 */}
+              <div className="hidden xl:flex absolute -left-20 2xl:-left-32 top-1/2 -translate-y-1/2 flex-col items-center pointer-events-none select-none z-20">
+                <img
+                  src="/images/mascot-enigma.webp"
+                  alt="Enigma Isle explorer mascot"
+                  className="w-40 2xl:w-44 h-auto object-contain drop-shadow-xl select-none"
+                  width={1369}
+                  height={1679}
+                />
+              </div>
 
             {/* Mobile/Tablet inline explorer guide header on the left side */}
             <div className="xl:hidden flex items-center gap-3.5 mb-6 bg-[#F5EDE0] px-4 py-2.5 rounded-2xl border border-[#E0D0B5] max-w-md">
@@ -238,7 +239,9 @@ export default function StepCards() {
           </div>
         </div>
 
-        {/* Organic Coastal River Transition into Mint Decryption Chambers (Moat fab8251a) */}
+        </section>
+
+        {/* Organic Coastal River Transition from Dirt Ground into Mint Decryption Chambers (Moat fab8251a) */}
         <div className="absolute bottom-0 inset-x-0 w-full overflow-hidden leading-none pointer-events-none z-10 -mb-1">
           <svg
             className="w-full h-8 sm:h-14 text-[#EDF5F1]"
@@ -249,7 +252,7 @@ export default function StepCards() {
             <path d="M0,0 C200,80 400,-20 600,50 C800,120 1000,20 1200,60 L1200,120 L0,120 Z" />
           </svg>
         </div>
-      </section>
+      </div>
 
       {/* S4 — How Decryption Works (Tasks 13, 14, 15, 16, 17, 18) */}
       <section

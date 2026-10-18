@@ -10,8 +10,8 @@ export default function TryAgain() {
 
   return (
     <section className="relative bg-gradient-to-b from-[#EDF5F1] via-[#F4EBD9] to-[#EAE0CA] py-20 sm:py-28 px-4 sm:px-6 overflow-hidden text-center">
-      {/* Warm Ambient Vault Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 sm:w-[500px] sm:h-[500px] bg-[#D4A017]/15 rounded-full blur-3xl pointer-events-none" />
+      {/* Warm Ambient Vault Glow matching #EAE0CA (Moat c4ef20b7) */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 sm:w-[500px] sm:h-[500px] bg-[#EAE0CA]/80 rounded-full blur-3xl pointer-events-none" />
 
       {/* Screen reader heading for accessibility */}
       <h2 className="sr-only">Interactive Cipher Workbench — Unlock the Island Cipher</h2>

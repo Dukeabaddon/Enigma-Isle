@@ -38,20 +38,20 @@ export default function ResultExpand({
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="relative w-full overflow-hidden bg-[#3E2A22]"
+          className="relative w-full overflow-hidden bg-[#3c2820]"
         >
-          {/* Underground Dirt Strata Background Layer — Perfectly seamless with Section 2 #3E2A22 */}
+          {/* Underground Dirt Strata Background Layer — Perfectly seamless with Section 2 #3c2820 */}
           <div
-            className="w-full bg-[#3E2A22] bg-repeat-x py-16 sm:py-24 px-4 sm:px-6 relative min-h-[100dvh] flex flex-col justify-center"
+            className="w-full bg-[#3c2820] bg-repeat-x py-16 sm:py-24 px-4 sm:px-6 relative min-h-[100dvh] flex flex-col justify-center"
             style={{
-              backgroundImage: `linear-gradient(to bottom, #3E2A22 0%, #3E2A22 25px, transparent 80px), url('/images/hero-dirt.webp'), radial-gradient(circle at 20% 80%, rgba(90,60,45,0.4) 0%, transparent 40%), radial-gradient(circle at 80% 90%, rgba(70,45,30,0.5) 0%, transparent 45%)`,
+              backgroundImage: `linear-gradient(to bottom, #3c2820 0%, #3c2820 25px, transparent 80px), url('/images/hero-dirt.webp'), radial-gradient(circle at 20% 80%, rgba(90,60,45,0.4) 0%, transparent 40%), radial-gradient(circle at 80% 90%, rgba(70,45,30,0.5) 0%, transparent 45%)`,
               backgroundSize: '100% 80px, auto 280px, 100% 100%, 100% 100%',
               backgroundPosition: 'top center, center -40px, center, center',
-              backgroundColor: '#3E2A22',
+              backgroundColor: '#3c2820',
             }}
           >
             {/* Sediment rocks & strata overlay */}
-            <div className="absolute inset-0 bg-[#3E2A22]/45 pointer-events-none" />
+            <div className="absolute inset-0 bg-[#3c2820]/45 pointer-events-none" />
 
             <div className="relative z-10 max-w-2xl mx-auto w-full space-y-4">
               {/* Parchment Paper Card */}

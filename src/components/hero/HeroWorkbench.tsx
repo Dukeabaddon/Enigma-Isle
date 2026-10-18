@@ -69,20 +69,20 @@ export default function HeroWorkbench() {
   return (
     <section
       id="workbench"
-      className="relative w-full overflow-hidden bg-[#3E2A22] min-h-[110dvh] flex flex-col justify-between"
+      className="relative w-full overflow-hidden bg-[#3c2820] min-h-[120dvh] flex flex-col justify-between"
     >
-      {/* Hidden SVG Definition for Smooth Responsive Wave Clip-Path applied to island plate */}
+      {/* Hidden SVG Definition for Smooth Responsive Wave Clip-Path applied to island plate (Moat 58f3da48 / 793f7cb8) */}
       <svg width="0" height="0" className="absolute pointer-events-none" aria-hidden="true">
         <defs>
           <clipPath id="hero-island-wave-cut" clipPathUnits="objectBoundingBox">
-            <path d="M 0,0 L 1,0 L 1,0.92 C 0.82,0.97 0.68,0.90 0.52,0.95 C 0.36,1.0 0.18,0.92 0,0.95 Z" />
+            <path d="M 0,0 L 1,0 L 1,0.92 C 0.85,0.97 0.70,0.92 0.52,0.96 C 0.35,1.0 0.18,0.92 0,0.94 Z" />
           </clipPath>
         </defs>
       </svg>
 
-      {/* Background Island Scenic Plate with Tuned White Fade and Wave Cut Bottom (Moat 6b0b1600 & ac5fd4b6) */}
+      {/* Background Island Scenic Plate 120dvh with Wave Cut between 110-120dvh */}
       <div
-        className="absolute top-0 left-0 right-0 h-[100dvh] pointer-events-none select-none z-0 overflow-hidden"
+        className="absolute top-0 left-0 right-0 h-[120dvh] pointer-events-none select-none z-0 overflow-hidden"
         style={{ clipPath: 'url(#hero-island-wave-cut)' }}
       >
         <div

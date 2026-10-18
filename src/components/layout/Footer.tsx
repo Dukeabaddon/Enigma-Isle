@@ -6,7 +6,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#111613] text-white/80 overflow-hidden">
+    <footer className="relative bg-[#0f1911] text-white/80 overflow-hidden">
       {/* Island Horizon Silhouette Plate (joins #EAE0CA from TryAgain smoothly) */}
       <div className="relative w-full overflow-hidden leading-none select-none bg-[#EAE0CA]">
         <img

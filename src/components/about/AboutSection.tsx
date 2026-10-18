@@ -3,9 +3,9 @@ import AbcdTable from './AbcdTable';
 export default function AboutSection() {
   return (
     <section
-      className="relative text-white pt-12 pb-24 sm:pb-32 px-4 sm:px-6 overflow-hidden bg-[#3E2A22]"
+      className="relative text-white pt-12 pb-14 sm:pb-20 px-4 sm:px-6 overflow-hidden bg-[#3c2820]"
       style={{
-        backgroundColor: '#3E2A22',
+        backgroundColor: '#3c2820',
         backgroundImage: `radial-gradient(circle at 15% 25%, rgba(110, 75, 55, 0.35) 0%, transparent 35%),
                           radial-gradient(circle at 85% 75%, rgba(70, 45, 30, 0.4) 0%, transparent 40%),
                           radial-gradient(circle at 50% 50%, rgba(95, 65, 45, 0.25) 0%, transparent 60%),
@@ -30,18 +30,6 @@ export default function AboutSection() {
 
         {/* Explorer Cartography Parchment Table on Dirt */}
         <AbcdTable />
-      </div>
-
-      {/* Organic Coastal Cliff Transition into Sunlit Chambers */}
-      <div className="absolute bottom-0 inset-x-0 w-full overflow-hidden leading-none pointer-events-none z-10">
-        <svg
-          className="w-full h-8 sm:h-14 text-[#FAF4E8]"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-          fill="currentColor"
-        >
-          <path d="M0,0 L120,40 C280,85 450,15 650,60 C850,105 1050,30 1200,70 L1200,120 L0,120 Z" />
-        </svg>
       </div>
     </section>
   );
