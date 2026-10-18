@@ -44,17 +44,18 @@ export default function ResultExpand({
           <div
             className="w-full bg-[#3E2A22] bg-repeat-x py-16 sm:py-24 px-4 sm:px-6 relative min-h-[100dvh] flex flex-col justify-center"
             style={{
-              backgroundImage: `url('/images/hero-dirt.webp'), radial-gradient(circle at 20% 80%, rgba(90,60,45,0.4) 0%, transparent 40%), radial-gradient(circle at 80% 90%, rgba(70,45,30,0.5) 0%, transparent 45%)`,
-              backgroundSize: 'auto 280px, 100% 100%, 100% 100%',
+              backgroundImage: `linear-gradient(to bottom, #3E2A22 0%, #3E2A22 25px, transparent 80px), url('/images/hero-dirt.webp'), radial-gradient(circle at 20% 80%, rgba(90,60,45,0.4) 0%, transparent 40%), radial-gradient(circle at 80% 90%, rgba(70,45,30,0.5) 0%, transparent 45%)`,
+              backgroundSize: '100% 80px, auto 280px, 100% 100%, 100% 100%',
+              backgroundPosition: 'top center, center -40px, center, center',
               backgroundColor: '#3E2A22',
             }}
           >
             {/* Sediment rocks & strata overlay */}
-            <div className="absolute inset-0 bg-[#3E2A22]/50 pointer-events-none" />
+            <div className="absolute inset-0 bg-[#3E2A22]/45 pointer-events-none" />
 
             <div className="relative z-10 max-w-2xl mx-auto w-full space-y-4">
               {/* Parchment Paper Card */}
-              <div className="relative parchment-paper p-6 sm:p-8 bg-[#FFFDF7] text-ink shadow-2xl">
+              <div id="cipher-result" className="relative parchment-paper p-6 sm:p-8 bg-[#FFFDF7] text-ink shadow-2xl scroll-mt-28">
                 {/* Result header */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-ink/10">
                   <div className="space-y-1">

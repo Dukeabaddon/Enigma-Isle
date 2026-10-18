@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Key } from 'lucide-react';
 import { useCipher } from '@/hooks/useCipher';
 import ResultExpand from './ResultExpand';
@@ -21,8 +21,35 @@ export default function HeroWorkbench() {
   const [stepsModalOpen, setStepsModalOpen] = useState(false);
   const [activeAction, setActiveAction] = useState<'encrypt' | 'decrypt'>('encrypt');
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Smooth scroll to expanded cipher result upon execution (Moat f9daf886)
+  useEffect(() => {
+    if (isExpanded && (encryptResult || decryptResult)) {
+      const timer = setTimeout(() => {
+        const el = document.getElementById('cipher-result');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [isExpanded, encryptResult, decryptResult]);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    if (!dropdownOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+      }
+    };
+    window.addEventListener('mousedown', handleClickOutside);
+    return () => window.removeEventListener('mousedown', handleClickOutside);
+  }, [dropdownOpen]);
 
   const handlePrimaryClick = () => {
+    setDropdownOpen(false);
     if (activeAction === 'encrypt') {
       handleEncrypt();
     } else {
@@ -30,18 +57,34 @@ export default function HeroWorkbench() {
     }
   };
 
+  // Immediate dropdown dismissal on alternate selection (Moat 5675e5b3 & 663bd05e)
   const handleSelectAlternate = (action: 'encrypt' | 'decrypt') => {
     setActiveAction(action);
     setDropdownOpen(false);
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
   };
 
   return (
     <section
       id="workbench"
-      className="relative w-full overflow-hidden bg-white min-h-[110dvh] flex flex-col justify-between"
+      className="relative w-full overflow-hidden bg-[#3E2A22] min-h-[110dvh] flex flex-col justify-between"
     >
-      {/* Background Island Scenic Plate with Tuned White Fade — Fixed to top 100dvh */}
-      <div className="absolute top-0 left-0 right-0 h-[100dvh] pointer-events-none select-none z-0 overflow-hidden">
+      {/* Hidden SVG Definition for Smooth Responsive Wave Clip-Path applied to island plate */}
+      <svg width="0" height="0" className="absolute pointer-events-none" aria-hidden="true">
+        <defs>
+          <clipPath id="hero-island-wave-cut" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0 L 1,0 L 1,0.92 C 0.82,0.97 0.68,0.90 0.52,0.95 C 0.36,1.0 0.18,0.92 0,0.95 Z" />
+          </clipPath>
+        </defs>
+      </svg>
+
+      {/* Background Island Scenic Plate with Tuned White Fade and Wave Cut Bottom (Moat 6b0b1600 & ac5fd4b6) */}
+      <div
+        className="absolute top-0 left-0 right-0 h-[100dvh] pointer-events-none select-none z-0 overflow-hidden"
+        style={{ clipPath: 'url(#hero-island-wave-cut)' }}
+      >
         <div
           className="absolute inset-0 bg-cover bg-bottom opacity-95 max-sm:hidden"
           style={{ backgroundImage: `url('/images/hero-island.webp')` }}
@@ -51,7 +94,7 @@ export default function HeroWorkbench() {
           style={{ backgroundImage: `url('/images/hero-island-mobile.webp')` }}
         />
         {/* Soft, breathable top fade revealing lush island art */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/55 via-white/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/25 to-transparent" />
       </div>
 
       {/* Main Hero Interactive Container - Full Screen positioned higher */}
@@ -87,9 +130,10 @@ export default function HeroWorkbench() {
               }}
             />
 
-            {/* Key Cluster: ONLY ONE button visible at a time; hover dropdown switches active */}
+            {/* Key Cluster: ONLY ONE button visible at a time; clean state-controlled replacement */}
             <div
-              className="relative group shrink-0 flex items-stretch"
+              ref={dropdownRef}
+              className="relative shrink-0 flex items-stretch"
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
             >
@@ -100,7 +144,7 @@ export default function HeroWorkbench() {
                   onClick={handlePrimaryClick}
                   aria-label="Encrypt"
                   title="Run Encryption"
-                  className="inline-flex min-h-12 items-center justify-center gap-1.5 rounded-r-[14px] px-6 text-xs font-bold uppercase tracking-wider bg-[#D4A017] hover:bg-[#C29012] text-white active:scale-95 transition-all shadow-none sm:min-w-[6.5rem] border-l border-ink/10 whitespace-nowrap"
+                  className="inline-flex min-h-12 items-center justify-center gap-1.5 rounded-r-[14px] px-6 text-xs font-bold uppercase tracking-wider bg-[#D4A017] hover:bg-[#C29012] text-white active:scale-95 transition-all shadow-none sm:min-w-[6.5rem] border-l border-ink/10 whitespace-nowrap cursor-pointer"
                 >
                   <Key className="h-4 w-4 text-white" aria-hidden />
                   <span className="font-bold">Encrypt</span>
@@ -111,43 +155,41 @@ export default function HeroWorkbench() {
                   onClick={handlePrimaryClick}
                   aria-label="Decrypt"
                   title="Run Decryption"
-                  className="inline-flex min-h-12 items-center justify-center gap-1.5 rounded-r-[14px] px-6 text-xs font-bold uppercase tracking-wider bg-[#2F8F6B] hover:bg-[#267759] text-white active:scale-95 transition-all shadow-none sm:min-w-[6.5rem] border-l border-ink/10 whitespace-nowrap"
+                  className="inline-flex min-h-12 items-center justify-center gap-1.5 rounded-r-[14px] px-6 text-xs font-bold uppercase tracking-wider bg-[#2F8F6B] hover:bg-[#267759] text-white active:scale-95 transition-all shadow-none sm:min-w-[6.5rem] border-l border-ink/10 whitespace-nowrap cursor-pointer"
                 >
                   <Key className="h-4 w-4 text-white" aria-hidden />
                   <span className="font-bold">Decrypt</span>
                 </button>
               )}
 
-              {/* Hover / Focus Dropdown: Replaces active button upon click */}
-              <div
-                className={`absolute right-0 top-full pt-1.5 z-30 ${
-                  dropdownOpen ? 'block' : 'hidden group-hover:block group-focus-within:block'
-                }`}
-              >
-                {activeAction === 'encrypt' ? (
-                  <button
-                    type="button"
-                    data-testid="cipher-toggle"
-                    onClick={() => handleSelectAlternate('decrypt')}
-                    title="Switch to Decrypt"
-                    className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-[#2F8F6B] hover:bg-[#267759] text-white shadow-xl active:scale-95 transition-all whitespace-nowrap border border-white/20"
-                  >
-                    <Key className="h-4 w-4 text-white" />
-                    <span>Decrypt</span>
-                  </button>
-                ) : (
-                  <button
-                    type="button"
-                    data-testid="cipher-toggle"
-                    onClick={() => handleSelectAlternate('encrypt')}
-                    title="Switch to Encrypt"
-                    className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-[#D4A017] hover:bg-[#C29012] text-white shadow-xl active:scale-95 transition-all whitespace-nowrap border border-white/20"
-                  >
-                    <Key className="h-4 w-4 text-white" />
-                    <span>Encrypt</span>
-                  </button>
-                )}
-              </div>
+              {/* State-controlled Dropdown: Closes immediately on selection (Moat 5675e5b3) */}
+              {dropdownOpen && (
+                <div className="absolute right-0 top-full pt-1.5 z-30 animate-in fade-in zoom-in-95 duration-100">
+                  {activeAction === 'encrypt' ? (
+                    <button
+                      type="button"
+                      data-testid="cipher-toggle"
+                      onClick={() => handleSelectAlternate('decrypt')}
+                      title="Switch to Decrypt"
+                      className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-[#2F8F6B] hover:bg-[#267759] text-white shadow-xl active:scale-95 transition-all whitespace-nowrap border border-white/20 cursor-pointer"
+                    >
+                      <Key className="h-4 w-4 text-white" />
+                      <span>Decrypt</span>
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      data-testid="cipher-toggle"
+                      onClick={() => handleSelectAlternate('encrypt')}
+                      title="Switch to Encrypt"
+                      className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-[#D4A017] hover:bg-[#C29012] text-white shadow-xl active:scale-95 transition-all whitespace-nowrap border border-white/20 cursor-pointer"
+                    >
+                      <Key className="h-4 w-4 text-white" />
+                      <span>Encrypt</span>
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
           </div>
 
@@ -177,20 +219,6 @@ export default function HeroWorkbench() {
         encryptTraces={encryptResult?.traces}
         decryptTraces={decryptResult?.traces}
       />
-
-      {/* Bottom Curve Wave Transition matching Section 2 Brown Dirt #3E2A22 */}
-      {!isExpanded && (
-        <div className="relative z-20 w-full overflow-hidden leading-none pointer-events-none -mb-1">
-          <svg
-            className="w-full h-8 sm:h-14 text-[#3E2A22]"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-            fill="currentColor"
-          >
-            <path d="M0,0 C150,90 350,-40 500,45 C650,130 900,10 1200,50 L1200,120 L0,120 Z" />
-          </svg>
-        </div>
-      )}
     </section>
   );
 }
