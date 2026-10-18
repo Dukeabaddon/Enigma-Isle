@@ -3530,8 +3530,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_radius_none",
-      "community": 164,
-      "community_name": "radius",
+      "community": 248,
+      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
       "norm_label": "none"
     },
     {
@@ -3541,8 +3541,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_none_value",
-      "community": 164,
-      "community_name": "radius",
+      "community": 248,
+      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
       "norm_label": "$value"
     },
     {
@@ -3552,8 +3552,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_none_type",
-      "community": 164,
-      "community_name": "radius",
+      "community": 248,
+      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
       "norm_label": "$type"
     },
     {
@@ -3574,8 +3574,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_radius_default",
-      "community": 254,
-      "community_name": "none",
+      "community": 164,
+      "community_name": "radius",
       "norm_label": "default"
     },
     {
@@ -3585,8 +3585,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_default_value",
-      "community": 254,
-      "community_name": "none",
+      "community": 164,
+      "community_name": "radius",
       "norm_label": "$value"
     },
     {
@@ -3596,8 +3596,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_default_type",
-      "community": 254,
-      "community_name": "none",
+      "community": 164,
+      "community_name": "radius",
       "norm_label": "$type"
     },
     {
@@ -3706,8 +3706,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_shadow_none",
-      "community": 164,
-      "community_name": "radius",
+      "community": 248,
+      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
       "norm_label": "none"
     },
     {
@@ -3728,8 +3728,8 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_shadow_default",
-      "community": 254,
-      "community_name": "none",
+      "community": 164,
+      "community_name": "radius",
       "norm_label": "default"
     },
     {
@@ -3959,8 +3959,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_primary",
-      "community": 264,
-      "community_name": "destructive",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "primary"
     },
     {
@@ -3970,8 +3970,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_primary_value",
-      "community": 264,
-      "community_name": "destructive",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "$value"
     },
     {
@@ -3981,8 +3981,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_primary_type",
-      "community": 264,
-      "community_name": "destructive",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "$type"
     },
     {
@@ -4025,8 +4025,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_primary_foreground",
-      "community": 261,
-      "community_name": "1",
+      "community": 260,
+      "community_name": "16",
       "norm_label": "primary-foreground"
     },
     {
@@ -4036,8 +4036,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_primary_foreground_value",
-      "community": 261,
-      "community_name": "1",
+      "community": 260,
+      "community_name": "16",
       "norm_label": "$value"
     },
     {
@@ -4047,8 +4047,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_primary_foreground_type",
-      "community": 261,
-      "community_name": "1",
+      "community": 260,
+      "community_name": "16",
       "norm_label": "$type"
     },
     {
@@ -4091,8 +4091,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_secondary_foreground",
-      "community": 262,
-      "community_name": "3",
+      "community": 261,
+      "community_name": "1",
       "norm_label": "secondary-foreground"
     },
     {
@@ -4102,8 +4102,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_secondary_foreground_value",
-      "community": 262,
-      "community_name": "3",
+      "community": 261,
+      "community_name": "1",
       "norm_label": "$value"
     },
     {
@@ -4113,8 +4113,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_secondary_foreground_type",
-      "community": 262,
-      "community_name": "3",
+      "community": 261,
+      "community_name": "1",
       "norm_label": "$type"
     },
     {
@@ -4190,8 +4190,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_destructive",
-      "community": 114,
-      "community_name": "color",
+      "community": 254,
+      "community_name": "none",
       "norm_label": "destructive"
     },
     {
@@ -4201,8 +4201,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_destructive_value",
-      "community": 114,
-      "community_name": "color",
+      "community": 254,
+      "community_name": "none",
       "norm_label": "$value"
     },
     {
@@ -4212,8 +4212,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_destructive_type",
-      "community": 114,
-      "community_name": "color",
+      "community": 254,
+      "community_name": "none",
       "norm_label": "$type"
     },
     {
@@ -4223,8 +4223,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_destructive_foreground",
-      "community": 255,
-      "community_name": "padding-y",
+      "community": 256,
+      "community_name": "xl",
       "norm_label": "destructive-foreground"
     },
     {
@@ -4234,8 +4234,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_destructive_foreground_value",
-      "community": 255,
-      "community_name": "padding-y",
+      "community": 256,
+      "community_name": "xl",
       "norm_label": "$value"
     },
     {
@@ -4245,8 +4245,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_destructive_foreground_type",
-      "community": 255,
-      "community_name": "padding-y",
+      "community": 256,
+      "community_name": "xl",
       "norm_label": "$type"
     },
     {
@@ -4520,8 +4520,8 @@
       "source_location": "L110",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_button_padding_x",
-      "community": 252,
-      "community_name": "padding-y",
+      "community": 226,
+      "community_name": "input",
       "norm_label": "padding-x"
     },
     {
@@ -4531,8 +4531,8 @@
       "source_location": "L110",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_padding_x_value",
-      "community": 252,
-      "community_name": "padding-y",
+      "community": 226,
+      "community_name": "input",
       "norm_label": "$value"
     },
     {
@@ -4542,8 +4542,8 @@
       "source_location": "L110",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_padding_x_type",
-      "community": 252,
-      "community_name": "padding-y",
+      "community": 226,
+      "community_name": "input",
       "norm_label": "$type"
     },
     {
@@ -4553,8 +4553,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_button_padding_y",
-      "community": 226,
-      "community_name": "input",
+      "community": 255,
+      "community_name": "padding-y",
       "norm_label": "padding-y"
     },
     {
@@ -4564,8 +4564,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_padding_y_value",
-      "community": 226,
-      "community_name": "input",
+      "community": 255,
+      "community_name": "padding-y",
       "norm_label": "$value"
     },
     {
@@ -4575,8 +4575,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_padding_y_type",
-      "community": 226,
-      "community_name": "input",
+      "community": 255,
+      "community_name": "padding-y",
       "norm_label": "$type"
     },
     {
@@ -4718,8 +4718,8 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_input_padding_x",
-      "community": 252,
-      "community_name": "padding-y",
+      "community": 226,
+      "community_name": "input",
       "norm_label": "padding-x"
     },
     {
@@ -4729,8 +4729,8 @@
       "source_location": "L120",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_input_padding_y",
-      "community": 226,
-      "community_name": "input",
+      "community": 255,
+      "community_name": "padding-y",
       "norm_label": "padding-y"
     },
     {
@@ -11109,8 +11109,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": "testendtoendcoherence"
     },
     {
@@ -11142,8 +11142,8 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_dark_query_foreground_is_lighter_than_background",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": ".test_dark_query_foreground_is_lighter_than_background()"
     },
     {
@@ -11153,8 +11153,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_dark_query_does_not_advise_against_dark_mode",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": ".test_dark_query_does_not_advise_against_dark_mode()"
     },
     {
@@ -11164,8 +11164,8 @@
       "source_location": "L183",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_light_query_keeps_a_light_background",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": ".test_light_query_keeps_a_light_background()"
     },
     {
@@ -11175,8 +11175,8 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_rationale_139",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": "the exact reproduction from issue #428."
     },
     {
@@ -15245,8 +15245,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_0",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 262,
+      "community_name": "3",
       "norm_label": "0"
     },
     {
@@ -15256,8 +15256,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_0_value",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 262,
+      "community_name": "3",
       "norm_label": "$value"
     },
     {
@@ -15267,8 +15267,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_0_type",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 262,
+      "community_name": "3",
       "norm_label": "$type"
     },
     {
@@ -15344,7 +15344,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_3",
-      "community": 267,
+      "community": 265,
       "community_name": "3",
       "norm_label": "3"
     },
@@ -15355,7 +15355,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_3_value",
-      "community": 267,
+      "community": 265,
       "community_name": "3",
       "norm_label": "$value"
     },
@@ -15366,7 +15366,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_3_type",
-      "community": 267,
+      "community": 265,
       "community_name": "3",
       "norm_label": "$type"
     },
@@ -15443,8 +15443,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_6",
-      "community": 266,
-      "community_name": "1",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "6"
     },
     {
@@ -15454,8 +15454,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_6_value",
-      "community": 266,
-      "community_name": "1",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "$value"
     },
     {
@@ -15465,8 +15465,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_6_type",
-      "community": 266,
-      "community_name": "1",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "$type"
     },
     {
@@ -15575,8 +15575,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_16",
-      "community": 265,
-      "community_name": "16",
+      "community": 264,
+      "community_name": "destructive",
       "norm_label": "16"
     },
     {
@@ -15586,8 +15586,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_16_value",
-      "community": 265,
-      "community_name": "16",
+      "community": 264,
+      "community_name": "destructive",
       "norm_label": "$value"
     },
     {
@@ -15597,8 +15597,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_16_type",
-      "community": 265,
-      "community_name": "16",
+      "community": 264,
+      "community_name": "destructive",
       "norm_label": "$type"
     },
     {
@@ -15894,8 +15894,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_radius_none",
-      "community": 245,
-      "community_name": "none",
+      "community": 252,
+      "community_name": "padding-y",
       "norm_label": "none"
     },
     {
@@ -15905,8 +15905,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_none_value",
-      "community": 245,
-      "community_name": "none",
+      "community": 252,
+      "community_name": "padding-y",
       "norm_label": "$value"
     },
     {
@@ -15916,8 +15916,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_none_type",
-      "community": 245,
-      "community_name": "none",
+      "community": 252,
+      "community_name": "padding-y",
       "norm_label": "$type"
     },
     {
@@ -16070,8 +16070,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_shadow_none",
-      "community": 245,
-      "community_name": "none",
+      "community": 252,
+      "community_name": "padding-y",
       "norm_label": "none"
     },
     {
@@ -20778,8 +20778,8 @@
       "source_location": "L925",
       "_origin": "ast",
       "id": "cursor_skills_ui_ux_pro_max_scripts_core_exact_stack_identifier",
-      "community": 73,
-      "community_name": "search",
+      "community": 57,
+      "community_name": "search_stack",
       "norm_label": "_exact_stack_identifier()"
     },
     {
@@ -21075,8 +21075,8 @@
       "source_location": "L926",
       "_origin": "ast",
       "id": "cursor_skills_ui_ux_pro_max_scripts_core_rationale_926",
-      "community": 73,
-      "community_name": "search",
+      "community": 57,
+      "community_name": "search_stack",
       "norm_label": "resolve a standalone api identifier even when its bm25 idf is low."
     },
     {
@@ -25549,7 +25549,7 @@
       "label": "StepCard()",
       "file_type": "code",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L246",
+      "source_location": "L268",
       "_origin": "ast",
       "id": "src_components_hero_stepsmodal_stepcard",
       "community": 0,
@@ -25560,7 +25560,7 @@
       "label": "MonoRow()",
       "file_type": "code",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L270",
+      "source_location": "L292",
       "_origin": "ast",
       "id": "src_components_hero_stepsmodal_monorow",
       "community": 0,
@@ -25571,12 +25571,23 @@
       "label": "MiniCell()",
       "file_type": "code",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L278",
+      "source_location": "L300",
       "_origin": "ast",
       "id": "src_components_hero_stepsmodal_minicell",
       "community": 0,
       "community_name": "encrypt.ts",
       "norm_label": "minicell()"
+    },
+    {
+      "label": "GridTraversalAnimation()",
+      "file_type": "code",
+      "source_file": "src/components/hero/StepsModal.tsx",
+      "source_location": "L324",
+      "_origin": "ast",
+      "id": "src_components_hero_stepsmodal_gridtraversalanimation",
+      "community": 0,
+      "community_name": "encrypt.ts",
+      "norm_label": "gridtraversalanimation()"
     },
     {
       "label": "StepCards.tsx",
@@ -50373,83 +50384,6 @@
       "norm_label": "outputs"
     },
     {
-      "label": "ASSET-DROP.md",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_asset_drop",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "asset-drop.md"
-    },
-    {
-      "label": "Asset drop sheet \u2014 what to generate & where",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "asset drop sheet \u2014 what to generate & where"
-    },
-    {
-      "label": "1) Nav brand icon (SVG)",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "docs_asset_drop_1_nav_brand_icon_svg",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "1) nav brand icon (svg)"
-    },
-    {
-      "label": "2) Hero island (main BG)",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "docs_asset_drop_2_hero_island_main_bg",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "2) hero island (main bg)"
-    },
-    {
-      "label": "3) Dirt strata (S1 expand)",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L54",
-      "_origin": "ast",
-      "id": "docs_asset_drop_3_dirt_strata_s1_expand",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "3) dirt strata (s1 expand)"
-    },
-    {
-      "label": "4) Optional mobile island",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L72",
-      "_origin": "ast",
-      "id": "docs_asset_drop_4_optional_mobile_island",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "4) optional mobile island"
-    },
-    {
-      "label": "Checklist",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L83",
-      "_origin": "ast",
-      "id": "docs_asset_drop_checklist",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "checklist"
-    },
-    {
       "label": "Build Log.md",
       "file_type": "document",
       "source_file": "docs/Build Log.md",
@@ -50780,6 +50714,39 @@
       "norm_label": "verification matrix:"
     },
     {
+      "label": "[Wave 2 Moat & Final Polish \u2014 Tasks 94\u2013105 Resolution] \u2014 2026-10-18 19:24",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L362",
+      "_origin": "ast",
+      "id": "docs_build_log_wave_2_moat_final_polish_tasks_94_105_resolution_2026_10_18_19_24",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "[wave 2 moat & final polish \u2014 tasks 94\u2013105 resolution] \u2014 2026-10-18 19:24"
+    },
+    {
+      "label": "Summary of Tasks 94\u2013105 Shipped:",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L364",
+      "_origin": "ast",
+      "id": "docs_build_log_summary_of_tasks_94_105_shipped",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "summary of tasks 94\u2013105 shipped:"
+    },
+    {
+      "label": "Verification Matrix:",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L388",
+      "_origin": "ast",
+      "id": "docs_build_log_verification_matrix_388",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "verification matrix:"
+    },
+    {
       "label": "DRAWBRIDGE-SETUP.md",
       "file_type": "document",
       "source_file": "docs/DRAWBRIDGE-SETUP.md",
@@ -50943,94 +50910,6 @@
       "community": 1,
       "community_name": "Project context \u2014 Enigma landing",
       "norm_label": "dependencies (when scaffolded)"
-    },
-    {
-      "label": "BUILDER-ANTIGRAVITY-AUDIT-PROPOSE.md",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-AUDIT-PROPOSE.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_audit_propose",
-      "community": 256,
-      "community_name": "xl",
-      "norm_label": "builder-antigravity-audit-propose.md"
-    },
-    {
-      "label": "Builder \u2014 Antigravity AUDIT + PROPOSE ONLY (AUTHORITATIVE)",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-AUDIT-PROPOSE.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_audit_propose_builder_antigravity_audit_propose_only_authoritative",
-      "community": 256,
-      "community_name": "xl",
-      "norm_label": "builder \u2014 antigravity audit + propose only (authoritative)"
-    },
-    {
-      "label": "PROMPT",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-AUDIT-PROPOSE.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_audit_propose_prompt",
-      "community": 256,
-      "community_name": "xl",
-      "norm_label": "prompt"
-    },
-    {
-      "label": "End",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-AUDIT-PROPOSE.md",
-      "source_location": "L127",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_audit_propose_end",
-      "community": 256,
-      "community_name": "xl",
-      "norm_label": "end"
-    },
-    {
-      "label": "BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_footer_moat",
-      "community": 248,
-      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "norm_label": "builder-antigravity-footer-moat.md"
-    },
-    {
-      "label": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_footer_moat_builder_antigravity_footer_moat_authoritative",
-      "community": 248,
-      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "norm_label": "builder \u2014 antigravity footer + moat (authoritative)"
-    },
-    {
-      "label": "PROMPT",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_footer_moat_prompt",
-      "community": 248,
-      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "norm_label": "prompt"
-    },
-    {
-      "label": "End",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L165",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_footer_moat_end",
-      "community": 248,
-      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "norm_label": "end"
     },
     {
       "label": "questionnaire.md",
@@ -92996,7 +92875,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L278",
+      "source_location": "L324",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_hero_stepsmodal",
+      "target": "src_components_hero_stepsmodal_gridtraversalanimation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/hero/StepsModal.tsx",
+      "source_location": "L300",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_hero_stepsmodal",
@@ -93007,7 +92897,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L270",
+      "source_location": "L292",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_hero_stepsmodal",
@@ -93018,7 +92908,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L246",
+      "source_location": "L268",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_hero_stepsmodal",
@@ -93045,6 +92935,18 @@
       "_origin": "ast",
       "source": "src_components_hero_stepsmodal",
       "target": "src_components_hero_stepsmodal_stepsmodalprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/hero/StepsModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_hero_stepsmodal",
+      "target": "src_lib_cipher_grid_cipher_grid",
       "confidence_score": 1.0
     },
     {
@@ -117358,72 +117260,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop",
-      "target": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_1_nav_brand_icon_svg",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_2_hero_island_main_bg",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L54",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_3_dirt_strata_s1_expand",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L72",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_4_optional_mobile_island",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L83",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_checklist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "docs/Build Log.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -117507,6 +117343,17 @@
       "_origin": "ast",
       "source": "docs_build_log_build_log_enigma_isle",
       "target": "docs_build_log_2026_10_18_visual_ia_polish_pass_single_source_pass",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L362",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_build_log_enigma_isle",
+      "target": "docs_build_log_wave_2_moat_final_polish_tasks_94_105_resolution_2026_10_18_19_24",
       "confidence_score": 1.0
     },
     {
@@ -117743,6 +117590,28 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L364",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_wave_2_moat_final_polish_tasks_94_105_resolution_2026_10_18_19_24",
+      "target": "docs_build_log_summary_of_tasks_94_105_shipped",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L388",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_wave_2_moat_final_polish_tasks_94_105_resolution_2026_10_18_19_24",
+      "target": "docs_build_log_verification_matrix_388",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/DRAWBRIDGE-SETUP.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -117881,72 +117750,6 @@
       "_origin": "ast",
       "source": "docs_plan_architecture_plan_short",
       "target": "docs_plan_suggested_src_layout_build_phase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-AUDIT-PROPOSE.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_prompts_builder_antigravity_audit_propose",
-      "target": "docs_prompts_builder_antigravity_audit_propose_builder_antigravity_audit_propose_only_authoritative",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-AUDIT-PROPOSE.md",
-      "source_location": "L127",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_prompts_builder_antigravity_audit_propose_builder_antigravity_audit_propose_only_authoritative",
-      "target": "docs_prompts_builder_antigravity_audit_propose_end",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-AUDIT-PROPOSE.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_prompts_builder_antigravity_audit_propose_builder_antigravity_audit_propose_only_authoritative",
-      "target": "docs_prompts_builder_antigravity_audit_propose_prompt",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_prompts_builder_antigravity_footer_moat",
-      "target": "docs_prompts_builder_antigravity_footer_moat_builder_antigravity_footer_moat_authoritative",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L165",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_prompts_builder_antigravity_footer_moat_builder_antigravity_footer_moat_authoritative",
-      "target": "docs_prompts_builder_antigravity_footer_moat_end",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_prompts_builder_antigravity_footer_moat_builder_antigravity_footer_moat_authoritative",
-      "target": "docs_prompts_builder_antigravity_footer_moat_prompt",
       "confidence_score": 1.0
     },
     {
@@ -118545,5 +118348,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "57729e0e4dc575816827673ced76aca09dccffdc"
+  "built_at_commit": "e04023a9b93f73678817518503a56e8b6d5b7cac"
 }

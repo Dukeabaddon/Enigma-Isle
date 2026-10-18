@@ -25,38 +25,38 @@
     "semantic_hash": ""
   },
   "src/components/about/AboutSection.tsx": {
-    "mtime": 1792319690.7837555,
-    "ast_hash": "9c610d7721fd7589680c111b638de885",
+    "mtime": 1792321841.0755858,
+    "ast_hash": "3d49fbf0ed8b3f48705d2f1a0c29a259",
     "semantic_hash": ""
   },
   "src/components/close/TryAgain.tsx": {
-    "mtime": 1792318103.9659452,
-    "ast_hash": "b88218948c5da7c508001469add2ba5d",
+    "mtime": 1792321578.5745401,
+    "ast_hash": "bea6dee92fbf7c3c28ee3a0d7a1c52dc",
     "semantic_hash": ""
   },
   "src/components/hero/HeroWorkbench.tsx": {
-    "mtime": 1792319727.013216,
-    "ast_hash": "4f966cca7b081929488c912af0d3ecb3",
+    "mtime": 1792321601.8167808,
+    "ast_hash": "d8de8564cd7adba276bd392c3d1e35b1",
     "semantic_hash": ""
   },
   "src/components/hero/ResultExpand.tsx": {
-    "mtime": 1792319710.3680873,
-    "ast_hash": "a04c902703312d5b496f6e2272d3ec1a",
+    "mtime": 1792322135.814954,
+    "ast_hash": "ceb58259af646817c59676bddc65718e",
     "semantic_hash": ""
   },
   "src/components/hero/StepsModal.tsx": {
-    "mtime": 1792313703.8510752,
-    "ast_hash": "baa31d3d11ea10b81e5671ecb1f301ff",
+    "mtime": 1792322277.376407,
+    "ast_hash": "91dbc513037d9ac141cc40f99d893537",
     "semantic_hash": ""
   },
   "src/components/journey/StepCards.tsx": {
-    "mtime": 1792319806.227562,
-    "ast_hash": "3173db21eefa361cb48c23499a3b4af6",
+    "mtime": 1792322157.8476057,
+    "ast_hash": "9514311e98f6d4b817a2d60f5746a78f",
     "semantic_hash": ""
   },
   "src/components/layout/Footer.tsx": {
-    "mtime": 1792319655.1550293,
-    "ast_hash": "f86167df329d3396843b783be07152de",
+    "mtime": 1792321564.4854643,
+    "ast_hash": "de93d9295c161c8886b3dde5a17978bc",
     "semantic_hash": ""
   },
   "src/components/layout/Nav.tsx": {
@@ -205,8 +205,8 @@
     "semantic_hash": ""
   },
   "shared/grill-summary.md": {
-    "mtime": 1792319136.2000625,
-    "ast_hash": "777977767853620ae400d1df0f0ab9f3",
+    "mtime": 1792322380.2054505,
+    "ast_hash": "1fb7d054a7a3023b60f378677dab11da",
     "semantic_hash": ""
   },
   "stages/01-discovery/CONTEXT.md": {
@@ -247,31 +247,6 @@
   "stages/05-polish/CONTEXT.md": {
     "mtime": 1792239233.6274383,
     "ast_hash": "9eb550f6cbd9eef5fccf627c99d3c19f",
-    "semantic_hash": ""
-  },
-  "public/images/dirt-strata.png": {
-    "mtime": 1792309581.5760403,
-    "ast_hash": "556b955b4c5bc3d97ebbcee67801cb68",
-    "semantic_hash": ""
-  },
-  "public/images/island.png": {
-    "mtime": 1792309581.5729005,
-    "ast_hash": "1087f65d4d9a1b1a6326782b72100c37",
-    "semantic_hash": ""
-  },
-  "public/images/island.svg": {
-    "mtime": 1792310180.461867,
-    "ast_hash": "103faa37caeb52f4d32676496edd2d5f",
-    "semantic_hash": ""
-  },
-  "public/images/parchment.png": {
-    "mtime": 1792309581.578645,
-    "ast_hash": "8611b28ad1e216a4ae1b20ddf28c08ac",
-    "semantic_hash": ""
-  },
-  "public/images/scroll-map.png": {
-    "mtime": 1792309581.580973,
-    "ast_hash": "29151b00dd70dc7424aedc403404be4b",
     "semantic_hash": ""
   },
   "shots/01-hero-white-fade.png": {
@@ -960,8 +935,8 @@
     "semantic_hash": ""
   },
   ".moat/moat-tasks-detail.json": {
-    "mtime": 1792319849.201757,
-    "ast_hash": "447d7a4adf2dd3cc29f9ef81475520ad",
+    "mtime": 1792322325.0615294,
+    "ast_hash": "7685179612cafa5177e60a8b9dc3c72d",
     "semantic_hash": ""
   },
   "vercel.json": {
@@ -1550,63 +1525,18 @@
     "semantic_hash": ""
   },
   ".moat/moat-tasks.md": {
-    "mtime": 1792319878.2950003,
-    "ast_hash": "d668d1539e4fe307685a7aa989726349",
+    "mtime": 1792322383.372713,
+    "ast_hash": "bc620047ada31be241e153f1dc5d97e2",
     "semantic_hash": ""
   },
   "docs/Build Log.md": {
-    "mtime": 1792318187.0187912,
-    "ast_hash": "a7476e19c65c776971637953eabeec8c",
+    "mtime": 1792321504.5518348,
+    "ast_hash": "9cfef6e8f51efc5bbc4d47eb1c594a05",
     "semantic_hash": ""
   },
   "docs/DRAWBRIDGE-SETUP.md": {
     "mtime": 1792311443.0801244,
     "ast_hash": "2a215ae0f8b298e566eb131ecea76d5e",
-    "semantic_hash": ""
-  },
-  "public/images/parchment-border.png": {
-    "mtime": 1792311579.061571,
-    "ast_hash": "36467a746483676e3e890b9333bad7f5",
-    "semantic_hash": ""
-  },
-  "docs/ASSET-DROP.md": {
-    "mtime": 1792313149.6653373,
-    "ast_hash": "c9967bad6d403b95cf2c66ff7e97198d",
-    "semantic_hash": ""
-  },
-  "public/images/candidates/antigravity/README.md": {
-    "mtime": 1792313582.777676,
-    "ast_hash": "8ad6c232009983c30184ccd106322961",
-    "semantic_hash": ""
-  },
-  "public/images/candidates/antigravity/hero-dirt.png": {
-    "mtime": 1792313572.3371527,
-    "ast_hash": "0f6c760a96355277904dac77d122d5f5",
-    "semantic_hash": ""
-  },
-  "public/images/candidates/antigravity/hero-dirt.webp": {
-    "mtime": 1792313572.450409,
-    "ast_hash": "03e9e6b848662e9cb14802e1e931782f",
-    "semantic_hash": ""
-  },
-  "public/images/candidates/antigravity/hero-island-mobile.webp": {
-    "mtime": 1792313572.5542479,
-    "ast_hash": "d322da0df387c4bbb4a16310dffc64a0",
-    "semantic_hash": ""
-  },
-  "public/images/candidates/antigravity/hero-island.png": {
-    "mtime": 1792313570.9154952,
-    "ast_hash": "b8d0a7ee5cf657090daef732316a2fea",
-    "semantic_hash": ""
-  },
-  "public/images/candidates/antigravity/hero-island.webp": {
-    "mtime": 1792313572.2209947,
-    "ast_hash": "06ef3990bce4babc5fd99baf7c515dbf",
-    "semantic_hash": ""
-  },
-  "public/images/candidates/antigravity/nav-icon.svg": {
-    "mtime": 1792313513.821246,
-    "ast_hash": "522b4ce2b042b8c9fdfd76ac27b8af17",
     "semantic_hash": ""
   },
   "shots/08-island-footer.png": {
@@ -1630,8 +1560,8 @@
     "semantic_hash": ""
   },
   "public/images/nav-icon.webp": {
-    "mtime": 1792314670.778111,
-    "ast_hash": "56631c5542510af64843d32b5c2334e4",
+    "mtime": 1792320087.409935,
+    "ast_hash": "569cc72f65ef21018b0769e14d221ac4",
     "semantic_hash": ""
   },
   "public/images/mascot-enigma.webp": {
@@ -1644,11 +1574,6 @@
     "ast_hash": "af979b6a7919f87b96c865b387223478",
     "semantic_hash": ""
   },
-  "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md": {
-    "mtime": 1792319520.297178,
-    "ast_hash": "e2417db396020b1db0971b98bcbbd096",
-    "semantic_hash": ""
-  },
   "public/images/footer-island.webp": {
     "mtime": 1792319616.3473563,
     "ast_hash": "4bcbfdfc64157b61e30743e9b895798d",
@@ -1657,6 +1582,11 @@
   "public/images/treasure-chest.webp": {
     "mtime": 1792319620.2970448,
     "ast_hash": "8e001cfa8b986fc5e26f49fbaa6b9677",
+    "semantic_hash": ""
+  },
+  "public/images/parchment-border.webp": {
+    "mtime": 1792321402.550343,
+    "ast_hash": "24f7c76db5abd57ebd1a2074ff59b613",
     "semantic_hash": ""
   }
 }

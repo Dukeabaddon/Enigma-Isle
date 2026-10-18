@@ -2,7 +2,7 @@
 
 **Updated:** 2026-10-18  
 **Full capture:** `brainstorms/2026-10-17-college-cipher-landing.md`  
-**Builder prompt (current):** `docs/prompts/BUILDER-GEMINI-ISLAND-PASS.md`
+**Builder prompts:** paste in chat when needed (spent one-time `docs/prompts/` cleared)
 
 ## Product
 

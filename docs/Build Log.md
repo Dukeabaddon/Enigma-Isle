@@ -356,3 +356,37 @@ Candidate assets generated and placed in `public/images/candidates/antigravity/`
 - `npm run build`: 0 errors, 0 warnings (tsc + vite build in 414ms).
 - Moat tasks: 97/97 tasks marked done.
 - Git commits: Atomic commit history tracking every design change.
+
+---
+
+## [Wave 2 Moat & Final Polish — Tasks 94–105 Resolution] — 2026-10-18 19:24
+
+### Summary of Tasks 94–105 Shipped:
+1. **Footer Island Dark Ground Palette (`17a068b5`, `2bfb6d29`):**
+   - Updated solid footer lower ground color to exact hex `#0f1911` matching the bottom foliage band of `footer-island.webp`.
+2. **TryAgain Ambient Vault Glow (`c4ef20b7`):**
+   - Replaced golden ambient light with `#EAE0CA/80` matching the top sand color of the footer sky plate for a continuous atmospheric gradient.
+3. **Hero Wave & 120dvh Geometry (`58f3da48`, `793f7cb8`):**
+   - Hero section set to `min-h-[120dvh]`, island scenic plate container set to `h-[120dvh]`.
+   - Responsive SVG `clipPath` wave cut mapped between 110dvh and 120dvh (`y` points between 0.92 and 0.96 of 120dvh).
+   - Underlay dirt ground set to exact hex `#3c2820`.
+4. **Seamless Dirt Seam S1→S2 (`33fc212d`, `bb6c8989`):**
+   - Removed S2's bottom cream wave SVG. Section 2 (`AboutSection`) now ends with pure `#3c2820` dirt ground.
+   - Synchronized `ResultExpand.tsx` background layers to `#3c2820`.
+5. **Full-Width S3 with Rounded Top Corners on Dirt Ground (`a8d1d1a2`, `04b0bae8`):**
+   - `#encrypt-journey` set to 100% screen width (`w-full`) touching left and right viewport edges without gutters.
+   - Applied `rounded-t-3xl sm:rounded-t-[40px] shadow-2xl` on top of parent `#3c2820` ground so the parchment manuscript curves gracefully into the earth.
+   - Bottom edge flows directly via `#EDF5F1` wave into `#decrypt-journey`.
+6. **Decryption Step 1 Copy Polish (`0d1828f0`):**
+   - Removed "(traversing K)" per Drawbridge comment: *"Applies the exact inverse vectors: left 2 → down 1 → right 1 → down 1 across boundaries."*
+7. **Centered Font-Display Subheading on Cipher Result (`d8683416`):**
+   - Replaced left-aligned status badge with centered `font-display font-extrabold text-sm sm:text-base tracking-wider text-[#B8860B]` subheading, with centered mono output and centered copy button.
+8. **Animated Full 5-Column ABCDE Table in Finisher Step 4 (`fe9f8ad7`):**
+   - Created `GridTraversalAnimation` in `StepsModal.tsx` rendering the full 26-letter 5-column alphabet grid.
+   - Live cyclic animation steps through the 4-hop finisher vector traversal in order (`path` and `labels`) with active glowing highlight and visited states.
+
+### Verification Matrix:
+- `npm run test`: 6/6 tests passing (Vitest).
+- `npm run build`: 0 errors, 0 warnings (tsc + vite build in 502ms).
+- Moat tasks: 105/105 tasks verified and marked done in `.moat/moat-tasks-detail.json` and `.moat/moat-tasks.md`.
+- Git commits: Atomic commit history tracking every design iteration.

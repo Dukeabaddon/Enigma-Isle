@@ -3530,8 +3530,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_radius_none",
-      "community": 254,
-      "community_name": "none",
+      "community": 248,
+      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
       "norm_label": "none"
     },
     {
@@ -3541,8 +3541,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_none_value",
-      "community": 254,
-      "community_name": "none",
+      "community": 248,
+      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
       "norm_label": "$value"
     },
     {
@@ -3552,8 +3552,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_none_type",
-      "community": 254,
-      "community_name": "none",
+      "community": 248,
+      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
       "norm_label": "$type"
     },
     {
@@ -3706,8 +3706,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_shadow_none",
-      "community": 254,
-      "community_name": "none",
+      "community": 248,
+      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
       "norm_label": "none"
     },
     {
@@ -3926,8 +3926,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_foreground",
-      "community": 114,
-      "community_name": "color",
+      "community": 255,
+      "community_name": "padding-y",
       "norm_label": "foreground"
     },
     {
@@ -3937,8 +3937,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_foreground_value",
-      "community": 114,
-      "community_name": "color",
+      "community": 255,
+      "community_name": "padding-y",
       "norm_label": "$value"
     },
     {
@@ -3948,8 +3948,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_foreground_type",
-      "community": 114,
-      "community_name": "color",
+      "community": 255,
+      "community_name": "padding-y",
       "norm_label": "$type"
     },
     {
@@ -3992,8 +3992,8 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_primary_hover",
-      "community": 114,
-      "community_name": "color",
+      "community": 260,
+      "community_name": "16",
       "norm_label": "primary-hover"
     },
     {
@@ -4003,8 +4003,8 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_primary_hover_value",
-      "community": 114,
-      "community_name": "color",
+      "community": 260,
+      "community_name": "16",
       "norm_label": "$value"
     },
     {
@@ -4014,8 +4014,8 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_primary_hover_type",
-      "community": 114,
-      "community_name": "color",
+      "community": 260,
+      "community_name": "16",
       "norm_label": "$type"
     },
     {
@@ -4025,8 +4025,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_primary_foreground",
-      "community": 261,
-      "community_name": "1",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "primary-foreground"
     },
     {
@@ -4036,8 +4036,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_primary_foreground_value",
-      "community": 261,
-      "community_name": "1",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "$value"
     },
     {
@@ -4047,8 +4047,8 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_primary_foreground_type",
-      "community": 261,
-      "community_name": "1",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "$type"
     },
     {
@@ -4091,8 +4091,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_secondary_foreground",
-      "community": 262,
-      "community_name": "3",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "secondary-foreground"
     },
     {
@@ -4102,8 +4102,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_secondary_foreground_value",
-      "community": 262,
-      "community_name": "3",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "$value"
     },
     {
@@ -4113,8 +4113,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_secondary_foreground_type",
-      "community": 262,
-      "community_name": "3",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "$type"
     },
     {
@@ -4157,8 +4157,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_muted_foreground",
-      "community": 114,
-      "community_name": "color",
+      "community": 256,
+      "community_name": "xl",
       "norm_label": "muted-foreground"
     },
     {
@@ -4168,8 +4168,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_muted_foreground_value",
-      "community": 114,
-      "community_name": "color",
+      "community": 256,
+      "community_name": "xl",
       "norm_label": "$value"
     },
     {
@@ -4179,8 +4179,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_muted_foreground_type",
-      "community": 114,
-      "community_name": "color",
+      "community": 256,
+      "community_name": "xl",
       "norm_label": "$type"
     },
     {
@@ -4190,8 +4190,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_destructive",
-      "community": 264,
-      "community_name": "destructive",
+      "community": 254,
+      "community_name": "none",
       "norm_label": "destructive"
     },
     {
@@ -4201,8 +4201,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_destructive_value",
-      "community": 264,
-      "community_name": "destructive",
+      "community": 254,
+      "community_name": "none",
       "norm_label": "$value"
     },
     {
@@ -4212,8 +4212,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_destructive_type",
-      "community": 264,
-      "community_name": "destructive",
+      "community": 254,
+      "community_name": "none",
       "norm_label": "$type"
     },
     {
@@ -4223,8 +4223,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_destructive_foreground",
-      "community": 255,
-      "community_name": "padding-y",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "destructive-foreground"
     },
     {
@@ -4234,8 +4234,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_destructive_foreground_value",
-      "community": 255,
-      "community_name": "padding-y",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "$value"
     },
     {
@@ -4245,8 +4245,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_destructive_foreground_type",
-      "community": 255,
-      "community_name": "padding-y",
+      "community": 114,
+      "community_name": "color",
       "norm_label": "$type"
     },
     {
@@ -4256,8 +4256,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_color_border",
-      "community": 4,
-      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
+      "community": 182,
+      "community_name": "card",
       "norm_label": "border"
     },
     {
@@ -4267,8 +4267,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_border_value",
-      "community": 4,
-      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
+      "community": 182,
+      "community_name": "card",
       "norm_label": "$value"
     },
     {
@@ -4278,8 +4278,8 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_border_type",
-      "community": 4,
-      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
+      "community": 182,
+      "community_name": "card",
       "norm_label": "$type"
     },
     {
@@ -4553,8 +4553,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_button_padding_y",
-      "community": 252,
-      "community_name": "padding-y",
+      "community": 226,
+      "community_name": "input",
       "norm_label": "padding-y"
     },
     {
@@ -4564,8 +4564,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_padding_y_value",
-      "community": 252,
-      "community_name": "padding-y",
+      "community": 226,
+      "community_name": "input",
       "norm_label": "$value"
     },
     {
@@ -4575,8 +4575,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_padding_y_type",
-      "community": 252,
-      "community_name": "padding-y",
+      "community": 226,
+      "community_name": "input",
       "norm_label": "$type"
     },
     {
@@ -4674,8 +4674,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_input_border",
-      "community": 4,
-      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
+      "community": 182,
+      "community_name": "card",
       "norm_label": "border"
     },
     {
@@ -4729,8 +4729,8 @@
       "source_location": "L120",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_input_padding_y",
-      "community": 252,
-      "community_name": "padding-y",
+      "community": 226,
+      "community_name": "input",
       "norm_label": "padding-y"
     },
     {
@@ -4773,8 +4773,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "agents_skills_design_system_templates_design_tokens_starter_card_border",
-      "community": 4,
-      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
+      "community": 182,
+      "community_name": "card",
       "norm_label": "border"
     },
     {
@@ -8414,8 +8414,8 @@
       "source_location": "L925",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_exact_stack_identifier",
-      "community": 68,
-      "community_name": "search",
+      "community": 54,
+      "community_name": "search_stack",
       "norm_label": "_exact_stack_identifier()"
     },
     {
@@ -8711,8 +8711,8 @@
       "source_location": "L926",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_core_rationale_926",
-      "community": 68,
-      "community_name": "search",
+      "community": 54,
+      "community_name": "search_stack",
       "norm_label": "resolve a standalone api identifier even when its bm25 idf is low."
     },
     {
@@ -8865,8 +8865,8 @@
       "source_location": "L258",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": "designsystemgenerator"
     },
     {
@@ -8876,8 +8876,8 @@
       "source_location": "L261",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator_init",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".__init__()"
     },
     {
@@ -8887,8 +8887,8 @@
       "source_location": "L267",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator_load_reasoning",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": "._load_reasoning()"
     },
     {
@@ -8898,8 +8898,8 @@
       "source_location": "L275",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator_load_styles",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": "._load_styles()"
     },
     {
@@ -8909,8 +8909,8 @@
       "source_location": "L282",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator_load_landing_patterns",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": "._load_landing_patterns()"
     },
     {
@@ -8920,8 +8920,8 @@
       "source_location": "L297",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_designsystemgenerator_build_style_lookup",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": "._build_style_lookup()"
     },
     {
@@ -9272,8 +9272,8 @@
       "source_location": "L259",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_259",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": "generates design system recommendations from aggregated searches."
     },
     {
@@ -9283,8 +9283,8 @@
       "source_location": "L268",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_design_system_rationale_268",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": "load reasoning rules from csv."
     },
     {
@@ -10240,8 +10240,8 @@
       "source_location": "L313",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testreasoningmatch",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": "testreasoningmatch"
     },
     {
@@ -10251,8 +10251,8 @@
       "source_location": "L314",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testreasoningmatch_test_known_category_matches_exactly",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_known_category_matches_exactly()"
     },
     {
@@ -10262,8 +10262,8 @@
       "source_location": "L319",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_core_testreasoningmatch_test_unknown_category_falls_back_gracefully",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_unknown_category_falls_back_gracefully()"
     },
     {
@@ -10581,8 +10581,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_data_contracts_testreasoningcontract",
-      "community": 61,
-      "community_name": "read_rows",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": "testreasoningcontract"
     },
     {
@@ -10636,8 +10636,8 @@
       "source_location": "L133",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_data_contracts_testreasoningcontract_test_generator_matches_reasoning_exactly_and_defaults_only_for_unknown",
-      "community": 61,
-      "community_name": "read_rows",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_generator_matches_reasoning_exactly_and_defaults_only_for_unknown()"
     },
     {
@@ -10658,8 +10658,8 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_data_contracts_testreasoningcontract_test_every_known_product_generates_a_traceable_landing_pattern",
-      "community": 61,
-      "community_name": "read_rows",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_every_known_product_generates_a_traceable_landing_pattern()"
     },
     {
@@ -10669,8 +10669,8 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_data_contracts_testreasoningcontract_test_representative_new_products_generate_traceable_sources",
-      "community": 61,
-      "community_name": "read_rows",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_representative_new_products_generate_traceable_sources()"
     },
     {
@@ -10680,8 +10680,8 @@
       "source_location": "L187",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_data_contracts_testreasoningcontract_test_constraints_reach_domain_queries",
-      "community": 61,
-      "community_name": "read_rows",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_constraints_reach_domain_queries()"
     },
     {
@@ -10691,8 +10691,8 @@
       "source_location": "L209",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_data_contracts_testreasoningcontract_test_canonical_style_priority_is_not_limited_to_bm25_top_three",
-      "community": 61,
-      "community_name": "read_rows",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_canonical_style_priority_is_not_limited_to_bm25_top_three()"
     },
     {
@@ -10702,8 +10702,8 @@
       "source_location": "L218",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_data_contracts_testreasoningcontract_test_duplicate_semantic_reasoning_labels_fail_validation",
-      "community": 61,
-      "community_name": "read_rows",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_duplicate_semantic_reasoning_labels_fail_validation()"
     },
     {
@@ -10713,8 +10713,8 @@
       "source_location": "L231",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_data_contracts_testreasoningcontract_test_every_exact_product_label_resolves_to_itself",
-      "community": 61,
-      "community_name": "read_rows",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_every_exact_product_label_resolves_to_itself()"
     },
     {
@@ -10724,8 +10724,8 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_data_contracts_testreasoningcontract_test_style_aliases_have_one_exact_owner",
-      "community": 61,
-      "community_name": "read_rows",
+      "community": 4,
+      "community_name": "Antigravity / Gemini build prompt \u2014 Enigma Isle",
       "norm_label": ".test_style_aliases_have_one_exact_owner()"
     },
     {
@@ -11109,8 +11109,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": "testendtoendcoherence"
     },
     {
@@ -11142,8 +11142,8 @@
       "source_location": "L171",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_dark_query_foreground_is_lighter_than_background",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": ".test_dark_query_foreground_is_lighter_than_background()"
     },
     {
@@ -11153,8 +11153,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_dark_query_does_not_advise_against_dark_mode",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": ".test_dark_query_does_not_advise_against_dark_mode()"
     },
     {
@@ -11164,8 +11164,8 @@
       "source_location": "L183",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_testendtoendcoherence_test_light_query_keeps_a_light_background",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": ".test_light_query_keeps_a_light_background()"
     },
     {
@@ -11175,8 +11175,8 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "agents_skills_ui_ux_pro_max_scripts_tests_test_design_system_mode_rationale_139",
-      "community": 60,
-      "community_name": "DesignSystemGenerator",
+      "community": 93,
+      "community_name": "_select_palette_for_mode",
       "norm_label": "the exact reproduction from issue #428."
     },
     {
@@ -15278,8 +15278,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_1",
-      "community": 266,
-      "community_name": "1",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "1"
     },
     {
@@ -15289,8 +15289,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_1_value",
-      "community": 266,
-      "community_name": "1",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "$value"
     },
     {
@@ -15300,8 +15300,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_1_type",
-      "community": 266,
-      "community_name": "1",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "$type"
     },
     {
@@ -15311,8 +15311,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_2",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 262,
+      "community_name": "3",
       "norm_label": "2"
     },
     {
@@ -15322,8 +15322,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_2_value",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 262,
+      "community_name": "3",
       "norm_label": "$value"
     },
     {
@@ -15333,8 +15333,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_2_type",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 262,
+      "community_name": "3",
       "norm_label": "$type"
     },
     {
@@ -15344,8 +15344,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_3",
-      "community": 267,
-      "community_name": "3",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "3"
     },
     {
@@ -15355,8 +15355,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_3_value",
-      "community": 267,
-      "community_name": "3",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "$value"
     },
     {
@@ -15366,8 +15366,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_3_type",
-      "community": 267,
-      "community_name": "3",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "$type"
     },
     {
@@ -15377,8 +15377,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_4",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 264,
+      "community_name": "destructive",
       "norm_label": "4"
     },
     {
@@ -15388,8 +15388,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_4_value",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 264,
+      "community_name": "destructive",
       "norm_label": "$value"
     },
     {
@@ -15399,8 +15399,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_4_type",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 264,
+      "community_name": "destructive",
       "norm_label": "$type"
     },
     {
@@ -15542,8 +15542,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_12",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 261,
+      "community_name": "1",
       "norm_label": "12"
     },
     {
@@ -15553,8 +15553,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_12_value",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 261,
+      "community_name": "1",
       "norm_label": "$value"
     },
     {
@@ -15564,8 +15564,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_12_type",
-      "community": 100,
-      "community_name": "spacing",
+      "community": 261,
+      "community_name": "1",
       "norm_label": "$type"
     },
     {
@@ -15575,8 +15575,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_spacing_16",
-      "community": 265,
-      "community_name": "16",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "16"
     },
     {
@@ -15586,8 +15586,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_16_value",
-      "community": 265,
-      "community_name": "16",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "$value"
     },
     {
@@ -15597,8 +15597,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_16_type",
-      "community": 265,
-      "community_name": "16",
+      "community": 100,
+      "community_name": "spacing",
       "norm_label": "$type"
     },
     {
@@ -15751,8 +15751,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_fontsize_xl",
-      "community": 256,
-      "community_name": "xl",
+      "community": 245,
+      "community_name": "none",
       "norm_label": "xl"
     },
     {
@@ -15762,8 +15762,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_xl_value",
-      "community": 256,
-      "community_name": "xl",
+      "community": 245,
+      "community_name": "none",
       "norm_label": "$value"
     },
     {
@@ -15773,8 +15773,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_xl_type",
-      "community": 256,
-      "community_name": "xl",
+      "community": 245,
+      "community_name": "none",
       "norm_label": "$type"
     },
     {
@@ -15894,8 +15894,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_radius_none",
-      "community": 245,
-      "community_name": "none",
+      "community": 252,
+      "community_name": "padding-y",
       "norm_label": "none"
     },
     {
@@ -15905,8 +15905,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_none_value",
-      "community": 245,
-      "community_name": "none",
+      "community": 252,
+      "community_name": "padding-y",
       "norm_label": "$value"
     },
     {
@@ -15916,8 +15916,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_none_type",
-      "community": 245,
-      "community_name": "none",
+      "community": 252,
+      "community_name": "padding-y",
       "norm_label": "$type"
     },
     {
@@ -16015,8 +16015,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_radius_xl",
-      "community": 256,
-      "community_name": "xl",
+      "community": 245,
+      "community_name": "none",
       "norm_label": "xl"
     },
     {
@@ -16070,8 +16070,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "cursor_skills_design_system_templates_design_tokens_starter_shadow_none",
-      "community": 245,
-      "community_name": "none",
+      "community": 252,
+      "community_name": "padding-y",
       "norm_label": "none"
     },
     {
@@ -25549,7 +25549,7 @@
       "label": "StepCard()",
       "file_type": "code",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L246",
+      "source_location": "L268",
       "_origin": "ast",
       "id": "src_components_hero_stepsmodal_stepcard",
       "community": 0,
@@ -25560,7 +25560,7 @@
       "label": "MonoRow()",
       "file_type": "code",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L270",
+      "source_location": "L292",
       "_origin": "ast",
       "id": "src_components_hero_stepsmodal_monorow",
       "community": 0,
@@ -25571,12 +25571,23 @@
       "label": "MiniCell()",
       "file_type": "code",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L278",
+      "source_location": "L300",
       "_origin": "ast",
       "id": "src_components_hero_stepsmodal_minicell",
       "community": 0,
       "community_name": "encrypt.ts",
       "norm_label": "minicell()"
+    },
+    {
+      "label": "GridTraversalAnimation()",
+      "file_type": "code",
+      "source_file": "src/components/hero/StepsModal.tsx",
+      "source_location": "L324",
+      "_origin": "ast",
+      "id": "src_components_hero_stepsmodal_gridtraversalanimation",
+      "community": 0,
+      "community_name": "encrypt.ts",
+      "norm_label": "gridtraversalanimation()"
     },
     {
       "label": "StepCards.tsx",
@@ -50373,83 +50384,6 @@
       "norm_label": "outputs"
     },
     {
-      "label": "ASSET-DROP.md",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_asset_drop",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "asset-drop.md"
-    },
-    {
-      "label": "Asset drop sheet \u2014 what to generate & where",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "asset drop sheet \u2014 what to generate & where"
-    },
-    {
-      "label": "1) Nav brand icon (SVG)",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "docs_asset_drop_1_nav_brand_icon_svg",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "1) nav brand icon (svg)"
-    },
-    {
-      "label": "2) Hero island (main BG)",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "docs_asset_drop_2_hero_island_main_bg",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "2) hero island (main bg)"
-    },
-    {
-      "label": "3) Dirt strata (S1 expand)",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L54",
-      "_origin": "ast",
-      "id": "docs_asset_drop_3_dirt_strata_s1_expand",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "3) dirt strata (s1 expand)"
-    },
-    {
-      "label": "4) Optional mobile island",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L72",
-      "_origin": "ast",
-      "id": "docs_asset_drop_4_optional_mobile_island",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "4) optional mobile island"
-    },
-    {
-      "label": "Checklist",
-      "file_type": "document",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L83",
-      "_origin": "ast",
-      "id": "docs_asset_drop_checklist",
-      "community": 260,
-      "community_name": "16",
-      "norm_label": "checklist"
-    },
-    {
       "label": "Build Log.md",
       "file_type": "document",
       "source_file": "docs/Build Log.md",
@@ -50703,6 +50637,83 @@
       "norm_label": "verification matrix:"
     },
     {
+      "label": "2026-10-18 \u2013 Footer Island Wire-up, Seam Refinement & Moat Tasks 59\u201385 Complete",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "docs_build_log_2026_10_18_footer_island_wire_up_seam_refinement_moat_tasks_59_85_complete",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "2026-10-18 \u2013 footer island wire-up, seam refinement & moat tasks 59\u201385 complete"
+    },
+    {
+      "label": "Status: Complete & Verified",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L262",
+      "_origin": "ast",
+      "id": "docs_build_log_status_complete_verified_262",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "status: complete & verified"
+    },
+    {
+      "label": "Implemented Enhancements:",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L265",
+      "_origin": "ast",
+      "id": "docs_build_log_implemented_enhancements_265",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "implemented enhancements:"
+    },
+    {
+      "label": "Verification Matrix:",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L296",
+      "_origin": "ast",
+      "id": "docs_build_log_verification_matrix_296",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "verification matrix:"
+    },
+    {
+      "label": "[Wave 2 Moat & Seam Resolution \u2014 Final Architectural Pass] \u2014 2026-10-18 19:05",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L317",
+      "_origin": "ast",
+      "id": "docs_build_log_wave_2_moat_seam_resolution_final_architectural_pass_2026_10_18_19_05",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "[wave 2 moat & seam resolution \u2014 final architectural pass] \u2014 2026-10-18 19:05"
+    },
+    {
+      "label": "Core Deliverables Shipped:",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L319",
+      "_origin": "ast",
+      "id": "docs_build_log_core_deliverables_shipped",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "core deliverables shipped:"
+    },
+    {
+      "label": "Verification Matrix:",
+      "file_type": "document",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L354",
+      "_origin": "ast",
+      "id": "docs_build_log_verification_matrix_354",
+      "community": 241,
+      "community_name": "Build Log \u2014 Enigma Isle",
+      "norm_label": "verification matrix:"
+    },
+    {
       "label": "DRAWBRIDGE-SETUP.md",
       "file_type": "document",
       "source_file": "docs/DRAWBRIDGE-SETUP.md",
@@ -50866,94 +50877,6 @@
       "community": 1,
       "community_name": "Project context \u2014 Enigma landing",
       "norm_label": "dependencies (when scaffolded)"
-    },
-    {
-      "label": "BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_footer_moat",
-      "community": 248,
-      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "norm_label": "builder-antigravity-footer-moat.md"
-    },
-    {
-      "label": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_footer_moat_builder_antigravity_footer_moat_authoritative",
-      "community": 248,
-      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "norm_label": "builder \u2014 antigravity footer + moat (authoritative)"
-    },
-    {
-      "label": "PROMPT",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_footer_moat_prompt",
-      "community": 248,
-      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "norm_label": "prompt"
-    },
-    {
-      "label": "End",
-      "file_type": "document",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L165",
-      "_origin": "ast",
-      "id": "docs_prompts_builder_antigravity_footer_moat_end",
-      "community": 248,
-      "community_name": "Builder \u2014 Antigravity Footer + Moat (AUTHORITATIVE)",
-      "norm_label": "end"
-    },
-    {
-      "label": "README.md",
-      "file_type": "document",
-      "source_file": "public/images/candidates/antigravity/README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "public_images_candidates_antigravity_readme",
-      "community": 276,
-      "community_name": "4",
-      "norm_label": "readme.md"
-    },
-    {
-      "label": "Antigravity Candidate Assets \u2014 Enigma Isle",
-      "file_type": "document",
-      "source_file": "public/images/candidates/antigravity/README.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "public_images_candidates_antigravity_readme_antigravity_candidate_assets_enigma_isle",
-      "community": 276,
-      "community_name": "4",
-      "norm_label": "antigravity candidate assets \u2014 enigma isle"
-    },
-    {
-      "label": "Assets Generated",
-      "file_type": "document",
-      "source_file": "public/images/candidates/antigravity/README.md",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "public_images_candidates_antigravity_readme_assets_generated",
-      "community": 276,
-      "community_name": "4",
-      "norm_label": "assets generated"
-    },
-    {
-      "label": "Canonical Drop Locations",
-      "file_type": "document",
-      "source_file": "public/images/candidates/antigravity/README.md",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "public_images_candidates_antigravity_readme_canonical_drop_locations",
-      "community": 276,
-      "community_name": "4",
-      "norm_label": "canonical drop locations"
     },
     {
       "label": "questionnaire.md",
@@ -92538,18 +92461,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app",
-      "target": "src_components_close_tryagain_tryagain",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -92931,7 +92842,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L278",
+      "source_location": "L324",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_hero_stepsmodal",
+      "target": "src_components_hero_stepsmodal_gridtraversalanimation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/hero/StepsModal.tsx",
+      "source_location": "L300",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_hero_stepsmodal",
@@ -92942,7 +92864,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L270",
+      "source_location": "L292",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_hero_stepsmodal",
@@ -92953,7 +92875,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/hero/StepsModal.tsx",
-      "source_location": "L246",
+      "source_location": "L268",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_hero_stepsmodal",
@@ -92980,6 +92902,18 @@
       "_origin": "ast",
       "source": "src_components_hero_stepsmodal",
       "target": "src_components_hero_stepsmodal_stepsmodalprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/hero/StepsModal.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_hero_stepsmodal",
+      "target": "src_lib_cipher_grid_cipher_grid",
       "confidence_score": 1.0
     },
     {
@@ -117293,72 +117227,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop",
-      "target": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_1_nav_brand_icon_svg",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_2_hero_island_main_bg",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L54",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_3_dirt_strata_s1_expand",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L72",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_4_optional_mobile_island",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/ASSET-DROP.md",
-      "source_location": "L83",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_asset_drop_asset_drop_sheet_what_to_generate_where",
-      "target": "docs_asset_drop_checklist",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "docs/Build Log.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -117376,6 +117244,17 @@
       "_origin": "ast",
       "source": "docs_build_log_build_log_enigma_isle",
       "target": "docs_build_log_2026_10_18_drawbridge_moat_wave_2_tasks_23_40_complete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_build_log_enigma_isle",
+      "target": "docs_build_log_2026_10_18_footer_island_wire_up_seam_refinement_moat_tasks_59_85_complete",
       "confidence_score": 1.0
     },
     {
@@ -117431,6 +117310,17 @@
       "_origin": "ast",
       "source": "docs_build_log_build_log_enigma_isle",
       "target": "docs_build_log_2026_10_18_visual_ia_polish_pass_single_source_pass",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L317",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_build_log_enigma_isle",
+      "target": "docs_build_log_wave_2_moat_seam_resolution_final_architectural_pass_2026_10_18_19_05",
       "confidence_score": 1.0
     },
     {
@@ -117601,6 +117491,61 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L265",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_2026_10_18_footer_island_wire_up_seam_refinement_moat_tasks_59_85_complete",
+      "target": "docs_build_log_implemented_enhancements_265",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L262",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_2026_10_18_footer_island_wire_up_seam_refinement_moat_tasks_59_85_complete",
+      "target": "docs_build_log_status_complete_verified_262",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L296",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_2026_10_18_footer_island_wire_up_seam_refinement_moat_tasks_59_85_complete",
+      "target": "docs_build_log_verification_matrix_296",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L319",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_wave_2_moat_seam_resolution_final_architectural_pass_2026_10_18_19_05",
+      "target": "docs_build_log_core_deliverables_shipped",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Build Log.md",
+      "source_location": "L354",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_build_log_wave_2_moat_seam_resolution_final_architectural_pass_2026_10_18_19_05",
+      "target": "docs_build_log_verification_matrix_354",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/DRAWBRIDGE-SETUP.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -117739,72 +117684,6 @@
       "_origin": "ast",
       "source": "docs_plan_architecture_plan_short",
       "target": "docs_plan_suggested_src_layout_build_phase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_prompts_builder_antigravity_footer_moat",
-      "target": "docs_prompts_builder_antigravity_footer_moat_builder_antigravity_footer_moat_authoritative",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L165",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_prompts_builder_antigravity_footer_moat_builder_antigravity_footer_moat_authoritative",
-      "target": "docs_prompts_builder_antigravity_footer_moat_end",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/prompts/BUILDER-ANTIGRAVITY-FOOTER-MOAT.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "docs_prompts_builder_antigravity_footer_moat_builder_antigravity_footer_moat_authoritative",
-      "target": "docs_prompts_builder_antigravity_footer_moat_prompt",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/images/candidates/antigravity/README.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "public_images_candidates_antigravity_readme",
-      "target": "public_images_candidates_antigravity_readme_antigravity_candidate_assets_enigma_isle",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/images/candidates/antigravity/README.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "public_images_candidates_antigravity_readme_antigravity_candidate_assets_enigma_isle",
-      "target": "public_images_candidates_antigravity_readme_assets_generated",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "public/images/candidates/antigravity/README.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "public_images_candidates_antigravity_readme_antigravity_candidate_assets_enigma_isle",
-      "target": "public_images_candidates_antigravity_readme_canonical_drop_locations",
       "confidence_score": 1.0
     },
     {
@@ -118402,5 +118281,6 @@
       "confidence_score": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "e68f651fdad388253a389579e1d5d274cd88cfcd"
 }

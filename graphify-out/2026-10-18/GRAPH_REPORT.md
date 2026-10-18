@@ -1,13 +1,18 @@
 # Graph Report - enigma  (2026-10-18)
 
 ## Corpus Check
-- 286 files · ~939,050 words
+- 283 files · ~704,888 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4712 nodes · 5926 edges · 353 communities (272 shown, 81 thin omitted)
+- 4705 nodes · 5922 edges · 349 communities (268 shown, 81 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 434 edges (avg confidence: 0.74)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `e68f651f`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - encrypt.ts
@@ -273,9 +278,6 @@
 - 3
 - 8
 - destructive
-- 16
-- 1
-- 3
 - ring
 - 8
 - .__init__
@@ -284,7 +286,6 @@
 - main
 - destructive
 - destructive-foreground
-- 4
 - muted
 - secondary-foreground
 - primary-foreground
@@ -388,11 +389,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (353 total, 81 thin omitted)
+## Communities (349 total, 81 thin omitted)
 
 ### Community 0 - "encrypt.ts"
-Cohesion: 0.08
-Nodes (38): App(), AbcdTable(), AboutSection(), TryAgain(), HeroWorkbench(), ResultExpand(), ResultExpandProps, StepsModalProps (+30 more)
+Cohesion: 0.07
+Nodes (37): App(), AbcdTable(), AboutSection(), HeroWorkbench(), ResultExpand(), ResultExpandProps, StepsModalProps, StepCards() (+29 more)
 
 ### Community 1 - "Project context — Enigma landing"
 Cohesion: 0.05
@@ -403,8 +404,8 @@ Cohesion: 0.08
 Nodes (23): DOM, DOM.Iterable, ES2020, src, compilerOptions, allowImportingTsExtensions, isolatedModules, jsx (+15 more)
 
 ### Community 4 - "Antigravity / Gemini build prompt — Enigma Isle"
-Cohesion: 0.60
-Nodes (5): $type, $value, border, border, border
+Cohesion: 0.17
+Nodes (5): DesignSystemGenerator, Generates design system recommendations from aggregated searches., Load reasoning rules from CSV., TestReasoningMatch, TestReasoningContract
 
 ### Community 5 - "001 — Stack: Vite + React + TypeScript + Tailwind + Framer Motion"
 Cohesion: 0.11
@@ -591,8 +592,8 @@ Cohesion: 0.11
 Nodes (27): _contains_phrase(), _domain_keywords(), _file_signature(), _get_bm25(), _load_csv(), _load_csv_snapshot(), _load_product_keywords(), _load_rows_or_empty() (+19 more)
 
 ### Community 54 - "search_stack"
-Cohesion: 0.10
-Nodes (8): _project_row(), Search stack-specific guidelines, search_stack(), _valid_max_results(), _rows(), TestNativeDesktopStackFreshness, _rows(), TestWebStackFreshness
+Cohesion: 0.09
+Nodes (10): _exact_stack_identifier(), _project_row(), Resolve a standalone API identifier even when its BM25 IDF is low., Search stack-specific guidelines, search_stack(), _valid_max_results(), _rows(), TestNativeDesktopStackFreshness (+2 more)
 
 ### Community 55 - "design_system.py"
 Cohesion: 0.09
@@ -615,12 +616,12 @@ Cohesion: 0.06
 Nodes (30): Accessibility, Base System, Best Practices, Clean & Modern, Common Font Pairings, Contrast Requirements, CSS Implementation, Editorial (+22 more)
 
 ### Community 60 - "DesignSystemGenerator"
-Cohesion: 0.10
-Nodes (14): DesignSystemGenerator, Generates design system recommendations from aggregated searches., Load reasoning rules from CSV., Execute searches across multiple domains., Find matching reasoning rule for a category., Apply reasoning rules to search results., Select best matching result based on priority keywords., Extract results list from search result dict. (+6 more)
+Cohesion: 0.14
+Nodes (8): Execute searches across multiple domains., Find matching reasoning rule for a category., Apply reasoning rules to search results., Select best matching result based on priority keywords., Extract results list from search result dict., Generate complete design system recommendation.          variance/motion/density, Bucket a 1-10 dial value into its tier config. Returns None if value is None., _resolve_dial()
 
 ### Community 61 - "read_rows"
-Cohesion: 0.11
-Nodes (7): read_rows(), split_values(), style_identities(), TestGeneratedCatalogContract, TestLandingAndStackContract, TestReasoningContract, TestStyleIdentityContract
+Cohesion: 0.15
+Nodes (6): read_rows(), split_values(), style_identities(), TestGeneratedCatalogContract, TestLandingAndStackContract, TestStyleIdentityContract
 
 ### Community 62 - "Typography Specifications"
 Cohesion: 0.06
@@ -647,8 +648,8 @@ Cohesion: 0.07
 Nodes (15): Test TailwindConfigGenerator class., Test that adding same plugin twice doesn't duplicate., Test generating config with custom colors., Test generating config with plugins., Test writing configuration to file., Test writing config to invalid path., Test generating complete TypeScript configuration., Test initialization with different frameworks. (+7 more)
 
 ### Community 68 - "search"
-Cohesion: 0.10
-Nodes (9): _exact_stack_identifier(), Resolve a deprecated in-domain alias, or expose a cross-domain redirect., Main search function with auto-domain detection, Resolve a standalone API identifier even when its BM25 IDF is low., search(), _style_search_destination(), TestSearchDomains, read_rows() (+1 more)
+Cohesion: 0.11
+Nodes (7): Resolve a deprecated in-domain alias, or expose a cross-domain redirect., Main search function with auto-domain detection, search(), _style_search_destination(), TestSearchDomains, read_rows(), TestStyleTaxonomy
 
 ### Community 69 - "Logo Usage Rules"
 Cohesion: 0.07
@@ -747,8 +748,8 @@ Cohesion: 0.08
 Nodes (23): Art Direction Styles (Reuse from Banner), Color & Contrast, Design Best Practices, HTML Design Rules, HTML Template Structure, Option A: Chrome Headless CLI (Recommended — zero dependencies), Option B: chrome-devtools skill, Option C: Playwright script (+15 more)
 
 ### Community 93 - "_select_palette_for_mode"
-Cohesion: 0.12
-Nodes (12): _contrast_ratio(), _derive_dark_palette(), _palette_is_dark(), WCAG relative luminance of a #RRGGBB string, or None if unparseable., True when a colors.csv row's Background is a dark surface., WCAG contrast ratio for two hex colors, or None if either is invalid., Keep product brand tokens while deriving accessible dark surfaces., Pick the highest-ranked palette matching the resolved mode.      Only the dark c (+4 more)
+Cohesion: 0.10
+Nodes (14): _contrast_ratio(), _derive_dark_palette(), _palette_is_dark(), WCAG relative luminance of a #RRGGBB string, or None if unparseable., True when a colors.csv row's Background is a dark surface., WCAG contrast ratio for two hex colors, or None if either is invalid., Keep product brand tokens while deriving accessible dark surfaces., Pick the highest-ranked palette matching the resolved mode.      Only the dark c (+6 more)
 
 ### Community 94 - "Workflow"
 Cohesion: 0.08
@@ -832,7 +833,7 @@ Nodes (18): 1. Wordmark (Logotype), 2. Lettermark (Monogram), 3. Pictorial Mark 
 
 ### Community 114 - "color"
 Cohesion: 0.11
-Nodes (19): $type, $value, background, foreground, muted-foreground, primary, primary-hover, secondary (+11 more)
+Nodes (19): $type, $value, background, destructive-foreground, primary, primary-foreground, secondary, secondary-foreground (+11 more)
 
 ### Community 115 - "Asset Organization Guide"
 Cohesion: 0.11
@@ -1095,8 +1096,8 @@ Cohesion: 0.24
 Nodes (11): extensions, formatReport(), fs, getFiles(), main(), parseArgs(), path, patterns (+3 more)
 
 ### Community 182 - "card"
-Cohesion: 0.20
-Nodes (12): $type, $value, bg, bg, padding, shadow, card, bg (+4 more)
+Cohesion: 0.15
+Nodes (17): $type, $value, $type, $value, bg, bg, border, padding (+9 more)
 
 ### Community 183 - ".generate_config_string"
 Cohesion: 0.20
@@ -1271,8 +1272,8 @@ Cohesion: 0.67
 Nodes (3): $type, $value, 16
 
 ### Community 226 - "input"
-Cohesion: 0.29
-Nodes (8): padding-x, input, $type, $value, focus-ring, padding-x, $type, $value
+Cohesion: 0.20
+Nodes (12): padding-x, padding-y, input, $type, $value, focus-ring, padding-x, padding-y (+4 more)
 
 ### Community 227 - "_suggest_identities"
 Cohesion: 0.25
@@ -1331,8 +1332,8 @@ Cohesion: 0.33
 Nodes (5): References (Knowledge Base), Routing, Slides, Subcommands, When to Use
 
 ### Community 241 - "Build Log — Enigma Isle"
-Cohesion: 0.09
-Nodes (22): 2026-10-18 – Drawbridge Moat Wave 2 (Tasks 23–40 Complete), 2026-10-18 – Mascot + Woodboard Wire-up & Moat Follow-up (Tasks 41–58 Complete), 2026-10-18 — Slice 1: Full Implementation & Verification, 2026-10-18 — Slice 2: Drawbridge Moat Batch (Batch Bridge), 2026-10-18 — Slice 3: Moat Batch + Parallel Asset Race, 2026-10-18 – Visual / IA Polish Pass (Single Source Pass), Build Log — Enigma Isle, Implemented Enhancements: (+14 more)
+Cohesion: 0.07
+Nodes (29): 2026-10-18 – Drawbridge Moat Wave 2 (Tasks 23–40 Complete), 2026-10-18 – Footer Island Wire-up, Seam Refinement & Moat Tasks 59–85 Complete, 2026-10-18 – Mascot + Woodboard Wire-up & Moat Follow-up (Tasks 41–58 Complete), 2026-10-18 — Slice 1: Full Implementation & Verification, 2026-10-18 — Slice 2: Drawbridge Moat Batch (Batch Bridge), 2026-10-18 — Slice 3: Moat Batch + Parallel Asset Race, 2026-10-18 – Visual / IA Polish Pass (Single Source Pass), Build Log — Enigma Isle (+21 more)
 
 ### Community 242 - "Brand Guidelines Template"
 Cohesion: 0.40
@@ -1348,7 +1349,7 @@ Nodes (5): radius, radius, radius, $type, $value
 
 ### Community 245 - "none"
 Cohesion: 0.67
-Nodes (4): $type, $value, none, none
+Nodes (4): xl, xl, $type, $value
 
 ### Community 246 - "sm"
 Cohesion: 0.60
@@ -1359,8 +1360,8 @@ Cohesion: 0.40
 Nodes (4): Brand Guidelines Template, Document Structure, Extractable Fields, Usage
 
 ### Community 248 - "Builder — Antigravity Footer + Moat (AUTHORITATIVE)"
-Cohesion: 0.50
-Nodes (3): Builder — Antigravity Footer + Moat (AUTHORITATIVE), End, PROMPT
+Cohesion: 0.67
+Nodes (4): $type, $value, none, none
 
 ### Community 249 - "1"
 Cohesion: 0.67
@@ -1376,7 +1377,7 @@ Nodes (5): sm, sm, sm, $type, $value
 
 ### Community 252 - "padding-y"
 Cohesion: 0.67
-Nodes (4): padding-y, padding-y, $type, $value
+Nodes (4): $type, $value, none, none
 
 ### Community 253 - "xl"
 Cohesion: 0.67
@@ -1384,31 +1385,31 @@ Nodes (4): xl, xl, $type, $value
 
 ### Community 254 - "none"
 Cohesion: 0.67
-Nodes (4): $type, $value, none, none
+Nodes (3): destructive, $type, $value
 
 ### Community 255 - "padding-y"
 Cohesion: 0.67
-Nodes (3): destructive-foreground, $type, $value
+Nodes (3): foreground, $type, $value
 
 ### Community 256 - "xl"
 Cohesion: 0.67
-Nodes (4): xl, xl, $type, $value
+Nodes (3): muted-foreground, $type, $value
 
 ### Community 257 - "md"
 Cohesion: 0.67
 Nodes (3): muted, $type, $value
 
 ### Community 260 - "16"
-Cohesion: 0.29
-Nodes (6): 1) Nav brand icon (SVG), 2) Hero island (main BG), 3) Dirt strata (S1 expand), 4) Optional mobile island, Asset drop sheet — what to generate & where, Checklist
+Cohesion: 0.67
+Nodes (3): primary-hover, $type, $value
 
 ### Community 261 - "1"
 Cohesion: 0.67
-Nodes (3): primary-foreground, $type, $value
+Nodes (3): $type, $value, 12
 
 ### Community 262 - "3"
 Cohesion: 0.67
-Nodes (3): secondary-foreground, $type, $value
+Nodes (3): $type, $value, 2
 
 ### Community 263 - "8"
 Cohesion: 0.67
@@ -1416,19 +1417,7 @@ Nodes (3): $type, $value, 8
 
 ### Community 264 - "destructive"
 Cohesion: 0.67
-Nodes (3): destructive, $type, $value
-
-### Community 265 - "16"
-Cohesion: 0.67
-Nodes (3): $type, $value, 16
-
-### Community 266 - "1"
-Cohesion: 0.67
-Nodes (3): $type, $value, 1
-
-### Community 267 - "3"
-Cohesion: 0.67
-Nodes (3): $type, $value, 3
+Nodes (3): $type, $value, 4
 
 ### Community 268 - "ring"
 Cohesion: 0.67
@@ -1445,10 +1434,6 @@ Nodes (3): destructive, $type, $value
 ### Community 275 - "destructive-foreground"
 Cohesion: 0.67
 Nodes (3): destructive-foreground, $type, $value
-
-### Community 276 - "4"
-Cohesion: 0.50
-Nodes (3): Antigravity Candidate Assets — Enigma Isle, Assets Generated, Canonical Drop Locations
 
 ### Community 277 - "muted"
 Cohesion: 0.67
@@ -1467,14 +1452,14 @@ Cohesion: 0.67
 Nodes (3): ring, $type, $value
 
 ## Knowledge Gaps
-- **1977 isolated node(s):** `fs`, `path`, `fs`, `path`, `fs` (+1972 more)
+- **1973 isolated node(s):** `fs`, `path`, `fs`, `path`, `fs` (+1968 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **81 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `DesignSystemGenerator` connect `DesignSystemGenerator` to `BM25`, `search`, `read_rows`, `_filter_anti_patterns_for_mode`, `search`, `_select_palette_for_mode`, `_filter_anti_patterns_for_mode`, `DesignSystemGenerator`, `_select_palette_for_mode`, `detect_domain`, `design_system.py`, `_resolve_color_mode`, `design_system.py`, `detect_domain`, `_resolve_color_mode`, `read_rows`, `BM25`?**
+- **Why does `DesignSystemGenerator` connect `Antigravity / Gemini build prompt — Enigma Isle` to `BM25`, `search`, `read_rows`, `_filter_anti_patterns_for_mode`, `search`, `_select_palette_for_mode`, `_filter_anti_patterns_for_mode`, `DesignSystemGenerator`, `_resolve_color_mode`, `_select_palette_for_mode`, `detect_domain`, `design_system.py`, `_resolve_color_mode`, `design_system.py`, `detect_domain`, `DesignSystemGenerator`, `read_rows`, `BM25`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **Why does `search()` connect `search` to `_normalize`, `BM25`, `_suggest_identities`, `TestTextLayoutDataContracts`, `core.py`, `search_stack`, `design_system.py`, `detect_domain`, `.generate`, `validate_data.py`?**
   _High betweenness centrality (0.008) - this node is a cross-community bridge._
