@@ -311,3 +311,48 @@ Candidate assets generated and placed in `public/images/candidates/antigravity/`
 
 
 
+
+---
+
+## [Wave 2 Moat & Seam Resolution — Final Architectural Pass] — 2026-10-18 19:05
+
+### Core Deliverables Shipped:
+1. **Footer Island & Solid Dark Ground (Moat ed3f6342, 7f8589a2):**
+   - Decoupled `footer-island.webp` from absolute overlay text container.
+   - Horizon silhouette sits seamlessly on `#EAE0CA`, flowing naturally from `TryAgain.tsx`.
+   - All navigation links, expedition logs, and back-to-top controls sit below the island on a solid `#111613` background.
+   - Eliminated artificial opacity hacks and heavy padding.
+
+2. **Section 1 Wave Mask & Brown Dirt Underlay (Moat 6b0b1600, ac5fd4b6, fe139c33, fe37de9a, 1ecdf2f0):**
+   - Changed Section 1 container background to `#3E2A22`, directly matching Section 2 and the deep stratum layers.
+   - Applied responsive SVG `clip-path` (`hero-island-wave-cut`) directly to the bottom edge of `hero-island.webp`.
+   - The island illustration itself cuts into the dark earth in an organic wave, completely eliminating white strips and lines.
+   - In `ResultExpand.tsx`, masked out the top white gradient haze of `hero-dirt.webp`, joining `#3E2A22` without seam.
+
+3. **Treasure Chest Wiring & Centered Button (TryAgain.tsx):**
+   - Wired `public/images/treasure-chest.webp` (1712×1685 RGBA) anchored to the bottom-right corner of the woodboard plaque with drop shadow.
+   - Unified "Try Cipher" button vertical alignment with `top-[82%] -translate-y-1/2 left-1/2 -translate-x-1/2` locking it continuously to the center of the wooden planks across all breakpoints.
+
+4. **Explorer Mascot Positioning (Moat a4bd70cc):**
+   - Removed mascot from the flex header above cards.
+   - Anchored mascot to the left flank directly beside Tablet 1 (Value Scaling), static (no bobbing/floating), standing proud.
+   - Added compact responsive guide banner for tablet/mobile.
+
+5. **Cipher Workbench Interaction Polish (Moat 5675e5b3, 663bd05e, f9daf886):**
+   - Fixed dropdown dismissal: removed conflicting CSS hover classes; state-managed dropdown closes instantly upon selection and on outside click.
+   - Smooth scroll: execution of Encrypt/Decrypt smoothly scrolls viewport down to `#cipher-result`.
+
+6. **Journey Visual Flow & Step 4 Grid (Moat fab8251a, 91be93db):**
+   - Added organic wave transition between S3 (How Encryption Works, `#FAF4E8`) and S4 (How Decryption Works, `#EDF5F1`).
+   - Upgraded Encryption Step 4 (Vector Finisher) to full 6x5 animated ABCD table grid matching Decrypt Step 1.
+
+7. **100% WebP Production Assets & Clean Orphans:**
+   - Converted `parchment-border.png` (603KB) to `parchment-border.webp` (70KB).
+   - Removed all unused PNG/SVG/AVIF orphans and candidates directory.
+   - `public/images/` contains exactly 9 canonical WebP assets totaling ~1.9MB.
+
+### Verification Matrix:
+- `npm run test`: 6/6 tests passing (Vitest).
+- `npm run build`: 0 errors, 0 warnings (tsc + vite build in 414ms).
+- Moat tasks: 97/97 tasks marked done.
+- Git commits: Atomic commit history tracking every design change.
