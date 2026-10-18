@@ -38,6 +38,31 @@ export default function StepCards() {
         id="encrypt-journey"
         className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-24 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-visible rounded-t-3xl sm:rounded-t-[40px] rounded-b-3xl sm:rounded-b-[40px] shadow-2xl mb-6"
       >
+          {/* Ibong Adarna — top-left corner of encryption section */}
+          <img
+            src="/images/adarna.webp"
+            alt="Ibong Adarna on a branch"
+            className="pointer-events-none absolute left-0 top-0 z-20 w-36 sm:w-44 lg:w-52 xl:w-60 h-auto select-none object-contain drop-shadow-lg -translate-x-1 -translate-y-2"
+            width={1649}
+            height={2277}
+          />
+
+          {/* Desktop flanks — section-absolute so max-w grid cannot clip */}
+          <img
+            src="/images/mascot-enigma.webp"
+            alt="Enigma Isle explorer mascot"
+            className="hidden xl:block absolute left-[-20px] bottom-6 w-52 2xl:w-60 h-auto object-contain drop-shadow-xl select-none pointer-events-none z-20"
+            width={1369}
+            height={1679}
+          />
+          <img
+            src="/images/treasure-chest.webp"
+            alt="Island treasure chest"
+            className="hidden xl:block absolute right-[-20px] bottom-6 w-44 2xl:w-52 h-auto object-contain drop-shadow-xl select-none pointer-events-none z-20 -scale-x-100 rotate-[8deg] origin-bottom"
+            width={1712}
+            height={1685}
+          />
+
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
               <h2 className="font-display font-black text-3xl sm:text-5xl text-ink tracking-tight">
@@ -48,26 +73,7 @@ export default function StepCards() {
               </p>
             </div>
 
-            {/* Cards + flanks: mascot left bottom, treasure right bottom */}
             <div className="relative">
-              {/* Desktop mascot — feet on section floor, larger */}
-              <img
-                src="/images/mascot-enigma.webp"
-                alt="Enigma Isle explorer mascot"
-                className="hidden xl:block absolute left-0 bottom-0 -translate-x-[100px] w-52 2xl:w-60 h-auto object-contain drop-shadow-xl select-none pointer-events-none z-20"
-                width={1369}
-                height={1679}
-              />
-
-              {/* Desktop treasure chest — right flank, feet on floor */}
-              <img
-                src="/images/treasure-chest.webp"
-                alt="Island treasure chest"
-                className="hidden xl:block absolute right-0 bottom-0 translate-x-[100px] w-44 2xl:w-52 h-auto object-contain drop-shadow-xl select-none pointer-events-none z-20 -scale-x-100 rotate-[8deg] origin-bottom"
-                width={1712}
-                height={1685}
-              />
-
             {/* Mobile/Tablet: mascot + chest row above cards */}
             <div className="xl:hidden flex items-end justify-between gap-3 mb-6 px-1">
               <img

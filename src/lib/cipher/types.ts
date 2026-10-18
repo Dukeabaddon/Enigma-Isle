@@ -9,6 +9,7 @@ export interface LetterEncryptTrace {
     up1: string;
     left1: string;
     up2: string;
+    right1: string;
     right2: string;
   };
   outputChar: string;
@@ -17,6 +18,7 @@ export interface LetterEncryptTrace {
 export interface LetterDecryptTrace {
   inputChar: string;
   step1_inverseMoves: {
+    left1: string;
     left2: string;
     down1: string;
     right1: string;

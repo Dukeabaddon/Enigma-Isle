@@ -31,6 +31,7 @@ export function encryptCharacter(char: string): LetterEncryptTrace {
       up1,
       left1,
       up2,
+      right1,
       right2,
     },
     outputChar: right2,

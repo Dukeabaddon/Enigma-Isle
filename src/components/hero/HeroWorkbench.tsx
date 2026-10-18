@@ -5,8 +5,6 @@ import ResultExpand from './ResultExpand';
 import StepsModal from './StepsModal';
 
 /** Seam brown — measured hero-island bottom; ADR 004. NO CSS wave clip. */
-const SEAM = '#342319';
-
 export default function HeroWorkbench() {
   const {
     inputText,
@@ -69,31 +67,65 @@ export default function HeroWorkbench() {
 
   return (
     <>
-      {/* Section 1 — Hero only. Art paints into SEAM. Never re-add wave clipPath. */}
+      {/* Section 1 — Hero only. Never re-add wave clipPath. */}
       <section
         id="workbench"
-        className="relative w-full overflow-hidden min-h-[135dvh] flex flex-col"
+        className="relative w-full overflow-x-hidden overflow-y-visible min-h-[135dvh] flex flex-col"
         style={{ backgroundColor: '#ece0c8' }}
       >
-        {/* Extended sky band (#ece0c8 from island art top); island plate fills bottom 100dvh full width */}
+        {/* Full-bleed island: bottom of art (brown dirt) pins to section bottom */}
         <div
-          className="absolute inset-x-0 bottom-0 h-[100dvh] w-full pointer-events-none select-none z-0 overflow-hidden"
-          style={{ backgroundColor: SEAM }}
+          className="absolute inset-0 w-full pointer-events-none select-none z-0 overflow-hidden"
+          style={{
+            background:
+              'linear-gradient(to bottom, #ece0c8 0%, #ece0c8 55%, #35231b 100%)',
+          }}
         >
           <div
-            className="absolute inset-0 bg-cover bg-bottom max-sm:hidden"
-            style={{ backgroundImage: `url('/images/hero-island.webp')` }}
+            className="absolute inset-0 max-sm:hidden"
+            style={{
+              backgroundImage: `url('/images/hero-island.webp')`,
+              backgroundSize: '100% auto',
+              backgroundPosition: 'center bottom',
+              backgroundRepeat: 'no-repeat',
+              WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 14%)',
+              maskImage: 'linear-gradient(to bottom, transparent 0%, black 14%)',
+            }}
           />
           <div
-            className="absolute inset-0 bg-cover bg-bottom sm:hidden"
-            style={{ backgroundImage: `url('/images/hero-island-mobile.webp')` }}
+            className="absolute inset-0 sm:hidden"
+            style={{
+              backgroundImage: `url('/images/hero-island-mobile.webp')`,
+              backgroundSize: '100% auto',
+              backgroundPosition: 'center bottom',
+              backgroundRepeat: 'no-repeat',
+              WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 14%)',
+              maskImage: 'linear-gradient(to bottom, transparent 0%, black 14%)',
+            }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/20 to-transparent" />
+          {/* Plate-top cream fade — soft sky join */}
+          <div
+            className="absolute inset-x-0 top-0 h-36 sm:h-44 pointer-events-none"
+            style={{
+              background: 'linear-gradient(to bottom, #ece0c8 0%, transparent 100%)',
+            }}
+            aria-hidden
+          />
         </div>
+
+        {/* Soft sky veil: cream → warm white → transparent through top 50% of section */}
+        <div
+          className="absolute inset-0 z-[1] pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(to bottom, #ece0c8 0%, rgba(236,224,200,0.75) 18%, rgba(255,250,240,0.35) 35%, transparent 50%)',
+          }}
+          aria-hidden
+        />
 
         {/* Title + input pushed down from sticky nav */}
         <div className="relative z-10 max-w-4xl mx-auto w-full px-4 sm:px-6 flex flex-col items-center justify-start text-center flex-1 pt-28 sm:pt-36 md:pt-44 pb-16 sm:pb-20">
-          <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl tracking-wider text-ink mb-3 drop-shadow-xs">
+          <h1 className="font-hero text-5xl sm:text-7xl md:text-8xl tracking-wide text-ink mb-3 drop-shadow-xs">
             ENIGMA ISLE
           </h1>
 

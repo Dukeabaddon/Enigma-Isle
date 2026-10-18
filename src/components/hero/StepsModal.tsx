@@ -173,14 +173,16 @@ export default function StepsModal({
                       currentEncryptTrace.step4_moves.up1,
                       currentEncryptTrace.step4_moves.left1,
                       currentEncryptTrace.step4_moves.up2,
+                      currentEncryptTrace.step4_moves.right1,
                       currentEncryptTrace.outputChar,
                     ]}
-                    labels={['Start', 'Up 1', 'Left 1', 'Up 1', 'Right 2 (Cipher)']}
+                    labels={['Start', 'Up 1', 'Left 1', 'Up 1', 'Right 1', 'Right 2 (Cipher)']}
                   />
-                  <div className="mt-2.5 grid grid-cols-2 gap-2 sm:grid-cols-4">
+                  <div className="mt-2.5 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
                     <MiniCell label="Up 1" value={currentEncryptTrace.step4_moves.up1} />
                     <MiniCell label="Left 1" value={currentEncryptTrace.step4_moves.left1} />
                     <MiniCell label="Up 1" value={currentEncryptTrace.step4_moves.up2} />
+                    <MiniCell label="Right 1" value={currentEncryptTrace.step4_moves.right1} />
                     <MiniCell
                       label="Right 2"
                       value={currentEncryptTrace.outputChar}
@@ -202,14 +204,16 @@ export default function StepsModal({
                     accent="decrypt"
                     path={[
                       currentDecryptTrace.inputChar,
+                      currentDecryptTrace.step1_inverseMoves.left1,
                       currentDecryptTrace.step1_inverseMoves.left2,
                       currentDecryptTrace.step1_inverseMoves.down1,
                       currentDecryptTrace.step1_inverseMoves.right1,
                       currentDecryptTrace.step1_letter,
                     ]}
-                    labels={['Start', 'Left 2', 'Down 1', 'Right 1', 'Down 1 (Restore)']}
+                    labels={['Start', 'Left 1', 'Left 2', 'Down 1', 'Right 1', 'Down 1 (Restore)']}
                   />
-                  <div className="mt-2.5 grid grid-cols-2 gap-2 sm:grid-cols-4">
+                  <div className="mt-2.5 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
+                    <MiniCell label="Left 1" value={currentDecryptTrace.step1_inverseMoves.left1} />
                     <MiniCell label="Left 2" value={currentDecryptTrace.step1_inverseMoves.left2} />
                     <MiniCell label="Down 1" value={currentDecryptTrace.step1_inverseMoves.down1} />
                     <MiniCell label="Right 1" value={currentDecryptTrace.step1_inverseMoves.right1} />

@@ -1,43 +1,42 @@
-# Dependencies & build
-node_modules/
-dist/
-playwright-report/
-test-results/
-coverage/
-*.local
 
+!.env.example
+!stages/*/output/.gitkeep
+# Agent / AI tooling (do not ship)
+# Dependencies & build
+# Design stage working outputs (keep .gitkeep)
+# Env / secrets
 # OS / editor junk
-.DS_Store
+# Private / local-only notes
 **/.DS_Store
 *.crswap
-*.tiff
+*.local
 *.tif
-
-# Agent / AI tooling (do not ship)
-CLAUDE.md
-AGENTS.md
-DELEGATE-PLAN.md
-.claude/
+*.tiff
+.DS_Store
 .agents/
-.cursor/
-.codex/
-.windsurf/
 .antigravity/
-.moat/
-graphify-out/
+.claude/
+.codex/
 .context/
-shared/grill-summary.md
-
-# Private / local-only notes
-brainstorms/
-docs/Build Log.md
-docs/prompts/
-
-# Design stage working outputs (keep .gitkeep)
-stages/*/output/*
-!stages/*/output/.gitkeep
-
-# Env / secrets
+.cursor/
 .env
 .env.*
-!.env.example
+.moat/
+.tmp-venv/
+.windsurf/
+AGENTS.md
+CLAUDE.md
+DELEGATE-PLAN.md
+brainstorms/
+coverage/
+dist/
+docs/Build Log.md
+docs/prompts/
+graphify-out/
+node_modules/
+playwright-report/
+public/images/hero-dirt.backup.webp
+shared/grill-summary.md
+stages/*/output/*
+test-results/
+public/images/strata.raw.jpeg

@@ -12,7 +12,10 @@ interface ResultExpandProps {
   onReset: () => void;
 }
 
-const SEAM = '#342319';
+/** Section fill under strata: #35231b → #33231a */
+const BG_TOP = '#35231b';
+const BG_BOTTOM = '#33231a';
+const DIRT_H = 280;
 
 export default function ResultExpand({
   isExpanded,
@@ -42,30 +45,56 @@ export default function ResultExpand({
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="relative w-full overflow-hidden scroll-mt-20"
-          style={{ backgroundColor: SEAM }}
+          className="relative z-[5] w-full overflow-x-hidden overflow-y-visible scroll-mt-20"
+          style={{
+            background: `linear-gradient(to bottom, ${BG_TOP} 0%, ${BG_BOTTOM} 100%)`,
+          }}
         >
-          {/* Horizontal tile (bg-repeat-x) — same pattern as pre-deploy ResultExpand */}
+          {/* Strata IMAGE only — top:-35px into hero grass (not section margin) */}
           <div
-            className="w-full bg-repeat-x py-16 sm:py-24 px-4 sm:px-6 relative min-h-[100dvh] flex flex-col justify-center"
+            className="absolute inset-x-0 w-full pointer-events-none select-none z-[1]"
             style={{
-              backgroundImage: `linear-gradient(to bottom, ${SEAM} 0%, ${SEAM} 20px, transparent 72px), url('/images/hero-dirt.webp'), radial-gradient(circle at 20% 80%, rgba(90,60,45,0.35) 0%, transparent 40%), radial-gradient(circle at 80% 90%, rgba(70,45,30,0.4) 0%, transparent 45%)`,
-              backgroundSize: '100% 72px, auto 280px, 100% 100%, 100% 100%',
-              backgroundPosition: 'top center, top center, center, center',
-              backgroundRepeat: 'no-repeat, repeat-x, no-repeat, no-repeat',
-              backgroundColor: SEAM,
+              top: -35,
+              height: DIRT_H + 35,
+              backgroundImage: `url('/images/strata.jpeg')`,
+              backgroundSize: `auto ${DIRT_H}px`,
+              backgroundPosition: 'center top',
+              backgroundRepeat: 'repeat-x',
             }}
-          >
-            <div
-              className="absolute inset-0 pointer-events-none"
-              style={{ backgroundColor: 'rgba(52, 35, 25, 0.35)' }}
-              aria-hidden
-            />
+            aria-hidden
+          />
+          {/* Exact color lip — grass join */}
+          <div
+            className="absolute inset-x-0 h-3 pointer-events-none z-[2]"
+            style={{ top: -35, backgroundColor: BG_TOP }}
+            aria-hidden
+          />
+          {/* Top join veil — #35231b → transparent over strata */}
+          <div
+            className="absolute inset-x-0 h-20 sm:h-24 pointer-events-none z-[2]"
+            style={{
+              top: -35,
+              background: `linear-gradient(to bottom, ${BG_TOP} 0%, transparent 100%)`,
+            }}
+            aria-hidden
+          />
+          {/* Soft falloff under strata into #35231b → #33231a */}
+          <div
+            className="absolute inset-x-0 pointer-events-none z-[1]"
+            style={{
+              top: DIRT_H - 48 - 35,
+              height: 80,
+              background: `linear-gradient(to bottom, transparent 0%, ${BG_TOP} 45%, ${BG_BOTTOM} 100%)`,
+            }}
+            aria-hidden
+          />
 
-            <div className="relative z-10 max-w-2xl mx-auto w-full space-y-4">
+          {/* Parchment low — clear air under strata */}
+          <div className="relative z-10 min-h-[110dvh] flex flex-col justify-end px-4 sm:px-6 pt-[calc(280px+6rem)] pb-20 sm:pb-28">
+            <div className="max-w-2xl mx-auto w-full space-y-4">
               <div
                 id="cipher-result"
-                className="relative parchment-paper p-6 sm:p-8 bg-[#FFFDF7] text-ink shadow-2xl"
+                className="relative parchment-paper p-6 sm:p-8 bg-[#FFFDF7] text-ink shadow-2xl translate-y-[100px] mb-[100px]"
               >
                 <div className="flex flex-col items-center justify-center text-center gap-3 pb-5 border-b border-ink/10">
                   <div className="space-y-1.5 w-full">

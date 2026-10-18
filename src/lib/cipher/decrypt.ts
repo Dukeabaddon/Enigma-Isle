@@ -21,6 +21,7 @@ export function decryptCharacter(char: string): LetterDecryptTrace {
   return {
     inputChar: char,
     step1_inverseMoves: {
+      left1,
       left2,
       down1,
       right1,
