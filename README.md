@@ -1,7 +1,7 @@
 <div align="center">
 
 <p>
-  <img src="docs/assets/enigma-isle-banner.png" alt="Enigma Isle — tropical cipher adventure landing" width="100%" />
+  <img src="docs/assets/enigma-isle-banner.webp" alt="Enigma Isle — tropical cipher adventure landing" width="100%" />
 </p>
 
 # Enigma Isle
@@ -117,7 +117,7 @@ Locked in [decisions/001-stack-vite-react-ts.md](decisions/001-stack-vite-react-
 
 ```
 enigma/
-├── docs/assets/          README banner (SVG source + PNG for GitHub)
+├── docs/assets/          README banner (SVG source + WebP for GitHub)
 ├── public/images/        WebP island / UI art
 ├── src/
 │   ├── components/       Nav, hero, journey cards, footer
@@ -197,10 +197,10 @@ The course goal is a working <strong>encrypt and decrypt</strong> pair with an e
 </details>
 
 <details>
-<summary><b>Why PNG banner instead of SVG?</b></summary>
+<summary><b>Why WebP banner instead of SVG?</b></summary>
 <br/>
 
-GitHub’s image proxy (Camo) often strips or fails SVG in READMEs. Vector source lives at <code>docs/assets/enigma-isle-banner.svg</code>; the README embeds the rasterized PNG.
+GitHub’s image proxy (Camo) often strips or fails SVG in READMEs. Vector source lives at <code>docs/assets/enigma-isle-banner.svg</code>; the README embeds the WebP raster.
 </details>
 
 ---
