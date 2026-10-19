@@ -44,4 +44,6 @@ public/images/*.raw.*
 shared/grill-summary.md
 shots/
 stages/*/output/*
+!stages/03-cipher-spec/output/cipher-spec.md
+!stages/03-cipher-spec/output/test-vectors.json
 test-results/

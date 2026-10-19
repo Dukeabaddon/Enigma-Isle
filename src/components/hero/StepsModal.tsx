@@ -150,15 +150,15 @@ export default function StepsModal({
                   </MonoRow>
                 </StepCard>
 
-                <StepCard accent="neutral" title="Step 3 · Column down 5×">
+                <StepCard accent="neutral" title="Step 3 · Column down 13×">
                   <p>
-                    From <strong>{currentEncryptTrace.step2_letter}</strong>, shift down 5 in its
-                    column.
+                    From <strong>{currentEncryptTrace.step2_letter}</strong>, shift down 13 in its
+                    column (mod column length).
                   </p>
                   <MonoRow>
                     <span className="font-bold">{currentEncryptTrace.step2_letter}</span>
                     <CornerDownRight className="h-4 w-4 text-[#7a4a22]" />
-                    <span className="text-xs text-[#7a4a22]">down 5</span>
+                    <span className="text-xs text-[#7a4a22]">down 13</span>
                     <ArrowRight className="h-4 w-4" />
                     <span className="font-bold">{currentEncryptTrace.step3_letter}</span>
                   </MonoRow>
@@ -225,14 +225,15 @@ export default function StepsModal({
                   </div>
                 </StepCard>
 
-                <StepCard accent="neutral" title="Decrypt 2 · Column up 5×">
+                <StepCard accent="neutral" title="Decrypt 2 · Column up 13×">
                   <p>
-                    From <strong>{currentDecryptTrace.step1_letter}</strong>, shift up 5 in column.
+                    From <strong>{currentDecryptTrace.step1_letter}</strong>, shift up 13 in column
+                    (mod column length).
                   </p>
                   <MonoRow>
                     <span className="font-bold">{currentDecryptTrace.step1_letter}</span>
                     <ArrowRight className="h-4 w-4 text-[#7a4a22]" />
-                    <span className="text-xs text-[#7a4a22]">up 5</span>
+                    <span className="text-xs text-[#7a4a22]">up 13</span>
                     <ArrowRight className="h-4 w-4" />
                     <span className="font-bold">{currentDecryptTrace.step2_letter}</span>
                   </MonoRow>

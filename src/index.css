@@ -24,6 +24,7 @@
 @layer base {
   html {
     overflow-x: hidden;
+    overscroll-behavior-x: none;
   }
 
   body {
@@ -31,6 +32,7 @@
     color: var(--color-ink);
     font-family: var(--font-sans);
     overflow-x: hidden;
+    overscroll-behavior-x: none;
   }
 }
 

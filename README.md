@@ -148,9 +148,11 @@ The algorithm is documented in [stages/03-cipher-spec/output/cipher-spec.md](sta
 
 - Letters **A–Z** only (normalized, uppercase output); spaces preserved.
 - **Step 1–2:** Bijective cyclic walk (×18 step count from letter value).
-- **Step 3–4:** 5-column grid shifts and directional return path — tuned so **encrypt ↔ decrypt** inverts under defined wrap rules (see [decisions/002-cipher-invertible-variant.md](decisions/002-cipher-invertible-variant.md)).
+- **Step 3:** Column shift **down 13×** (mod column length); decrypt uses **up 13×**.
+- **Step 4:** Grid finisher `up → left → up → right×2` with defined wraps.
+- Locked vectors (Vitest): `HELLO` → `CZUUA`, `SWORD` → `DQAJE` — see [test-vectors.json](stages/03-cipher-spec/output/test-vectors.json) and [ADR 005](decisions/005-column-shift-13.md).
 
-Run `npm test` to execute round-trip vectors. Treat output as a **classroom invertibility demo**, not a substitute for modern cryptography.
+Run `npm test` (Vitest unit tests) for round-trips. Treat output as a **classroom invertibility demo**, not a substitute for modern cryptography.
 
 ---
 

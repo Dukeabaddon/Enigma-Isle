@@ -36,7 +36,7 @@ export default function StepCards() {
       {/* S3 — How Encryption Works: rounded top+bottom on dirt; slightly darker cream so radius reads */}
       <section
         id="encrypt-journey"
-        className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-40 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-x-hidden overflow-y-visible rounded-t-3xl rounded-b-3xl sm:rounded-t-[40px] sm:rounded-b-[40px] shadow-2xl mb-6"
+        className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-40 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-x-clip overflow-y-visible touch-pan-y overscroll-x-none [-webkit-overflow-scrolling:touch] rounded-t-3xl rounded-b-3xl sm:rounded-t-[40px] sm:rounded-b-[40px] shadow-2xl mb-6"
       >
           {/* Desktop flanks — section-absolute so max-w grid cannot clip */}
           <img
@@ -151,17 +151,17 @@ export default function StepCards() {
                 </div>
               </div>
 
-              {/* Tablet 3: Down 5x in Column (Task 9: removed shift down in column span) */}
+              {/* Tablet 3: Down 13× in Column */}
               <div className="bg-[#FFFDF9] rounded-3xl p-6 sm:p-7 border-2 border-[#E8D5B5] shadow-md flex flex-col justify-between space-y-6">
                 <div className="space-y-2.5">
                   <span className="inline-block text-[11px] font-black uppercase tracking-widest text-[#B8860B] bg-[#D4A017]/10 px-2.5 py-1 rounded-md border border-[#D4A017]/20">
                     Step 3 · Shift
                   </span>
                   <h3 className="font-display font-extrabold text-xl text-ink">
-                    Column Shift 5×
+                    Column Shift 13×
                   </h3>
                   <p className="text-sm text-ink-muted leading-relaxed font-medium">
-                    Letter drops 5 positions inside its vertical column. 5-slot columns cycle back to origin; Column 1 wraps across 6 slots.
+                    Letter drops 13 positions inside its vertical column (mod column length). Col A has 6 slots; cols B–E have 5 — wrap keeps the map bijective.
                   </p>
                 </div>
 
@@ -213,7 +213,8 @@ export default function StepCards() {
                         if (!char) {
                           return <div key={`fwd-empty-${rIdx}-${cIdx}`} className="w-5 h-4 sm:w-5.5 sm:h-4.5" />;
                         }
-                        const fwdStepPath = ['U', 'P', 'T', 'O', 'L'];
+                        // Include right1 (K) so right×2 does not skip O→K→L (Moat 4648ed71)
+                        const fwdStepPath = ['U', 'P', 'T', 'O', 'K', 'L'];
                         const currentStepChar = fwdStepPath[tick % fwdStepPath.length];
                         const isActive = currentStepChar === char;
                         const isVisited = fwdStepPath.slice(0, (tick % fwdStepPath.length) + 1).includes(char);
@@ -246,32 +247,24 @@ export default function StepCards() {
       {/* S4 — How Decryption Works (Tasks 13, 14, 15, 16, 17, 18) */}
       <section
         id="decrypt-journey"
-        className="relative bg-[#EDF5F1] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px] seam-paint-mint"
+        className="relative bg-[#EDF5F1] text-ink pt-0 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px] seam-paint-mint"
       >
-        {/* Mobile: Adarna pinned top-left of section */}
+        {/* Mobile + desktop: Adarna pinned to section top-left (size independent of text) */}
         <img
           src="/images/adarna.webp"
           alt="Ibong Adarna on a branch"
-          className="pointer-events-none absolute left-0 top-0 z-20 w-40 h-auto max-w-none select-none object-contain object-left-top drop-shadow-lg sm:hidden"
-          width={1649}
-          height={2277}
-        />
-        {/* Desktop: Adarna flush left */}
-        <img
-          src="/images/adarna.webp"
-          alt="Ibong Adarna on a branch"
-          className="pointer-events-none absolute left-0 top-0 z-20 hidden sm:block w-44 lg:w-52 xl:w-60 h-auto max-w-none select-none object-contain object-left-top drop-shadow-lg"
+          className="pointer-events-none absolute left-0 top-0 z-20 w-40 sm:w-44 lg:w-52 xl:w-60 h-auto max-w-none select-none object-contain object-left-top drop-shadow-lg"
           width={1649}
           height={2277}
         />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          {/* Mobile: text below top-centered bird */}
-          <div className="sm:hidden mb-10 pt-[11.5rem] space-y-2 text-center">
-            <h2 className="font-display font-black text-3xl text-ink tracking-tight leading-tight">
+          {/* Mobile: title in empty band right of absolute Adarna */}
+          <div className="sm:hidden mb-8 min-h-[11.5rem] pl-[10.25rem] pr-1 pt-3 space-y-1 text-left">
+            <h2 className="font-display font-black text-[1.35rem] leading-[1.15] text-ink tracking-tight">
               How Decryption Works
             </h2>
-            <p className="text-sm text-ink/80 font-medium leading-snug">
+            <p className="text-[0.7rem] text-ink/80 font-medium leading-snug">
               The inverse pipeline executes each reversal in strictly opposite order, proving mathematical bijectivity.
             </p>
           </div>
@@ -349,11 +342,11 @@ export default function StepCards() {
                 <span className="inline-block text-[11px] font-black uppercase tracking-widest text-[#1F6B4F] bg-[#2F8F6B]/10 px-2.5 py-1 rounded-md border border-[#2F8F6B]/20">
                   Step 2 · Shift
                 </span>
-                <h3 className="font-display font-extrabold text-xl text-ink">
-                  Column Shift Up 5×
+                  <h3 className="font-display font-extrabold text-xl text-ink">
+                  Column Shift Up 13×
                 </h3>
                 <p className="text-sm text-ink-muted leading-relaxed font-medium">
-                  Shifts upward 5 positions inside the vertical column, returning Column 1 elements to original rows.
+                  Shifts upward 13 positions inside the vertical column (mod column length) — exact inverse of encrypt Step 3.
                 </p>
               </div>
 

@@ -1,5 +1,5 @@
 import { inverseWalkRightOnCycle, isLetter } from './alphabet';
-import { moveDown, moveLeft, moveRight, shiftColumnUp5 } from './grid';
+import { moveDown, moveLeft, moveRight, shiftColumnUp13 } from './grid';
 import { DecryptResult, LetterDecryptTrace } from './types';
 
 export function decryptCharacter(char: string): LetterDecryptTrace {
@@ -12,8 +12,8 @@ export function decryptCharacter(char: string): LetterDecryptTrace {
   const right1 = moveRight(down1);
   const down2 = moveDown(right1);
 
-  // Inverse of Step 3: shift up 5x in column
-  const step2Letter = shiftColumnUp5(down2);
+  // Inverse of Step 3: shift up 13× in column (mod column length)
+  const step2Letter = shiftColumnUp13(down2);
 
   // Inverse of Step 1 & 2: inverse cyclic walk
   const step3Letter = inverseWalkRightOnCycle(step2Letter);

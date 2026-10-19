@@ -16,6 +16,7 @@
 | ADR 002 | Invertible grid/directional variant |
 | ADR 003 | Brand Enigma Isle |
 | ADR 004 | Hero painted seam `#3c2820`; no CSS wave; WebP-only assets |
+| ADR 005 | Step 3 column shift **13×** (was 5×); decrypt up 13× |
 | Q6=D | Island visuals; clear English copy |
 | Host | Vercel |
 
@@ -33,8 +34,9 @@ See `decisions/`, `.context/decisions.md`, `shared/grill-summary.md`.
 01-discovery → 02-design → 03-cipher-spec → 04-build → 05-polish
 ```
 
-**Active:** `04-build` · **Next:** polish + deploy  
-**State:** `.context/state.md` · **Plan:** `docs/PLAN.md`
+**Active:** `04-build` → `05-polish` · **Next:** a11y / deploy  
+**State:** `.context/state.md` · **Plan:** `docs/PLAN.md` (local)  
+**Moat:** #120 K highlight · #121 encrypt mobile `touch-pan-y` (no sideways drag)
 
 ## Workflow (always)
 

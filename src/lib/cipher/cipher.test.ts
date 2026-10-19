@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { ALPHABET, decryptCharacter, decryptText, encryptCharacter, encryptText } from './index';
+import {
+  COLUMN_SHIFT,
+  GRID_COLUMNS,
+  shiftColumnDown13,
+  shiftColumnUp13,
+} from './grid';
 
 describe('Enigma Isle Cipher', () => {
   it('encrypts and round-trips all 26 letters of the alphabet', () => {
@@ -11,11 +17,30 @@ describe('Enigma Isle Cipher', () => {
     }
   });
 
-  it('matches worked example for Step 4 on U -> L', () => {
-    // When U is passed to Step 4 finisher:
-    // U -> up P -> left T -> up O -> right2 L
+  it('uses column shift count 13', () => {
+    expect(COLUMN_SHIFT).toBe(13);
+  });
+
+  it('shiftColumnDown13 / Up13 are inverses on every grid letter', () => {
+    for (const col of GRID_COLUMNS) {
+      for (const char of col) {
+        expect(shiftColumnUp13(shiftColumnDown13(char))).toBe(char);
+        expect(shiftColumnDown13(shiftColumnUp13(char))).toBe(char);
+      }
+    }
+  });
+
+  it('applies +13 mod column length (col A len 6 → +1; cols B–E len 5 → +3)', () => {
+    // Col A: [A,F,K,P,U,Z] — 13 % 6 = 1
+    expect(shiftColumnDown13('A')).toBe('F');
+    expect(shiftColumnDown13('Z')).toBe('A');
+    // Col B: [B,G,L,Q,V] — 13 % 5 = 3
+    expect(shiftColumnDown13('B')).toBe('Q');
+    expect(shiftColumnDown13('V')).toBe('L');
+  });
+
+  it('matches worked Step 4 finisher wiring (output = right2)', () => {
     const trace = encryptCharacter('U');
-    // Note: trace.step4_moves tests the finisher steps
     expect(trace.step4_moves.right2).toBe(trace.outputChar);
   });
 
@@ -23,7 +48,8 @@ describe('Enigma Isle Cipher', () => {
     const encLower = encryptText('hello');
     const encUpper = encryptText('HELLO');
     expect(encLower.text).toBe(encUpper.text);
-    expect(encLower.text).toBe('MHFFK');
+    // Locked vector after Step 3 column shift 13×
+    expect(encLower.text).toBe('CZUUA');
 
     const decrypted = decryptText(encLower.text);
     expect(decrypted.text).toBe('HELLO');
@@ -48,7 +74,7 @@ describe('Enigma Isle Cipher', () => {
   });
 
   it('accurately roundtrips sample words', () => {
-    const words = ['ENIGMA', 'ISLE', 'SECRET', 'TREASURE', 'DISCOVERY'];
+    const words = ['ENIGMA', 'ISLE', 'SECRET', 'TREASURE', 'DISCOVERY', 'SWORD'];
     for (const word of words) {
       const enc = encryptText(word);
       const dec = decryptText(enc.text);
@@ -56,12 +82,17 @@ describe('Enigma Isle Cipher', () => {
     }
   });
 
+  it('locks SWORD encrypt vector under shift-13', () => {
+    expect(encryptText('SWORD').text).toBe('DQAJE');
+    expect(decryptText('DQAJE').text).toBe('SWORD');
+  });
+
   it('provides complete step trace breakdown in character encryption and decryption', () => {
     const charTrace = encryptCharacter('A');
     expect(charTrace.step1_value).toBe(1);
     expect(charTrace.step2_count).toBe(18);
     expect(charTrace.normalizedChar).toBe('A');
-
+    // After walk S, down-13 on col C: S is in col D actually — assert inverse only
     const decTrace = decryptCharacter(charTrace.outputChar);
     expect(decTrace.outputChar).toBe('A');
   });

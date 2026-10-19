@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "columnShift": 13,
+    "note": "Step 3 = +13 mod column length; decrypt uses -13"
+  },
+  "alphabet": {
+    "A": {
+      "plain": "A",
+      "step12_rightWalk": "S",
+      "step3_colDown": "I",
+      "step4_finisher": "Y"
+    },
+    "B": {
+      "plain": "B",
+      "step12_rightWalk": "L",
+      "step3_colDown": "B",
+      "step4_finisher": "R"
+    },
+    "C": {
+      "plain": "C",
+      "step12_rightWalk": "E",
+      "step3_colDown": "T",
+      "step4_finisher": "F"
+    },
+    "D": {
+      "plain": "D",
+      "step12_rightWalk": "X",
+      "step3_colDown": "N",
+      "step4_finisher": "E"
+    },
+    "E": {
+      "plain": "E",
+      "step12_rightWalk": "Q",
+      "step3_colDown": "G",
+      "step4_finisher": "Z"
+    },
+    "F": {
+      "plain": "F",
+      "step12_rightWalk": "J",
+      "step3_colDown": "Y",
+      "step4_finisher": "K"
+    },
+    "G": {
+      "plain": "G",
+      "step12_rightWalk": "C",
+      "step3_colDown": "R",
+      "step4_finisher": "I"
+    },
+    "H": {
+      "plain": "H",
+      "step12_rightWalk": "V",
+      "step3_colDown": "L",
+      "step4_finisher": "C"
+    },
+    "I": {
+      "plain": "I",
+      "step12_rightWalk": "O",
+      "step3_colDown": "E",
+      "step4_finisher": "P"
+    },
+    "J": {
+      "plain": "J",
+      "step12_rightWalk": "H",
+      "step3_colDown": "W",
+      "step4_finisher": "N"
+    },
+    "K": {
+      "plain": "K",
+      "step12_rightWalk": "A",
+      "step3_colDown": "F",
+      "step4_finisher": "V"
+    },
+    "L": {
+      "plain": "L",
+      "step12_rightWalk": "T",
+      "step3_colDown": "J",
+      "step4_finisher": "U"
+    },
+    "M": {
+      "plain": "M",
+      "step12_rightWalk": "M",
+      "step3_colDown": "C",
+      "step4_finisher": "S"
+    },
+    "N": {
+      "plain": "N",
+      "step12_rightWalk": "F",
+      "step3_colDown": "K",
+      "step4_finisher": "B"
+    },
+    "O": {
+      "plain": "O",
+      "step12_rightWalk": "Y",
+      "step3_colDown": "O",
+      "step4_finisher": "A"
+    },
+    "P": {
+      "plain": "P",
+      "step12_rightWalk": "R",
+      "step3_colDown": "H",
+      "step4_finisher": "X"
+    },
+    "Q": {
+      "plain": "Q",
+      "step12_rightWalk": "K",
+      "step3_colDown": "P",
+      "step4_finisher": "G"
+    },
+    "R": {
+      "plain": "R",
+      "step12_rightWalk": "D",
+      "step3_colDown": "S",
+      "step4_finisher": "J"
+    },
+    "S": {
+      "plain": "S",
+      "step12_rightWalk": "W",
+      "step3_colDown": "M",
+      "step4_finisher": "D"
+    },
+    "T": {
+      "plain": "T",
+      "step12_rightWalk": "P",
+      "step3_colDown": "U",
+      "step4_finisher": "L"
+    },
+    "U": {
+      "plain": "U",
+      "step12_rightWalk": "I",
+      "step3_colDown": "X",
+      "step4_finisher": "O"
+    },
+    "V": {
+      "plain": "V",
+      "step12_rightWalk": "B",
+      "step3_colDown": "Q",
+      "step4_finisher": "H"
+    },
+    "W": {
+      "plain": "W",
+      "step12_rightWalk": "U",
+      "step3_colDown": "Z",
+      "step4_finisher": "Q"
+    },
+    "X": {
+      "plain": "X",
+      "step12_rightWalk": "N",
+      "step3_colDown": "D",
+      "step4_finisher": "T"
+    },
+    "Y": {
+      "plain": "Y",
+      "step12_rightWalk": "G",
+      "step3_colDown": "V",
+      "step4_finisher": "M"
+    },
+    "Z": {
+      "plain": "Z",
+      "step12_rightWalk": "Z",
+      "step3_colDown": "A",
+      "step4_finisher": "W"
+    }
+  },
+  "words": {
+    "HELLO": {
+      "plain": "HELLO",
+      "cipher": "CZUUA",
+      "roundTrip": "HELLO"
+    },
+    "SWORD": {
+      "plain": "SWORD",
+      "cipher": "DQAJE",
+      "roundTrip": "SWORD"
+    },
+    "ENIGMA": {
+      "plain": "ENIGMA",
+      "cipher": "ZBPISY",
+      "roundTrip": "ENIGMA"
+    },
+    "ISLE": {
+      "plain": "ISLE",
+      "cipher": "PDUZ",
+      "roundTrip": "ISLE"
+    },
+    "SECRET": {
+      "plain": "SECRET",
+      "cipher": "DZFJZL",
+      "roundTrip": "SECRET"
+    }
+  }
+}

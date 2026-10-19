@@ -1,5 +1,5 @@
 import { getLetterValue, isLetter, walkRightOnCycle } from './alphabet';
-import { moveLeft, moveRight, moveUp, shiftColumnDown5 } from './grid';
+import { moveLeft, moveRight, moveUp, shiftColumnDown13 } from './grid';
 import { CipherResult, LetterEncryptTrace } from './types';
 
 export function encryptCharacter(char: string): LetterEncryptTrace {
@@ -10,8 +10,8 @@ export function encryptCharacter(char: string): LetterEncryptTrace {
   // Step 1 + 2: Right-walk on full A-Z cycle
   const step2Letter = walkRightOnCycle(normalized, steps);
 
-  // Step 3: Shift down 5x in column
-  const step3Letter = shiftColumnDown5(step2Letter);
+  // Step 3: Shift down 13× in column (mod column length)
+  const step3Letter = shiftColumnDown13(step2Letter);
 
   // Step 4: up1 -> left1 -> up1 -> right2
   const up1 = moveUp(step3Letter);

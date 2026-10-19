@@ -9,7 +9,7 @@
 |---|-------------|----------------|
 | 1 | Letter → number (A=1…Z=26); ×18 | S=19 → 19×18=342 |
 | 2 | Shift **right** by that total | From letter cell, move right 342 (with wrap) |
-| 3 | Shift **down 5×** in column | E example wraps Y→E |
+| 3 | Shift **down 13×** in column | +13 mod column length |
 | 4 | up1 → left1 → up1 → right2 | Finisher path |
 
 **Decrypt** = reverse order + inverse moves (left↔right, up↔down, ÷ or inverse of ×18).
@@ -37,13 +37,13 @@ If right-walk is on a **26-letter cycle** (after Z → A; after E → F):
 
 **LOCKED (Q8c=A):** wrap = full A–Z cycle. After E → F. After Z → A.
 
-### 2) Step 3 “down 5×” — wrap locked (Q9=A)
+### 2) Step 3 “down 13×” — wrap locked (updated 2026-10-19)
 
 - Down moves **inside same column only**; wrap top↔bottom in that column.
-- Cols B–E have **5** letters each → down 5 = back to start (**no change** for those cols).
-- Your E example: E→J→O→T→Y→E — ends on E.
-- Col A (6 letters: A,F,K,P,U,Z): down 5 **does** move.
-- **Keep as designed.** Teach wrap in S3; note identity on 5-cols if asked.
+- Count = **13** (`COLUMN_SHIFT` in `src/lib/cipher/grid.ts`).
+- Col A (len 6): $13 \equiv 1 \pmod 6$ → always moves one slot.
+- Cols B–E (len 5): $13 \equiv 3 \pmod 5$ → moves three slots (not identity).
+- Decrypt uses up 13 (exact inverse).
 
 ### 3) Typo in Step 3 note
 

@@ -67,18 +67,22 @@ export function moveRight(char: string): string {
   return CIPHER_GRID[r][nextCol];
 }
 
-export function shiftColumnDown5(char: string): string {
+/** Step 3 column shift count (encrypt down / decrypt up). */
+export const COLUMN_SHIFT = 13;
+
+export function shiftColumnDown13(char: string): string {
   const { c } = getGridPosition(char);
   const col = GRID_COLUMNS[c];
   const idx = col.indexOf(char);
-  const nextIdx = (idx + 5) % col.length;
+  const nextIdx = (idx + COLUMN_SHIFT) % col.length;
   return col[nextIdx];
 }
 
-export function shiftColumnUp5(char: string): string {
+export function shiftColumnUp13(char: string): string {
   const { c } = getGridPosition(char);
   const col = GRID_COLUMNS[c];
   const idx = col.indexOf(char);
-  const nextIdx = ((idx - (5 % col.length)) + col.length) % col.length;
+  const step = COLUMN_SHIFT % col.length;
+  const nextIdx = (idx - step + col.length) % col.length;
   return col[nextIdx];
 }

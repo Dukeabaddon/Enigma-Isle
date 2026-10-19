@@ -8,3 +8,4 @@ Numbered, additive records. Do not rewrite history — add new files for changes
 | 002 | [002-cipher-invertible-variant.md](./002-cipher-invertible-variant.md) | Accepted 2026-10-17 |
 
 Running log: [../.context/decisions.md](../.context/decisions.md)
+- [005-column-shift-13.md](005-column-shift-13.md) — Step 3 down/up 13×
