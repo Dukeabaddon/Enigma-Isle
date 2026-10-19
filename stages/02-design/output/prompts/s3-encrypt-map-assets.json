@@ -1,0 +1,79 @@
+{
+  "project": "Enigma Isle",
+  "section": "encrypt-journey",
+  "branch": "feat/encrypt-journey-map-ui",
+  "reference": "stages/02-design/references/visual/s3-encrypt-map-infographic-ref.png",
+  "style_global": {
+    "look": "adventure treasure-map UI, soft illustrative (not photo)",
+    "palette": {
+      "parchment": "#E8DDB8",
+      "parchment_deep": "#D4C4A0",
+      "ink": "#3E2A22",
+      "vine_green": "#2F6B3A",
+      "leather": "#5C4033",
+      "gold": "#D4A017"
+    },
+    "negative": [
+      "photorealistic jungle photo",
+      "UI text or letters in asset",
+      "cards, ribbons, buttons baked into image",
+      "watermark",
+      "purple neon",
+      "pirate skull kitsch",
+      "busy collage"
+    ]
+  },
+  "assets": [
+    {
+      "id": "map-terrain-topo",
+      "filename": "map-terrain-topo.webp",
+      "place": "public/images/encrypt-journey/map-terrain-topo.webp",
+      "size": { "width": 1920, "height": 2400 },
+      "prompt": "Full-bleed vertical game UI background only: aged warm parchment map (#E8DDB8), faint topographic contour lines, soft sketched mountains and tiny islands, 2–3 subtle compass roses, gentle paper grain, no characters, no vines, no treasure, no text, no UI cards. Soft even lighting, flat illustrative map texture suitable as CSS background-image. Transparent text-free."
+    },
+    {
+      "id": "vine-corner-tl",
+      "filename": "vine-corner-tl.webp",
+      "place": "public/images/encrypt-journey/vine-corner-tl.webp",
+      "size": { "width": 900, "height": 700 },
+      "prompt": "Corner decoration only: lush tropical green leaves and vines curling from the TOP-LEFT corner, transparent background, soft cel shading, adventure game UI style matching a treasure map. No text, no characters, no parchment rectangle filling the frame — foliage on alpha only."
+    },
+    {
+      "id": "vine-corner-tr",
+      "filename": "vine-corner-tr.webp",
+      "place": "public/images/encrypt-journey/vine-corner-tr.webp",
+      "size": { "width": 900, "height": 700 },
+      "prompt": "Corner decoration only: lush tropical green leaves and vines curling from the TOP-RIGHT corner, transparent background, soft cel shading, adventure game UI style. Mirror-friendly composition of vine-corner-tl. No text, no characters, alpha only."
+    },
+    {
+      "id": "vine-corner-bl",
+      "filename": "vine-corner-bl.webp",
+      "place": "public/images/encrypt-journey/vine-corner-bl.webp",
+      "size": { "width": 800, "height": 560 },
+      "prompt": "Corner decoration only: tropical leaves and vines along BOTTOM-LEFT, transparent background, leave clear space on the right for a standing explorer character (do not draw the character). Soft cel shading, adventure UI. No text, alpha only."
+    },
+    {
+      "id": "footprints-trail",
+      "filename": "footprints-trail.webp",
+      "place": "public/images/encrypt-journey/footprints-trail.webp",
+      "optional": true,
+      "size": { "width": 1400, "height": 500 },
+      "prompt": "Sparse trail of brown boot footprints on fully transparent background, winding S-curve left-to-right then down, soft illustrative stamps, adventure map style. No other objects, no text."
+    }
+  ],
+  "css_not_assets": [
+    "Step cards (rounded parchment panels + shadow)",
+    "Leather ribbon headers (STEP n · LABEL) with fishtail notch + stitch",
+    "Inner demo window (traffic-light dots + well)",
+    "Dotted connector path with arrowheads (SVG/CSS)",
+    "Wood-style section title via CSS font + text-shadow (optional texture later)"
+  ],
+  "reuse_existing": [
+    "public/images/mascot-enigma.webp",
+    "public/images/treasure-chest.webp"
+  ],
+  "copy_lock": {
+    "step3_title": "Column Shift 13×",
+    "step3_body": "Letter drops 13 positions inside its vertical column (mod column length)."
+  }
+}

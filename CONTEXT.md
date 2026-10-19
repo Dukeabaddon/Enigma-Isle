@@ -34,9 +34,11 @@ See `decisions/`, `.context/decisions.md`, `shared/grill-summary.md`.
 01-discovery → 02-design → 03-cipher-spec → 04-build → 05-polish
 ```
 
-**Active:** `04-build` → `05-polish` · **Next:** a11y / deploy  
+**Active:** `04-build` · branch `feat/encrypt-journey-map-ui`  
+**Next:** S3 map redesign assets → CSS cards/ribbons → polish/deploy  
 **State:** `.context/state.md` · **Plan:** `docs/PLAN.md` (local)  
-**Moat:** #120 K highlight · #121 encrypt mobile `touch-pan-y` (no sideways drag)
+**Design:** `stages/02-design/output/s3-encrypt-journey-map-redesign.md`  
+**Moat:** #120 K · #121 touch-pan-y · cipher ADR 005 (13×)
 
 ## Workflow (always)
 
