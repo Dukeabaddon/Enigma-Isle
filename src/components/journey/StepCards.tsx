@@ -161,7 +161,7 @@ export default function StepCards() {
                     Column Shift 13×
                   </h3>
                   <p className="text-sm text-ink-muted leading-relaxed font-medium">
-                    Letter drops 13 positions inside its vertical column (mod column length). Col A has 6 slots; cols B–E have 5 — wrap keeps the map bijective.
+                    The letter slides down its own column 13 times. When it hits the bottom, it wraps back to the top.
                   </p>
                 </div>
 
@@ -346,7 +346,7 @@ export default function StepCards() {
                   Column Shift Up 13×
                 </h3>
                 <p className="text-sm text-ink-muted leading-relaxed font-medium">
-                  Shifts upward 13 positions inside the vertical column (mod column length) — exact inverse of encrypt Step 3.
+                  The letter slides up its own column 13 times. When it hits the top, it wraps back to the bottom.
                 </p>
               </div>
 

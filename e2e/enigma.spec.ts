@@ -37,19 +37,19 @@ test.describe('Enigma Isle E2E and Visual Verification', () => {
     saveScreenshot(shot2, '02-hero-encrypt-expand.png');
 
     // Get the ciphertext
-    const ciphertext = await page.locator('div.break-all').innerText();
+    const ciphertext = await page.getByTestId('cipher-output').innerText();
     expect(ciphertext.length).toBeGreaterThan(0);
 
     // 3. Decrypt interaction and scroll skin
-    // Mode alternate lives in hover dropdown on primary CTA
+    // ⇅ toggle switches mode (no hover dropdown)
     await page.locator('#workbench').scrollIntoViewIfNeeded();
-    await page.locator('button[aria-label="Encrypt"]').hover();
     await page.click('button[data-testid="cipher-toggle"]');
+    await expect(page.locator('button[aria-label="Decrypt"]')).toBeVisible();
     await page.fill('#message-input', ciphertext);
     await page.click('button[aria-label="Decrypt"]');
 
     await expect(page.locator('text=Decrypted Plaintext')).toBeVisible();
-    await expect(page.locator('div.break-all')).toHaveText('DISCOVERYVOYAGE');
+    await expect(page.getByTestId('cipher-output')).toHaveText('DISCOVERY VOYAGE');
     await page.waitForTimeout(600);
 
     const shot3 = 'shots/03-hero-decrypt.png';

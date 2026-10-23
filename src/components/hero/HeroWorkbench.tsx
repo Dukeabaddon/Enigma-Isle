@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronsUpDown, Key } from 'lucide-react';
 import { useCipher } from '@/hooks/useCipher';
 import ResultExpand from './ResultExpand';
@@ -21,8 +21,6 @@ export default function HeroWorkbench() {
 
   const [stepsModalOpen, setStepsModalOpen] = useState(false);
   const [activeAction, setActiveAction] = useState<'encrypt' | 'decrypt'>('encrypt');
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Smooth scroll to result section below hero
   useEffect(() => {
@@ -37,19 +35,7 @@ export default function HeroWorkbench() {
     }
   }, [isExpanded, encryptResult, decryptResult]);
 
-  useEffect(() => {
-    if (!dropdownOpen) return;
-    const handleClickOutside = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setDropdownOpen(false);
-      }
-    };
-    window.addEventListener('mousedown', handleClickOutside);
-    return () => window.removeEventListener('mousedown', handleClickOutside);
-  }, [dropdownOpen]);
-
   const handlePrimaryClick = () => {
-    setDropdownOpen(false);
     if (activeAction === 'encrypt') {
       handleEncrypt();
     } else {
@@ -57,15 +43,7 @@ export default function HeroWorkbench() {
     }
   };
 
-  const handleSelectAlternate = (action: 'encrypt' | 'decrypt') => {
-    setActiveAction(action);
-    setDropdownOpen(false);
-    if (document.activeElement instanceof HTMLElement) {
-      document.activeElement.blur();
-    }
-  };
-
-  /** Mobile: switch mode only — never runs cipher */
+  /** Switch mode only — never runs cipher */
   const handleCycleMode = () => {
     setActiveAction((prev) => (prev === 'encrypt' ? 'decrypt' : 'encrypt'));
   };
@@ -122,7 +100,7 @@ export default function HeroWorkbench() {
           aria-hidden
         />
 
-        {/* Title + input — mobile: input only +35px; desktop hover switch */}
+        {/* Title + input — mobile: input only +35px; ⇅ switch on all sizes */}
         <div className="relative z-10 max-w-4xl mx-auto w-full px-4 sm:px-6 flex flex-col items-center justify-start text-center flex-1 pt-28 sm:pt-36 md:pt-44 pb-16 sm:pb-20">
           <h1 className="font-hero text-5xl sm:text-7xl md:text-8xl tracking-wide text-ink mb-3 drop-shadow-xs">
             ENIGMA ISLE
@@ -152,10 +130,10 @@ export default function HeroWorkbench() {
                 }}
               />
 
-              {/* Mobile: chevron cycles mode only; primary runs cipher */}
+              {/* Chevron cycles mode only; primary runs cipher */}
               <button
                 type="button"
-                data-testid="cipher-toggle-mobile"
+                data-testid="cipher-toggle"
                 onClick={handleCycleMode}
                 aria-label={
                   activeAction === 'encrypt'
@@ -163,21 +141,12 @@ export default function HeroWorkbench() {
                     : 'Switch to encrypt'
                 }
                 title="Switch Encrypt / Decrypt"
-                className="sm:hidden inline-flex min-h-12 w-11 shrink-0 items-center justify-center border-l border-ink/10 text-ink/70 hover:bg-ink/5 active:bg-ink/10 transition-colors cursor-pointer"
+                className="inline-flex min-h-12 w-11 sm:w-12 shrink-0 items-center justify-center border-l border-ink/10 text-ink/70 hover:bg-ink/5 active:bg-ink/10 transition-colors cursor-pointer"
               >
                 <ChevronsUpDown className="h-5 w-5" aria-hidden />
               </button>
 
-              <div
-                ref={dropdownRef}
-                className="relative shrink-0 flex items-stretch"
-                onMouseEnter={() => {
-                  if (window.matchMedia('(hover: hover)').matches) {
-                    setDropdownOpen(true);
-                  }
-                }}
-                onMouseLeave={() => setDropdownOpen(false)}
-              >
+              <div className="relative shrink-0 flex items-stretch">
                 {activeAction === 'encrypt' ? (
                   <button
                     type="button"
@@ -202,34 +171,6 @@ export default function HeroWorkbench() {
                   </button>
                 )}
 
-                {/* Desktop hover: alternate action */}
-                {dropdownOpen && (
-                  <div className="hidden sm:block absolute right-0 top-full pt-1.5 z-30 animate-in fade-in zoom-in-95 duration-100">
-                    {activeAction === 'encrypt' ? (
-                      <button
-                        type="button"
-                        data-testid="cipher-toggle"
-                        onClick={() => handleSelectAlternate('decrypt')}
-                        title="Switch to Decrypt"
-                        className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-[#2F8F6B] hover:bg-[#267759] text-white shadow-xl active:scale-95 transition-all whitespace-nowrap border border-white/20 cursor-pointer"
-                      >
-                        <Key className="h-4 w-4 text-white" />
-                        <span>Decrypt</span>
-                      </button>
-                    ) : (
-                      <button
-                        type="button"
-                        data-testid="cipher-toggle"
-                        onClick={() => handleSelectAlternate('encrypt')}
-                        title="Switch to Encrypt"
-                        className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-[#D4A017] hover:bg-[#C29012] text-white shadow-xl active:scale-95 transition-all whitespace-nowrap border border-white/20 cursor-pointer"
-                      >
-                        <Key className="h-4 w-4 text-white" />
-                        <span>Encrypt</span>
-                      </button>
-                    )}
-                  </div>
-                )}
               </div>
             </div>
 

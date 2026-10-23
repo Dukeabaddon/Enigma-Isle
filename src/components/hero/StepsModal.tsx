@@ -78,7 +78,7 @@ export default function StepsModal({
         {/* Sharp readable content (not filtered) */}
         <div
           ref={containRef}
-          className="old-parchment-content flex max-h-[92vh] flex-col overflow-hidden px-5 py-6 sm:px-8 sm:py-8"
+          className="old-parchment-content flex max-h-[92vh] min-h-0 flex-col px-5 py-6 sm:px-8 sm:py-8"
         >
           <div className="mb-4 flex items-start justify-between gap-3">
             <div className="min-w-0">
@@ -103,7 +103,7 @@ export default function StepsModal({
           </div>
 
           {/* Letter selector */}
-          <div className="mb-4 flex items-center gap-2 overflow-x-auto pb-1 font-sans">
+          <div className="mb-4 flex shrink-0 items-center gap-2 overflow-x-auto overflow-y-visible py-2 font-sans">
             <span className="mr-1 shrink-0 text-[11px] font-bold uppercase tracking-wider text-[#7a4a22]">
               Letter
             </span>
@@ -118,12 +118,12 @@ export default function StepsModal({
                   key={idx}
                   type="button"
                   onClick={() => setSelectedIdx(idx)}
-                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg text-sm font-bold transition-all ${
+                  className={`box-border flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border-2 text-sm font-bold transition-colors ${
                     isSelected
                       ? mode === 'encrypt'
-                        ? 'bg-encrypt text-white shadow-md'
-                        : 'bg-decrypt text-white shadow-md'
-                      : 'bg-[#fffef0]/80 text-[#3d220f] ring-1 ring-[#5c3310]/20 hover:ring-[#5c3310]/40'
+                        ? 'border-[#B8860B] bg-encrypt text-white'
+                        : 'border-[#1F6B4F] bg-decrypt text-white'
+                      : 'border-[#5c3310]/25 bg-[#fffef0]/80 text-[#3d220f] hover:border-[#5c3310]/45'
                   }`}
                 >
                   {letter}

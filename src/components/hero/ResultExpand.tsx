@@ -114,7 +114,10 @@ export default function ResultExpand({
                     <h3 className="font-display font-extrabold text-sm sm:text-base uppercase tracking-wider text-[#B8860B] block text-center">
                       {mode === 'encrypt' ? 'Ciphertext Result (Upper A–Z)' : 'Decrypted Plaintext'}
                     </h3>
-                    <div className="font-mono text-2xl sm:text-4xl font-black tracking-[0.25em] sm:tracking-[0.3em] text-ink break-words whitespace-pre-wrap select-all text-center">
+                    <div
+                      data-testid="cipher-output"
+                      className="font-mono text-2xl sm:text-4xl font-black tracking-[0.25em] sm:tracking-[0.3em] text-ink break-words whitespace-pre-wrap select-all text-center"
+                    >
                       {activeResult}
                     </div>
                   </div>
