@@ -113,9 +113,9 @@ export default function HeroWorkbench() {
 
         <HeroSkyBirds />
 
-        {/* Title + input — mobile: input only +35px; ⇅ switch on all sizes */}
-        <div className="relative z-10 max-w-4xl mx-auto w-full px-4 sm:px-6 flex flex-col items-center justify-start text-center flex-1 pt-28 sm:pt-36 md:pt-44 pb-16 sm:pb-20">
-          <h1 className="font-hero text-5xl sm:text-7xl md:text-8xl tracking-wide text-ink mb-3 drop-shadow-xs">
+        {/* Title + input — +30px stack offset; mobile input extra mt */}
+        <div className="relative z-10 max-w-4xl mx-auto w-full px-4 sm:px-6 flex flex-col items-center justify-start text-center flex-1 pt-[calc(7rem+30px)] sm:pt-[calc(9rem+30px)] md:pt-[calc(11rem+30px)] pb-16 sm:pb-20">
+          <h1 className="font-hero text-6xl sm:text-8xl md:text-[5.5rem] tracking-wide text-ink mb-3 drop-shadow-xs">
             ENIGMA ISLE
           </h1>
 
@@ -123,7 +123,7 @@ export default function HeroWorkbench() {
             Drop in a secret phrase. Watch the island grid twist, hop, and lock your message into an unbreakable puzzle.
           </p>
 
-          <div className="w-full max-w-2xl text-left mt-[35px] sm:mt-0">
+          <div className="w-full max-w-2xl text-left mt-[65px] sm:mt-[30px]">
             <label htmlFor="message-input" className="sr-only">
               Secret message
             </label>

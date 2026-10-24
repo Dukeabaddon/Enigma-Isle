@@ -278,22 +278,22 @@ export default function StepCards() {
         id="decrypt-journey"
         className="relative bg-[#EDF5F1] text-ink pt-0 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px] seam-paint-mint"
       >
-        {/* Mobile + desktop: Adarna pinned to section top-left (size independent of text) */}
+        {/* Desktop only: Adarna pinned to section top-left */}
         <img
           src="/images/adarna.webp"
           alt="Ibong Adarna on a branch"
-          className="pointer-events-none absolute left-0 top-0 z-20 w-40 sm:w-44 lg:w-52 xl:w-60 h-auto max-w-none select-none object-contain object-left-top drop-shadow-lg"
+          className="pointer-events-none absolute left-0 top-0 z-20 hidden sm:block w-44 lg:w-52 xl:w-60 h-auto max-w-none select-none object-contain object-left-top drop-shadow-lg"
           width={1649}
           height={2277}
         />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          {/* Mobile: title in empty band right of absolute Adarna */}
-          <div className="sm:hidden mb-8 min-h-[11.5rem] pl-[10.25rem] pr-1 pt-3 space-y-1 text-left">
+          {/* Mobile: no Adarna — centered header */}
+          <div className="sm:hidden mb-8 pt-6 text-center space-y-2 px-1">
             <h2 className="font-display font-black text-[1.35rem] leading-[1.15] text-ink tracking-tight">
               How Decryption Works
             </h2>
-            <p className="text-[0.7rem] text-ink/80 font-medium leading-snug">
+            <p className="text-[0.7rem] text-ink/80 font-medium leading-snug max-w-sm mx-auto">
               Letters reverse in four steps. Digits: up, then left on the number grid.
             </p>
           </div>

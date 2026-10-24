@@ -11,25 +11,18 @@ export default function Footer() {
         Island plate — cream only (no dark border/fade).
         9603382 border-b #0f1911 + bottom gradient re-drew the hairlines.
       */}
-      <div className="relative w-full overflow-hidden leading-none select-none bg-[#eaddbf] seam-overlap seam-paint-cream -mt-px">
+      <div className="footer-island-plate relative w-full overflow-hidden leading-[0] select-none bg-sand-seam-bottom seam-overlap">
         <img
           src="/images/footer-island.webp"
           alt=""
-          className="w-full h-auto block select-none pointer-events-none"
+          className="footer-island-art w-full h-auto block select-none pointer-events-none"
           width={3392}
           height={1248}
           decoding="async"
         />
-        <div
-          className="pointer-events-none absolute inset-x-0 top-0 h-4 z-[1]"
-          style={{
-            background: 'linear-gradient(to bottom, #eaddbf 0%, transparent 100%)',
-          }}
-          aria-hidden
-        />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full pt-10 pb-12 space-y-12">
+      <div className="footer-dark-body relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full pt-10 pb-12 space-y-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 items-start">
           <div className="md:col-span-7 space-y-4">
             <div className="flex items-center gap-3">

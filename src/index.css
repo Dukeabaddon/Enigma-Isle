@@ -28,10 +28,13 @@
   --font-hero: 'Lilita One', 'Space Grotesk', system-ui, sans-serif;
   --font-hand: 'Caveat', cursive, sans-serif;
   --font-parchment: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+  /* ~110% zoom feel: scales rem-based type, spacing, and most Tailwind utilities */
+  --site-scale: 1.1;
 }
 
 @layer base {
   html {
+    font-size: calc(100% * var(--site-scale));
     overflow-x: hidden;
     overscroll-behavior-x: none;
   }
@@ -328,10 +331,138 @@
     }
   }
 
-  /* Close bridge: parchment sits in mist band, not above horizon */
+  .close-bridge-stage {
+    position: relative;
+  }
+
+  .close-mist-divider {
+    height: 7rem;
+  }
+
+  @media (min-width: 768px) {
+    .close-mist-divider {
+      height: 9rem;
+    }
+  }
+
+  /* Desktop: parchment overlaps mist + divider */
   .parchment-mist-overlay {
-    bottom: var(--parchment-mist-bottom, 60px);
+    bottom: var(--parchment-mist-bottom, 3.75rem);
     top: auto;
+    transform: translateX(-50%);
+  }
+
+  /* Flat zone of parchment-bridge-panel.webp (clear of torn edges) */
+  .try-again-parchment-inner {
+    inset: 30% 14% 26% 14%;
+    padding: 5px 0;
+    gap: 0.35rem;
+    transform: translateY(2%);
+    box-sizing: border-box;
+  }
+
+  .try-again-parchment-title {
+    font-size: clamp(1.35rem, 4.2vw, 2.35rem);
+    line-height: 1.15;
+  }
+
+  .try-again-parchment-body {
+    font-size: clamp(0.75rem, 2.6vw, 1rem);
+    margin-top: 0.25rem;
+    max-width: 14rem;
+  }
+
+  .try-again-parchment-cta {
+    margin-top: 0.5rem;
+    font-size: clamp(0.9375rem, 3vw, 1.25rem);
+    min-height: 2.75rem;
+  }
+
+  @media (min-width: 640px) {
+    .try-again-parchment-inner {
+      inset: 28% 11% 24% 11%;
+      gap: 0.5rem;
+      transform: translateY(3%);
+    }
+
+    .try-again-parchment-body {
+      max-width: 18rem;
+    }
+
+    .try-again-parchment-cta {
+      margin-top: 0.65rem;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .close-mist-divider {
+      height: 40dvh;
+      min-height: 9rem;
+      max-height: 17rem;
+    }
+
+    .parchment-mist-overlay {
+      bottom: calc(20dvh - 0.25rem);
+      width: min(84vw, 19.5rem);
+      transform: translate(-50%, 50%);
+    }
+
+    .try-again-parchment-inner {
+      inset: 32% 22% 28% 22%;
+      gap: 0.15rem;
+      transform: translateY(1%);
+    }
+
+    .try-again-parchment-title {
+      font-size: 1.0625rem;
+      line-height: 1.12;
+    }
+
+    .try-again-parchment-body {
+      font-size: 0.625rem;
+      line-height: 1.3;
+      margin-top: 0.1rem;
+      max-width: 8.75rem;
+    }
+
+    .try-again-parchment-cta {
+      margin-top: 0.25rem;
+      font-size: 0.8125rem;
+      min-height: 2.25rem;
+    }
+
+    /* Sand band → footer island: overlap + one cream paint (no stacked shadows) */
+    #decrypt-close-bridge .sand-seam-bridge {
+      margin-bottom: -3px;
+      position: relative;
+      z-index: 2;
+    }
+
+    #decrypt-close-bridge + footer {
+      margin-top: -3px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .footer-island-plate {
+      margin-top: 0;
+      box-shadow: none;
+      background-color: var(--color-sand-seam-bottom);
+    }
+
+    .footer-island-art {
+      display: block;
+      width: 100%;
+      vertical-align: bottom;
+      transform: translateZ(0);
+    }
+
+    .footer-dark-body {
+      margin-top: -2px;
+      padding-top: 2.5rem;
+      background-color: #0f1911;
+      box-shadow: 0 -2px 0 0 #0f1911;
+    }
   }
 
   .sand-seam-bridge {
