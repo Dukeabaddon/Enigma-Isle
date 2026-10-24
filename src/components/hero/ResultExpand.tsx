@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Copy, Check, Eye } from 'lucide-react';
 import { CipherResult, DecryptResult } from '@/lib/cipher';
 import { motion, AnimatePresence } from 'framer-motion';
+import UndergroundSoilBackdrop from '@/components/layout/UndergroundSoilBackdrop';
 
 interface ResultExpandProps {
   isExpanded: boolean;
@@ -42,20 +43,12 @@ export default function ResultExpand({
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="relative z-[5] w-full overflow-x-hidden overflow-y-visible scroll-mt-20 rounded-t-none"
-          style={{
-            background: `linear-gradient(to bottom, ${UNDERGROUND} 0%, ${UNDERGROUND} 100%)`,
-          }}
+          className="relative z-[5] w-full scroll-mt-20 rounded-t-none"
+          style={{ backgroundColor: UNDERGROUND }}
         >
-          <div
-            className="pointer-events-none absolute inset-x-0 top-0 h-12 sm:h-16 z-[1]"
-            style={{
-              background: `linear-gradient(to bottom, ${UNDERGROUND} 0%, transparent 100%)`,
-            }}
-            aria-hidden
-          />
+          <UndergroundSoilBackdrop />
 
-          <div className="relative z-10 flex flex-col justify-start px-4 sm:px-6 pt-8 sm:pt-12 pb-12 sm:pb-16">
+          <div className="relative z-10 flex flex-col justify-start px-4 sm:px-6 pb-12 sm:pb-16">
             <div className="max-w-2xl mx-auto w-full space-y-4">
               <div
                 id="cipher-result"

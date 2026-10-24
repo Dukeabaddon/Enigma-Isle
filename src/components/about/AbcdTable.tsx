@@ -15,7 +15,9 @@ export default function AbcdTable() {
   return (
     <div className="relative max-w-xl mx-auto w-full">
       {/* Wood Depth Mat Underneath Parchment */}
-      <div className="absolute -inset-2.5 sm:-inset-3.5 rounded-[28px] bg-gradient-to-b from-[#2E1F16] via-[#38261B] to-[#1F140D] shadow-[0_20px_40px_rgba(0,0,0,0.5)] border border-[#5C4033]/60 -rotate-[0.3deg]" />
+      <div
+        className="absolute -inset-2.5 sm:-inset-3.5 rounded-[28px] bg-gradient-to-b from-[#342319] via-[#2a1a14] to-[#1f140d] shadow-[0_20px_40px_rgba(0,0,0,0.5)] border border-[#5C4033]/45 -rotate-[0.3deg]"
+      />
 
       {/* Parchment Map Sheet */}
       <div className="relative rounded-2xl bg-[#FFFDF7] border-2 border-[#D8C7A5] p-6 sm:p-9 shadow-2xl overflow-hidden rotate-[0.3deg]">
@@ -41,7 +43,8 @@ export default function AbcdTable() {
           {[1, 2, 3, 4, 5].map((colNum) => (
             <div
               key={colNum}
-              className="text-[11px] font-black text-ink pb-1.5 uppercase tracking-wider border-b-2 border-ink/20"
+              className="fit-ellipsis text-[10px] sm:text-[11px] font-black text-ink pb-1.5 uppercase tracking-wide sm:tracking-wider border-b-2 border-ink/20"
+              title={`Column ${colNum}`}
             >
               Col {colNum}
             </div>

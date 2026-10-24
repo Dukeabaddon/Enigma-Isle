@@ -40,6 +40,8 @@ playwright-report/
 public/images/*.backup.webp
 public/images/*.jpeg
 public/images/*.jpg
+# Source masters (ship WebP only, e.g. about-soil-texture.webp)
+public/images/Texturelabs_*
 public/images/*.raw.*
 shared/grill-summary.md
 shots/

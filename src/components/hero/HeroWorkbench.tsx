@@ -94,9 +94,9 @@ export default function HeroWorkbench() {
               className="h-full w-full object-cover object-bottom"
             />
             <div
-              className="absolute inset-x-0 top-0 h-28 pointer-events-none"
+              className="absolute inset-x-0 top-0 h-40 pointer-events-none"
               style={{
-                background: `linear-gradient(to bottom, ${HERO_PLATE} 0%, transparent 100%)`,
+                background: `linear-gradient(to bottom, ${HERO_PLATE} 0%, ${HERO_PLATE}ee 35%, transparent 100%)`,
               }}
               aria-hidden
             />
@@ -127,14 +127,14 @@ export default function HeroWorkbench() {
             <label htmlFor="message-input" className="sr-only">
               Secret message
             </label>
-            <div className="flex items-stretch rounded-2xl border-2 border-ink/20 bg-white/95 backdrop-blur-md shadow-xl transition-all focus-within:border-ink/50 focus-within:ring-2 focus-within:ring-ink/10 overflow-visible">
+            <div className="flex min-w-0 items-stretch overflow-hidden rounded-2xl border-2 border-ink/20 bg-white/95 backdrop-blur-md shadow-xl transition-all focus-within:border-ink/50 focus-within:ring-2 focus-within:ring-ink/10">
               <input
                 id="message-input"
                 type="text"
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
                 placeholder="Enter a secret phrase…"
-                className="min-w-0 flex-1 bg-transparent px-4 sm:px-5 py-3.5 font-mono text-base text-ink placeholder:text-ink-muted/60 outline-none rounded-l-2xl"
+                className="fit-ellipsis min-w-0 flex-1 bg-transparent px-4 sm:px-5 py-3.5 font-mono text-base text-ink placeholder:text-ink-muted/60 outline-none rounded-l-2xl"
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') {
                     e.preventDefault();

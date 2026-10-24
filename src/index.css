@@ -11,6 +11,11 @@
   --color-dirt: #5C4033;
   --color-dirt-deep: #3E2A22;
   --color-underground: #342319;
+  --about-soil-gap: 80px;
+  --hero-radius-overlap: 48px;
+  --underground-soil-pull: calc(var(--about-soil-gap) + var(--hero-radius-overlap));
+  --about-soil-opacity: 0.5;
+  --about-soil-tile-size: 480px;
   --color-island-teal: #3A8F8C;
   --color-sand: #E8D5B5;
   --color-hero-plate: #f2ebd9;
@@ -41,6 +46,13 @@
 }
 
 @layer utilities {
+  .fit-ellipsis {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   /*
     Mobile subpixel hairlines: fractional DPR leaves 1px gaps; parent
     #342319 peeks through. Fix = -1px overlap + same-color 1px shadow.
@@ -131,9 +143,79 @@
     }
   }
 
-  /* Gap between hero / result block and About (Invertible Island Cipher) */
+  /* §2 About: overlap hero rounded corners; soil fills pull band */
   .about-cipher-section {
-    margin-top: 80px;
+    margin-top: calc(-1 * var(--hero-radius-overlap));
+    padding-top: calc(var(--about-soil-gap) + 2.5rem);
+  }
+
+  main:has(#cipher-result-section) .about-cipher-section {
+    margin-top: 0;
+  }
+
+  @media (min-width: 640px) {
+    .about-cipher-section {
+      --about-soil-tile-size: 560px;
+      padding-top: calc(var(--about-soil-gap) + 3rem);
+    }
+  }
+
+  #cipher-result-section {
+    margin-top: calc(-1 * var(--hero-radius-overlap));
+    padding-top: calc(var(--about-soil-gap) + 1.5rem);
+  }
+
+  @media (min-width: 640px) {
+    #cipher-result-section {
+      padding-top: calc(var(--about-soil-gap) + 2rem);
+    }
+  }
+
+  .underground-soil-backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(-1 * var(--underground-soil-pull));
+    bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  /* Soil must paint into hero overlap; overflow-y visible on section */
+  .about-cipher-section,
+  #cipher-result-section {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .underground-soil-texture {
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-underground);
+    background-image: url('/images/about-soil-texture.webp');
+    background-repeat: repeat;
+    background-size: var(--about-soil-tile-size);
+    opacity: var(--about-soil-opacity);
+    filter: blur(0.35px);
+    transform: scale(1.02);
+    transform-origin: center;
+  }
+
+  .underground-soil-texture--a {
+    background-position: 14% 22%;
+  }
+
+  .underground-soil-texture--b {
+    background-position: calc(var(--about-soil-tile-size) * 0.57)
+      calc(var(--about-soil-tile-size) * 0.61);
+    opacity: calc(var(--about-soil-opacity) * 0.45);
+  }
+
+  .underground-soil-tint {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(52, 35, 25, 0.78);
   }
 
   /* Hero sky birds — ~25% smaller, 15–16s crossings, self-hosted sprite */

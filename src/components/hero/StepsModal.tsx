@@ -431,9 +431,12 @@ function GridTraversalAnimation({
       {/* Current Animated Status Indicator */}
       <div className="flex items-center gap-2 text-xs font-mono">
         <span className="text-[#7a4a22]">Traversal Step {activeStep + 1}/{path.length}:</span>
-        <span className={`px-2 py-0.5 rounded font-bold text-xs ${
-          accent === 'encrypt' ? 'bg-[#D4A017]/20 text-[#8C640C]' : 'bg-[#2F8F6B]/20 text-[#1F6B4F]'
-        }`}>
+        <span
+          className={`fit-ellipsis max-w-[min(100%,11rem)] px-2 py-0.5 rounded font-bold text-xs ${
+            accent === 'encrypt' ? 'bg-[#D4A017]/20 text-[#8C640C]' : 'bg-[#2F8F6B]/20 text-[#1F6B4F]'
+          }`}
+          title={`${activeLabel}: ${activeChar}`}
+        >
           {activeLabel}: <strong className="text-[#3d220f] font-black text-sm">{activeChar}</strong>
         </span>
       </div>
@@ -482,13 +485,14 @@ function GridTraversalAnimation({
             key={`step-${idx}`}
             type="button"
             onClick={() => setActiveStep(idx)}
-            className={`px-2 py-0.5 rounded transition-all cursor-pointer ${
+            className={`fit-ellipsis max-w-[9rem] px-2 py-0.5 rounded transition-all cursor-pointer ${
               idx === activeStep
                 ? accent === 'encrypt'
                   ? 'bg-[#D4A017] text-white font-bold shadow-xs'
                   : 'bg-[#2F8F6B] text-white font-bold shadow-xs'
                 : 'bg-[#5c3310]/8 text-[#4a2c14] hover:bg-[#5c3310]/15'
             }`}
+            title={labels[idx] ? `${labels[idx]}: ${char}` : char}
           >
             {labels[idx] ? `${labels[idx]}: ` : ''}{char}
           </button>
@@ -534,9 +538,10 @@ function NumberGridTraversal({
       <div className="flex items-center gap-2 text-xs font-mono">
         <span className="text-[#7a4a22]">Step {activeStep + 1}/{path.length}:</span>
         <span
-          className={`px-2 py-0.5 rounded font-bold text-xs ${
+          className={`fit-ellipsis max-w-[min(100%,11rem)] px-2 py-0.5 rounded font-bold text-xs ${
             accent === 'encrypt' ? 'bg-[#D4A017]/20 text-[#8C640C]' : 'bg-[#2F8F6B]/20 text-[#1F6B4F]'
           }`}
+          title={`${activeLabel}: ${activeChar}`}
         >
           {activeLabel}: <strong className="text-[#3d220f] font-black text-sm">{activeChar}</strong>
         </span>
@@ -573,13 +578,14 @@ function NumberGridTraversal({
             key={`digit-step-${idx}`}
             type="button"
             onClick={() => setActiveStep(idx)}
-            className={`cursor-pointer rounded px-2 py-0.5 transition-all ${
+            className={`fit-ellipsis max-w-[9rem] cursor-pointer rounded px-2 py-0.5 transition-all ${
               idx === activeStep
                 ? accent === 'encrypt'
                   ? 'bg-[#D4A017] font-bold text-white shadow-xs'
                   : 'bg-[#2F8F6B] font-bold text-white shadow-xs'
                 : 'bg-[#5c3310]/8 text-[#4a2c14] hover:bg-[#5c3310]/15'
             }`}
+            title={labels[idx] ? `${labels[idx]}: ${char}` : char}
           >
             {labels[idx] ? `${labels[idx]}: ` : ''}
             {char}
