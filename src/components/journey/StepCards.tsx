@@ -36,7 +36,7 @@ export default function StepCards() {
       {/* S3 — How Encryption Works: rounded top+bottom on dirt; slightly darker cream so radius reads */}
       <section
         id="encrypt-journey"
-        className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-40 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-x-clip overflow-y-visible touch-pan-y overscroll-x-none [-webkit-overflow-scrolling:touch] rounded-t-3xl rounded-b-3xl sm:rounded-t-[40px] sm:rounded-b-[40px] shadow-2xl mb-6"
+        className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-40 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-x-clip overflow-y-visible touch-pan-y overscroll-x-none [-webkit-overflow-scrolling:touch] rounded-t-3xl rounded-b-3xl sm:rounded-t-[40px] sm:rounded-b-[40px] shadow-none sm:shadow-2xl mb-6"
       >
           {/* Desktop flank — treasure only */}
           <img

@@ -5,9 +5,11 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-3 sm:top-5 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-5xl">
+    <header
+      className="nav-site-header fixed top-3 sm:top-5 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-5xl pt-[env(safe-area-inset-top,0px)]"
+    >
       {/* Pill stays pill — no radius morph */}
-      <div className="rounded-full bg-white/95 backdrop-blur-md border border-black/[0.08] shadow-[0_8px_30px_rgba(0,0,0,0.08)] px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
+      <div className="nav-site-pill rounded-full border border-black/[0.08] bg-white shadow-[0_8px_30px_rgba(0,0,0,0.08)] px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between sm:bg-white/95 sm:backdrop-blur-md">
         <a href="#workbench" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
           <img
             src="/images/nav-icon.webp"

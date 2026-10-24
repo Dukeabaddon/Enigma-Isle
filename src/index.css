@@ -37,14 +37,23 @@
     font-size: calc(100% * var(--site-scale));
     overflow-x: hidden;
     overscroll-behavior-x: none;
+    background-color: #0f1911;
+    min-height: 100%;
+    min-height: 100dvh;
   }
 
   body {
-    background-color: var(--color-page);
+    background-color: #0f1911;
     color: var(--color-ink);
     font-family: var(--font-sans);
     overflow-x: hidden;
     overscroll-behavior-x: none;
+    min-height: 100%;
+    min-height: 100dvh;
+  }
+
+  #root {
+    min-height: 100dvh;
   }
 }
 
@@ -74,6 +83,30 @@
     }
     .seam-paint-footer {
       box-shadow: 0 1px 0 0 #0f1911;
+    }
+    .seam-paint-underground {
+      box-shadow: 0 1px 0 0 var(--color-underground);
+    }
+
+    .hero-workbench-shell {
+      isolation: isolate;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      box-shadow: 0 1px 0 0 var(--color-underground);
+      margin-bottom: -1px;
+    }
+
+    #encrypt-journey {
+      isolation: isolate;
+      overflow: hidden;
+      box-shadow: 0 1px 0 0 var(--color-underground);
+      margin-bottom: calc(1.5rem - 1px);
+    }
+
+    .nav-site-pill {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
   }
 

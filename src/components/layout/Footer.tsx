@@ -6,7 +6,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="footer-site relative bg-sand-seam-bottom text-white/80 overflow-hidden sm:bg-[#0f1911]">
+    <footer className="footer-site relative bg-sand-seam-bottom text-white/80 overflow-hidden pb-[env(safe-area-inset-bottom,0px)] sm:bg-[#0f1911]">
       {/*
         Island plate — cream only (no dark border/fade).
         9603382 border-b #0f1911 + bottom gradient re-drew the hairlines.
