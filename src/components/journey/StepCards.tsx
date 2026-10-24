@@ -276,7 +276,7 @@ export default function StepCards() {
       {/* S4 — How Decryption Works (Tasks 13, 14, 15, 16, 17, 18) */}
       <section
         id="decrypt-journey"
-        className="relative bg-[#EDF5F1] text-ink pt-0 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px] seam-paint-mint"
+        className="relative bg-[#EDF5F1] text-ink pt-16 sm:pt-24 pb-20 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-hidden rounded-t-3xl sm:rounded-t-[40px] seam-paint-mint"
       >
         {/* Desktop only: Adarna pinned to section top-left */}
         <img
@@ -288,18 +288,7 @@ export default function StepCards() {
         />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          {/* Mobile: no Adarna — centered header */}
-          <div className="sm:hidden mb-8 pt-6 text-center space-y-2 px-1">
-            <h2 className="font-display font-black text-[1.35rem] leading-[1.15] text-ink tracking-tight">
-              How Decryption Works
-            </h2>
-            <p className="text-[0.7rem] text-ink/80 font-medium leading-snug max-w-sm mx-auto">
-              Letters reverse in four steps. Digits: up, then left on the number grid.
-            </p>
-          </div>
-
-          {/* sm+: centered header + absolute Adarna */}
-          <div className="hidden sm:block text-center max-w-2xl mx-auto mb-14 space-y-3">
+          <div className="text-center max-w-2xl mx-auto mb-3 sm:mb-8 xl:mb-14 space-y-3">
             <h2 className="font-display font-black text-3xl sm:text-5xl text-ink tracking-tight">
               How Decryption Works
             </h2>
