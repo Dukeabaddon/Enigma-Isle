@@ -89,7 +89,7 @@ export default function HeroWorkbench() {
               />
             </div>
           </div>
-          <div className="sm:hidden absolute inset-0">
+          <div className="hero-mobile-art-layer sm:hidden absolute inset-0">
             <img
               src="/images/hero-island-mobile.webp"
               alt=""
@@ -105,10 +105,6 @@ export default function HeroWorkbench() {
               }}
               aria-hidden
             />
-            <div
-              className="hero-mobile-soil-fade absolute inset-x-0 bottom-0 h-6 pointer-events-none sm:hidden"
-              aria-hidden
-            />
           </div>
         </div>
 
@@ -122,8 +118,6 @@ export default function HeroWorkbench() {
 
         <HeroSkyBirds />
         </div>
-
-        <div className="hero-underground-seam-cap sm:hidden" aria-hidden />
 
         {/* Title + input — +30px stack offset; mobile input extra mt */}
         <div className="relative z-10 max-w-4xl mx-auto w-full px-4 sm:px-6 flex flex-col items-center justify-start text-center flex-1 pt-[calc(7rem+30px)] sm:pt-[calc(9rem+30px)] md:pt-[calc(11rem+30px)] pb-16 sm:pb-20">

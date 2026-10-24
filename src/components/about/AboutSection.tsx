@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <section
       id="about-cipher"
-      className="about-cipher-section relative text-white seam-overlap seam-paint-underground pb-16 sm:pb-20 px-4 sm:px-6 z-[4]"
+      className="about-cipher-section relative text-white seam-overlap seam-paint-underground pb-16 sm:pb-20 px-4 sm:px-6 z-[7]"
       style={{ backgroundColor: 'var(--color-underground)' }}
     >
       <UndergroundSoilBackdrop />
