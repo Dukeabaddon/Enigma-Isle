@@ -115,18 +115,6 @@
       box-shadow: 0 -3px 0 0 var(--color-underground);
     }
 
-    .about-cipher-section::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      height: 4px;
-      background-color: var(--color-underground);
-      z-index: 2;
-      pointer-events: none;
-    }
-
     .about-cipher-section .underground-soil-backdrop {
       z-index: 1;
     }
@@ -211,6 +199,7 @@
     .hero-workbench-shell {
       border-bottom-left-radius: 40px;
       border-bottom-right-radius: 40px;
+      overflow: hidden;
     }
   }
 
