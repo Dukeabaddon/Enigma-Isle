@@ -88,18 +88,43 @@
       box-shadow: 0 1px 0 0 var(--color-underground);
     }
 
+    /* Hero → about: same hairline fix as footer island (overlap + top paint, no border) */
     .hero-workbench-shell {
       isolation: isolate;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       transform: translateZ(0);
-      box-shadow: 0 4px 0 0 var(--color-underground);
-      margin-bottom: -4px;
+      margin-bottom: -6px;
+      box-shadow: none;
     }
 
     .hero-mobile-art-layer img {
-      transform: scale(1.045);
+      display: block;
+      width: 100%;
+      margin-bottom: -3px;
+      transform: scale(1.045) translateZ(0);
       transform-origin: center bottom;
+      vertical-align: bottom;
+    }
+
+    .about-cipher-section {
+      box-shadow: 0 -3px 0 0 var(--color-underground);
+    }
+
+    .about-cipher-section.seam-paint-underground {
+      box-shadow: 0 -3px 0 0 var(--color-underground);
+    }
+
+    .about-cipher-section::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 4px;
+      background-color: var(--color-underground);
+      z-index: 2;
+      pointer-events: none;
     }
 
     .about-cipher-section .underground-soil-backdrop {
@@ -198,7 +223,7 @@
   @media (max-width: 639px) {
     .about-cipher-section {
       --underground-soil-pull: calc(var(--about-soil-gap) + var(--hero-radius-overlap) + 20px);
-      margin-top: calc(-1 * var(--hero-radius-overlap) - 4px);
+      margin-top: calc(-1 * var(--hero-radius-overlap) - 6px);
     }
   }
 
