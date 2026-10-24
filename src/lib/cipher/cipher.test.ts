@@ -1,5 +1,14 @@
 import { describe, expect, it } from 'vitest';
-import { ALPHABET, decryptCharacter, decryptText, encryptCharacter, encryptText } from './index';
+import {
+  ALPHABET,
+  DIGITS,
+  decryptCharacter,
+  decryptDigit,
+  decryptText,
+  encryptCharacter,
+  encryptDigit,
+  encryptText,
+} from './index';
 import {
   COLUMN_SHIFT,
   GRID_COLUMNS,
@@ -55,14 +64,43 @@ describe('Enigma Isle Cipher', () => {
     expect(decrypted.text).toBe('HELLO');
   });
 
-  it('preserves spaces; strips digits and punctuation', () => {
-    const raw = 'Hello, World! 2026';
+  it('preserves spaces; encrypts digits; strips punctuation', () => {
+    const raw = 'Hello, World! 20';
     const encrypted = encryptText(raw);
-    expect(encrypted.rawFilteredCount).toBe(2 + 4); // comma, bang, four digits
+    expect(encrypted.rawFilteredCount).toBe(2); // comma, bang
     expect(encrypted.text.includes(' ')).toBe(true);
+    expect(encrypted.text).toMatch(/\d/);
 
     const decrypted = decryptText(encrypted.text);
-    expect(decrypted.text).toBe('HELLO WORLD ');
+    expect(decrypted.text).toBe('HELLO WORLD 20');
+  });
+
+  it('round-trips all digits 0–9', () => {
+    for (const d of DIGITS) {
+      const enc = encryptDigit(d);
+      expect(decryptDigit(enc.outputChar).outputChar).toBe(d);
+      const full = encryptText(d);
+      expect(decryptText(full.text).text).toBe(d);
+    }
+  });
+
+  it('digit encrypt is bijective on 0–9', () => {
+    const outputs = DIGITS.map((d) => encryptDigit(d).outputChar);
+    expect(new Set(outputs).size).toBe(10);
+  });
+
+  it('locks digit 1 → 7 (sketch: right to 2, down to 7)', () => {
+    expect(encryptDigit('1').step_right).toBe('2');
+    expect(encryptDigit('1').outputChar).toBe('7');
+  });
+
+  it('mixed letters and digits round-trip', () => {
+    const phrase = 'A1 B2';
+    const enc = encryptText(phrase);
+    expect(enc.traces).toHaveLength(4);
+    expect(enc.traces[0].kind).toBe('letter');
+    expect(enc.traces[1].kind).toBe('digit');
+    expect(decryptText(enc.text).text).toBe('A1 B2');
   });
 
   it('round-trips phrases with spaces (e.g. hello island map)', () => {

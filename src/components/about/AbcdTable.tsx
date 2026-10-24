@@ -101,6 +101,29 @@ export default function AbcdTable() {
           </div>
         )}
       </div>
+
+      <div className="relative max-w-xl mx-auto w-full mt-10">
+        <div className="relative rounded-2xl bg-[#FFFDF7] border-2 border-[#D8C7A5] p-6 sm:p-8 shadow-xl rotate-[-0.2deg]">
+          <div className="text-center mb-5">
+            <h3 className="font-display font-extrabold text-xl sm:text-2xl text-ink tracking-tight">
+              2×5 Number Grid
+            </h3>
+            <p className="text-xs text-ink-muted mt-1.5 font-medium max-w-sm mx-auto">
+              Encrypt: right → down. Decrypt: up → left. Wraps at edges like the letter map.
+            </p>
+          </div>
+          <div className="grid grid-cols-5 gap-2 max-w-xs mx-auto font-mono text-center">
+            {['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].map((digit) => (
+              <div
+                key={digit}
+                className="h-11 rounded-xl flex items-center justify-center bg-white border border-ink/15 text-ink font-bold text-lg shadow-2xs"
+              >
+                {digit}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -67,7 +67,7 @@ Ref: `encrypt-4-example-U.png`
 ### Charset (Q13=C)
 
 - User may type anything.
-- Pipeline **ignores** numbers, spaces, special characters.
+- Pipeline encodes **0–9** on the 2×5 digit grid; preserves spaces; strips other special characters.
 - Only letters participate in encrypt/decrypt.
 - **Case (Q14=B):** a≡A; output always **UPPER**.
 - **I/O:** Fixed rules → **one** encrypt output string; decrypt → **one** if map is 1:1 (stage 03 prove). Not a Caesar “pick shift 1–25” UI.

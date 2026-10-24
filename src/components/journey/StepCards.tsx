@@ -68,7 +68,7 @@ export default function StepCards() {
                 How Encryption Works
               </h2>
               <p className="text-base sm:text-lg text-ink/80 font-medium">
-                Four sequential transformations applied forward to every character. Each card illustrates a mechanical step with a live visual loop.
+                Four sequential transformations on each letter. Digits use a separate 2×5 grid (right → down). Each card shows a live loop.
               </p>
             </div>
 
@@ -239,6 +239,53 @@ export default function StepCards() {
                 </div>
               </div>
             </div>
+
+            {/* Digits — full-width teaching band */}
+            <div className="mt-10 rounded-3xl border-2 border-[#D4A017]/30 bg-[#FFFDF9] p-6 sm:p-8 shadow-md">
+              <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                <div className="max-w-md space-y-2">
+                  <span className="inline-block text-[11px] font-black uppercase tracking-widest text-[#B8860B] bg-[#D4A017]/10 px-2.5 py-1 rounded-md border border-[#D4A017]/20">
+                    Digits 0–9
+                  </span>
+                  <h3 className="font-display font-extrabold text-xl text-ink">Number grid hop</h3>
+                  <p className="text-sm text-ink-muted font-medium leading-relaxed">
+                    Each digit moves <strong className="text-ink">right once</strong> (wrap at row end), then{' '}
+                    <strong className="text-ink">down once</strong> (wrap from bottom to top). Decrypt reverses:
+                    up, then left.
+                  </p>
+                </div>
+                <div className="flex flex-col items-center gap-3 rounded-2xl bg-[#F6EFE2] border border-[#E0D0B5] p-4 shadow-inner">
+                  <div className="grid grid-cols-5 gap-1.5 font-mono text-sm">
+                    {[
+                      ['0', '1', '2', '3', '4'],
+                      ['5', '6', '7', '8', '9'],
+                    ].flatMap((row, rIdx) =>
+                      row.map((digit) => {
+                        const demoPath = ['1', '2', '7'];
+                        const step = tick % demoPath.length;
+                        const active = demoPath[step] === digit;
+                        const visited = demoPath.slice(0, step + 1).includes(digit);
+                        return (
+                          <div
+                            key={`enc-digit-${rIdx}-${digit}`}
+                            className={`flex h-10 w-10 items-center justify-center rounded-lg border transition-all ${
+                              active
+                                ? 'border-[#8C640C] bg-[#D4A017] font-black text-white scale-105 shadow-md'
+                                : visited
+                                  ? 'border-[#D4A017]/40 bg-[#D4A017]/20 font-bold text-[#8C640C]'
+                                  : 'border-ink/10 bg-white text-ink/60'
+                            }`}
+                          >
+                            {digit}
+                          </div>
+                        );
+                      })
+                    )}
+                  </div>
+                  <p className="text-xs font-mono font-bold text-ink/70">Example: 1 → 2 → 7</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -265,7 +312,7 @@ export default function StepCards() {
               How Decryption Works
             </h2>
             <p className="text-[0.7rem] text-ink/80 font-medium leading-snug">
-              The inverse pipeline executes each reversal in strictly opposite order, proving mathematical bijectivity.
+              Letters reverse in four steps. Digits: up, then left on the number grid.
             </p>
           </div>
 
@@ -275,7 +322,7 @@ export default function StepCards() {
               How Decryption Works
             </h2>
             <p className="text-base sm:text-lg text-ink/80 font-medium">
-              The inverse pipeline executes each reversal in strictly opposite order, proving mathematical bijectivity.
+              Letters reverse in four steps. Digits reverse on the 2×5 grid: up, then left.
             </p>
           </div>
 
@@ -412,6 +459,51 @@ export default function StepCards() {
                 <div className="w-12 h-12 rounded-2xl bg-[#2F8F6B] text-white font-black flex items-center justify-center text-xl shadow-md border border-[#1F6B4F]">
                   ✓
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Digits — decrypt teaching band (mirror of encrypt section) */}
+          <div className="mt-10 rounded-3xl border-2 border-[#2F8F6B]/35 bg-[#F8FCFA] p-6 sm:p-8 shadow-md">
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+              <div className="max-w-md space-y-2">
+                <span className="inline-block text-[11px] font-black uppercase tracking-widest text-[#1F6B4F] bg-[#2F8F6B]/10 px-2.5 py-1 rounded-md border border-[#2F8F6B]/20">
+                  Digits 0–9
+                </span>
+                <h3 className="font-display font-extrabold text-xl text-ink">Reverse number grid hop</h3>
+                <p className="text-sm text-ink-muted font-medium leading-relaxed">
+                  Undo encrypt: <strong className="text-ink">up once</strong>, then <strong className="text-ink">left once</strong> (same wraps as letters).
+                </p>
+              </div>
+              <div className="flex flex-col items-center gap-3 rounded-2xl bg-[#E4F2EC] border border-[#BCE0D1] p-4 shadow-inner">
+                <div className="grid grid-cols-5 gap-1.5 font-mono text-sm">
+                  {[
+                    ['0', '1', '2', '3', '4'],
+                    ['5', '6', '7', '8', '9'],
+                  ].flatMap((row, rIdx) =>
+                    row.map((digit) => {
+                      const demoPath = ['7', '2', '1'];
+                      const step = tick % demoPath.length;
+                      const active = demoPath[step] === digit;
+                      const visited = demoPath.slice(0, step + 1).includes(digit);
+                      return (
+                        <div
+                          key={`dec-digit-${rIdx}-${digit}`}
+                          className={`flex h-10 w-10 items-center justify-center rounded-lg border transition-all ${
+                            active
+                              ? 'border-[#1F6B4F] bg-[#2F8F6B] font-black text-white scale-105 shadow-md'
+                              : visited
+                                ? 'border-[#2F8F6B]/40 bg-[#2F8F6B]/20 font-bold text-[#1F6B4F]'
+                                : 'border-ink/10 bg-white text-ink/60'
+                          }`}
+                        >
+                          {digit}
+                        </div>
+                      );
+                    })
+                  )}
+                </div>
+                <p className="text-xs font-mono font-bold text-ink/70">Example decrypt: 7 → 2 → 1</p>
               </div>
             </div>
           </div>

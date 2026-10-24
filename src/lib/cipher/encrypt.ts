@@ -1,6 +1,7 @@
 import { getLetterValue, isLetter, walkRightOnCycle } from './alphabet';
+import { encryptDigit, isDigit } from './digits';
 import { moveLeft, moveRight, moveUp, shiftColumnDown13 } from './grid';
-import { CipherResult, LetterEncryptTrace } from './types';
+import { CipherResult, EncryptTrace, LetterEncryptTrace } from './types';
 
 export function encryptCharacter(char: string): LetterEncryptTrace {
   const normalized = char.toUpperCase();
@@ -21,6 +22,7 @@ export function encryptCharacter(char: string): LetterEncryptTrace {
   const right2 = moveRight(right1);
 
   return {
+    kind: 'letter',
     inputChar: char,
     normalizedChar: normalized,
     step1_value: value,
@@ -39,14 +41,17 @@ export function encryptCharacter(char: string): LetterEncryptTrace {
 }
 
 export function encryptText(text: string): CipherResult {
-  const traces: LetterEncryptTrace[] = [];
+  const traces: EncryptTrace[] = [];
   let resultText = '';
   let rawFilteredCount = 0;
 
-  // Letters map; whitespace kept in place; other chars dropped
   for (const char of text) {
     if (isLetter(char)) {
       const trace = encryptCharacter(char);
+      traces.push(trace);
+      resultText += trace.outputChar;
+    } else if (isDigit(char)) {
+      const trace = { kind: 'digit' as const, ...encryptDigit(char) };
       traces.push(trace);
       resultText += trace.outputChar;
     } else if (/\s/.test(char)) {

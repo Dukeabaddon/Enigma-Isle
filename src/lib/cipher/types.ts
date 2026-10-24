@@ -1,4 +1,5 @@
 export interface LetterEncryptTrace {
+  kind: 'letter';
   inputChar: string;
   normalizedChar: string;
   step1_value: number;
@@ -15,7 +16,28 @@ export interface LetterEncryptTrace {
   outputChar: string;
 }
 
+export interface DigitEncryptTrace {
+  kind: 'digit';
+  inputChar: string;
+  normalizedChar: string;
+  step_right: string;
+  step_down: string;
+  outputChar: string;
+}
+
+export interface DigitDecryptTrace {
+  kind: 'digit';
+  inputChar: string;
+  step_up: string;
+  step_left: string;
+  outputChar: string;
+}
+
+export type EncryptTrace = LetterEncryptTrace | DigitEncryptTrace;
+export type DecryptTrace = LetterDecryptTrace | DigitDecryptTrace;
+
 export interface LetterDecryptTrace {
+  kind: 'letter';
   inputChar: string;
   step1_inverseMoves: {
     left1: string;
@@ -32,13 +54,13 @@ export interface LetterDecryptTrace {
 
 export interface CipherResult {
   text: string;
-  traces: LetterEncryptTrace[];
+  traces: EncryptTrace[];
   rawFilteredCount: number;
 }
 
 export interface DecryptResult {
   text: string;
-  traces: LetterDecryptTrace[];
+  traces: DecryptTrace[];
   rawFilteredCount: number;
 }
 

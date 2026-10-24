@@ -8,8 +8,21 @@
 
 ## 1. Pipeline Overview
 
-The cipher operates exclusively on letters `A–Z`. Any other characters (spaces, digits, punctuation) are filtered out prior to processing.
-All lowercase characters are normalized: `a ≡ A`. Output is always uppercase.
+The cipher operates on letters `A–Z` and digits `0–9`. Whitespace is preserved in place. Punctuation and other symbols are stripped (not encrypted).
+Letters: lowercase normalized to uppercase (`a ≡ A`). Digits pass through as `0–9`.
+
+### Digits `0–9` (2×5 grid)
+
+Grid layout:
+
+```
+0 1 2 3 4
+5 6 7 8 9
+```
+
+- **Encrypt:** `moveRight` then `moveDown` (wrap horizontally and vertically).
+- **Decrypt:** `moveUp` then `moveLeft` (exact inverse).
+- No ×18 walk or column-13 shift for digits.
 
 ### Encryption Pipeline (Forward)
 

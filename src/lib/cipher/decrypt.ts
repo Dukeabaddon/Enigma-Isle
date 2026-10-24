@@ -1,6 +1,7 @@
 import { inverseWalkRightOnCycle, isLetter } from './alphabet';
+import { decryptDigit, isDigit } from './digits';
 import { moveDown, moveLeft, moveRight, shiftColumnUp13 } from './grid';
-import { DecryptResult, LetterDecryptTrace } from './types';
+import { DecryptResult, DecryptTrace, LetterDecryptTrace } from './types';
 
 export function decryptCharacter(char: string): LetterDecryptTrace {
   const normalized = char.toUpperCase();
@@ -19,6 +20,7 @@ export function decryptCharacter(char: string): LetterDecryptTrace {
   const step3Letter = inverseWalkRightOnCycle(step2Letter);
 
   return {
+    kind: 'letter',
     inputChar: char,
     step1_inverseMoves: {
       left1,
@@ -35,14 +37,17 @@ export function decryptCharacter(char: string): LetterDecryptTrace {
 }
 
 export function decryptText(text: string): DecryptResult {
-  const traces: LetterDecryptTrace[] = [];
+  const traces: DecryptTrace[] = [];
   let resultText = '';
   let rawFilteredCount = 0;
 
-  // Letters inverse-map; whitespace kept in place; other chars dropped
   for (const char of text) {
     if (isLetter(char)) {
       const trace = decryptCharacter(char);
+      traces.push(trace);
+      resultText += trace.outputChar;
+    } else if (isDigit(char)) {
+      const trace = { kind: 'digit' as const, ...decryptDigit(char) };
       traces.push(trace);
       resultText += trace.outputChar;
     } else if (/\s/.test(char)) {

@@ -93,6 +93,22 @@ test.describe('Enigma Isle E2E and Visual Verification', () => {
     saveScreenshot(shot8, '08-island-footer.png');
   });
 
+  test('Mixed letters and digits round-trip', async ({ page }, testInfo) => {
+    if (testInfo.project.name !== 'chromium') return;
+
+    await page.goto('/');
+    const plain = 'ROOM 42';
+    await page.fill('#message-input', plain);
+    await page.click('button[aria-label="Encrypt"]');
+    await expect(page.getByTestId('cipher-output')).toBeVisible();
+    const cipher = await page.getByTestId('cipher-output').innerText();
+
+    await page.click('button[data-testid="cipher-toggle"]');
+    await page.fill('#message-input', cipher);
+    await page.click('button[aria-label="Decrypt"]');
+    await expect(page.getByTestId('cipher-output')).toHaveText('ROOM 42');
+  });
+
   test('Mobile hero viewport (390px)', async ({ page }, testInfo) => {
     if (testInfo.project.name !== 'mobile') return;
 

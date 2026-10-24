@@ -161,6 +161,18 @@
       "step4_finisher": "W"
     }
   },
+  "digits": {
+    "0": { "plain": "0", "cipher": "6" },
+    "1": { "plain": "1", "cipher": "7" },
+    "2": { "plain": "2", "cipher": "8" },
+    "3": { "plain": "3", "cipher": "9" },
+    "4": { "plain": "4", "cipher": "5" },
+    "5": { "plain": "5", "cipher": "1" },
+    "6": { "plain": "6", "cipher": "2" },
+    "7": { "plain": "7", "cipher": "3" },
+    "8": { "plain": "8", "cipher": "4" },
+    "9": { "plain": "9", "cipher": "0" }
+  },
   "words": {
     "HELLO": {
       "plain": "HELLO",

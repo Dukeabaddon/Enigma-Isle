@@ -46,7 +46,7 @@
     </td>
     <td width="50%" valign="top">
       <strong>Live cipher engine</strong><br/>
-      Pure TypeScript in <code>src/lib/cipher/</code> — A–Z pipeline with grid column shifts and cyclic walks; Vitest unit tests and locked spec in <code>stages/03-cipher-spec/</code>.
+      Pure TypeScript in <code>src/lib/cipher/</code> — A–Z plus 0–9 (letter pipeline + 2×5 digit grid); Vitest and spec in <code>stages/03-cipher-spec/</code>.
     </td>
   </tr>
   <tr>
@@ -146,7 +146,7 @@ Private agent notes (`docs/PLAN.md`, build logs, QA shots, prompts) stay local a
 
 The algorithm is documented in [stages/03-cipher-spec/output/cipher-spec.md](stages/03-cipher-spec/output/cipher-spec.md):
 
-- Letters **A–Z** only (normalized, uppercase output); spaces preserved.
+- Letters **A–Z** (uppercase output) and digits **0–9**; spaces preserved; other symbols stripped.
 - **Step 1–2:** Bijective cyclic walk (×18 step count from letter value).
 - **Step 3:** Column shift **down 13×** (mod column length); decrypt uses **up 13×**.
 - **Step 4:** Grid finisher `up → left → up → right×2` with defined wraps.
