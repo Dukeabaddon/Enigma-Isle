@@ -52,7 +52,7 @@
   <tr>
     <td valign="top">
       <strong>Teaching journey</strong><br/>
-      About section with ABCD table, encrypt/decrypt step cards, woodboard CTA, island footer — clear English copy; island theme is visual only.
+      About section with ABCD table, encrypt/decrypt step cards, quiet bridge to footer, island footer — clear English copy; island theme is visual only.
     </td>
     <td valign="top">
       <strong>ICM stage pipeline</strong><br/>

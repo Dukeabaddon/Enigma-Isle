@@ -14,7 +14,7 @@ export default function App() {
         <AboutSection />
         <StepCards />
         {/* Cream plate overlaps decrypt 1px on mobile (subpixel seam fix) */}
-        <div className="bg-[#eaddbf] seam-overlap">
+        <div className="bg-sand-seam-bottom seam-overlap">
           <TryAgain />
           <Footer />
         </div>

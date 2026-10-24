@@ -102,7 +102,7 @@ export default function AbcdTable() {
         )}
       </div>
 
-      <div className="relative max-w-xl mx-auto w-full mt-10">
+      <div id="number-grid" className="relative max-w-xl mx-auto w-full mt-10 scroll-mt-24">
         <div className="relative rounded-2xl bg-[#FFFDF7] border-2 border-[#D8C7A5] p-6 sm:p-8 shadow-xl rotate-[-0.2deg]">
           <div className="text-center mb-5">
             <h3 className="font-display font-extrabold text-xl sm:text-2xl text-ink tracking-tight">
