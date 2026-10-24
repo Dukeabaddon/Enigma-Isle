@@ -92,8 +92,13 @@
       isolation: isolate;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      box-shadow: 0 1px 0 0 var(--color-underground);
-      margin-bottom: -1px;
+      transform: translateZ(0);
+      box-shadow: 0 2px 0 0 var(--color-underground);
+      margin-bottom: -2px;
+    }
+
+    .about-cipher-section {
+      margin-top: calc(-1 * var(--hero-radius-overlap) - 2px);
     }
 
     #encrypt-journey {

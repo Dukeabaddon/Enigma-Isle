@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col overflow-x-hidden bg-[#342319] text-ink selection:bg-encrypt/20">
       <Nav />
-      <main className="flex-1 overflow-x-hidden">
+      <main className="flex-1 overflow-x-hidden bg-[var(--color-underground)]">
         <HeroWorkbench />
         <AboutSection />
         <StepCards />
