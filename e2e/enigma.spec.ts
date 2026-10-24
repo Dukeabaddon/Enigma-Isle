@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 function saveScreenshot(sourcePath: string, destName: string) {
-  const targetDir = path.resolve('stages/04-build/output/screenshots');
+  const targetDir = path.resolve('shots/e2e-archive');
   if (!fs.existsSync(targetDir)) {
     fs.mkdirSync(targetDir, { recursive: true });
   }

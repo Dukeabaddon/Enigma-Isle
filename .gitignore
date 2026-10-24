@@ -1,5 +1,4 @@
 !.env.example
-!stages/*/output/.gitkeep
 # Agent / AI tooling (do not ship)
 # Dependencies & build
 # Design stage working outputs (keep .gitkeep)
@@ -45,8 +44,5 @@ public/images/Texturelabs_*
 public/images/*.raw.*
 shared/grill-summary.md
 shots/
-stages/*/output/*
-!stages/03-cipher-spec/output/cipher-spec.md
-!stages/03-cipher-spec/output/test-vectors.json
 test-results/
 .ogi/

@@ -8,7 +8,7 @@
 
 ### A one-page island scroll landing with a client-side invertible cipher you can teach from.
 
-**Encrypt and decrypt in the browser — SnapTrips-style hero art, step cards, and dirt-strata results — built as a college final with Interpretable Context Methodology (ICM).**
+**Encrypt and decrypt in the browser — SnapTrips-style hero art, step cards, and underground results.**
 
 [![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
@@ -42,21 +42,21 @@
   <tr>
     <td width="50%" valign="top">
       <strong>Hero workbench</strong><br/>
-      Wide plaintext input, encrypt/decrypt switch, yellow/green actions, white fade over painted island art, results expanding into brown dirt strata (<code>#3c2820</code> seam — no CSS wave clip).
+      Wide plaintext input, encrypt/decrypt switch, yellow/green actions, white fade over painted island art, results expanding into underground soil sections.
     </td>
     <td width="50%" valign="top">
       <strong>Live cipher engine</strong><br/>
-      Pure TypeScript in <code>src/lib/cipher/</code> — A–Z plus 0–9 (letter pipeline + 2×5 digit grid); Vitest and spec in <code>stages/03-cipher-spec/</code>.
+      Pure TypeScript in <code>src/lib/cipher/</code> — A–Z plus 0–9 (letter pipeline + 2×5 digit grid); Vitest and spec in <code>docs/</code>.
     </td>
   </tr>
   <tr>
     <td valign="top">
       <strong>Teaching journey</strong><br/>
-      About section with ABCD table, encrypt/decrypt step cards, quiet bridge to footer, island footer — clear English copy; island theme is visual only.
+      About section with ABCD table, encrypt/decrypt step cards, mist bridge to footer, island footer — clear English copy; island theme is visual only.
     </td>
     <td valign="top">
-      <strong>ICM stage pipeline</strong><br/>
-      Context lives in staged folders (discovery → design → cipher spec → build → polish), ADRs in <code>decisions/</code>, not only in chat — see <a href="CONTEXT.md">CONTEXT.md</a>.
+      <strong>Quality & deploy</strong><br/>
+      Vitest unit tests, Playwright desktop + mobile E2E, static Vite build on Vercel.
     </td>
   </tr>
 </table>
@@ -64,7 +64,7 @@
 | Area | What you get |
 |------|----------------|
 | **Motion** | Framer Motion with reduced-motion respect |
-| **Assets** | WebP-only art (`public/images/*.webp`) — hero, dirt, strata, parchment, mascot, footer |
+| **Assets** | WebP art in <code>public/images/</code> |
 | **Quality** | Vitest cipher tests · Playwright desktop + mobile E2E |
 | **Host target** | Static Vite build → Vercel |
 
@@ -105,11 +105,9 @@ npx playwright install
 | UI | [React](https://react.dev) 19 + [TypeScript](https://www.typescriptlang.org) 7 |
 | Styling | [Tailwind CSS](https://tailwindcss.com) 4 |
 | Motion | [Framer Motion](https://www.framer.com/motion/) |
-| Icons / UI primitives | Lucide, shadcn-style utilities |
+| Icons / UI primitives | Lucide |
 | Tests | [Vitest](https://vitest.dev) · [@playwright/test](https://playwright.dev) |
 | Cipher | Client-only TS — no server round-trip |
-
-Locked in [decisions/001-stack-vite-react-ts.md](decisions/001-stack-vite-react-ts.md).
 
 ---
 
@@ -117,40 +115,28 @@ Locked in [decisions/001-stack-vite-react-ts.md](decisions/001-stack-vite-react-
 
 ```
 enigma/
-├── docs/assets/          README banner (SVG source + WebP for GitHub)
+├── docs/
+│   ├── assets/           README banner (SVG + WebP)
+│   ├── cipher-spec.md    Algorithm write-up
+│   └── test-vectors.json Locked examples for tests
 ├── public/images/        WebP island / UI art
-├── src/
-│   ├── components/       Nav, hero, journey cards, footer
-│   ├── hooks/            Cipher + motion preferences
-│   └── lib/cipher/       Encrypt, decrypt, grid, tests
-├── stages/
-│   ├── 01-discovery/     Research + references
-│   ├── 02-design/        IA, tokens, section specs
-│   ├── 03-cipher-spec/   Formal algorithm + test vectors
-│   ├── 04-build/         Implementation notes
-│   └── 05-polish/        Motion, a11y, deploy polish
-├── decisions/            Numbered ADRs (stack, brand, cipher, hero seam)
-└── design-system/        Tokens and theme
+└── src/
+    ├── components/       Nav, hero, journey cards, footer
+    ├── hooks/            Cipher + motion preferences
+    └── lib/cipher/       Encrypt, decrypt, grid, tests
 ```
-
-Entry points:
-
-- [CONTEXT.md](CONTEXT.md) — goals, hero UX, stage status  
-- [decisions/](decisions/) — numbered architecture decisions  
-
-Private agent notes (`docs/PLAN.md`, build logs, QA shots, prompts) stay local and are gitignored.
 
 ---
 
 ## Cipher note
 
-The algorithm is documented in [stages/03-cipher-spec/output/cipher-spec.md](stages/03-cipher-spec/output/cipher-spec.md):
+The algorithm is documented in [docs/cipher-spec.md](docs/cipher-spec.md):
 
 - Letters **A–Z** (uppercase output) and digits **0–9**; spaces preserved; other symbols stripped.
 - **Step 1–2:** Bijective cyclic walk (×18 step count from letter value).
 - **Step 3:** Column shift **down 13×** (mod column length); decrypt uses **up 13×**.
 - **Step 4:** Grid finisher `up → left → up → right×2` with defined wraps.
-- Locked vectors (Vitest): `HELLO` → `CZUUA`, `SWORD` → `DQAJE` — see [test-vectors.json](stages/03-cipher-spec/output/test-vectors.json) and [ADR 005](decisions/005-column-shift-13.md).
+- Locked vectors (Vitest): `HELLO` → `CZUUA`, `SWORD` → `DQAJE` — see [test-vectors.json](docs/test-vectors.json).
 
 Run `npm test` (Vitest unit tests) for round-trips. Treat output as a **classroom invertibility demo**, not a substitute for modern cryptography.
 
@@ -188,14 +174,7 @@ No. Encryption and decryption run in the browser from <code>src/lib/cipher/</cod
 <summary><b>Why “invertible” instead of “secure”?</b></summary>
 <br/>
 
-The course goal is a working <strong>encrypt and decrypt</strong> pair with an explainable grid story. Security properties (entropy, keys, side channels) are out of scope; the README callout above applies.
-</details>
-
-<details>
-<summary><b>What is ICM?</b></summary>
-<br/>
-
-<strong>Interpretable Context Methodology</strong> — project context is staged under <code>stages/</code> and <code>decisions/</code> so humans and agents can resume work without re-deriving the whole plan from chat history.
+The goal is a working <strong>encrypt and decrypt</strong> pair with an explainable grid story. Security properties (entropy, keys, side channels) are out of scope; the README callout above applies.
 </details>
 
 <details>
@@ -209,6 +188,6 @@ GitHub’s image proxy (Camo) often strips or fails SVG in READMEs. Vector sourc
 
 <div align="center">
 
-**Enigma Isle** — college final · island scroll · teachable cipher · client-side only.
+**Enigma Isle** — island scroll · teachable cipher · client-side only.
 
 </div>
