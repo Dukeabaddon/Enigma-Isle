@@ -11,16 +11,21 @@ export default function Footer() {
         Island plate — cream only (no dark border/fade).
         9603382 border-b #0f1911 + bottom gradient re-drew the hairlines.
       */}
-      <div
-        className="relative w-full overflow-hidden leading-none select-none seam-overlap -mt-px"
-        style={{ backgroundColor: 'var(--color-sand-seam-bottom)' }}
-      >
+      <div className="relative w-full overflow-hidden leading-none select-none bg-[#eaddbf] seam-overlap seam-paint-cream -mt-px">
         <img
           src="/images/footer-island.webp"
           alt=""
-          className="relative z-0 w-full h-auto block select-none pointer-events-none"
-          width={3424}
+          className="w-full h-auto block select-none pointer-events-none"
+          width={3392}
           height={1248}
+          decoding="async"
+        />
+        <div
+          className="pointer-events-none absolute inset-x-0 top-0 h-4 z-[1]"
+          style={{
+            background: 'linear-gradient(to bottom, #eaddbf 0%, transparent 100%)',
+          }}
+          aria-hidden
         />
       </div>
 
@@ -56,22 +61,17 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#table" className="hover:text-white transition-colors text-white/65">
-                  Letter grid
-                </a>
-              </li>
-              <li>
-                <a href="#number-grid" className="hover:text-white transition-colors text-white/65">
-                  Number grid
+                  Table
                 </a>
               </li>
               <li>
                 <a href="#encrypt-journey" className="hover:text-white transition-colors text-white/65">
-                  How encryption works
+                  Encrypt steps
                 </a>
               </li>
               <li>
                 <a href="#decrypt-journey" className="hover:text-white transition-colors text-white/65">
-                  How decryption works
+                  Decrypt steps
                 </a>
               </li>
             </ul>

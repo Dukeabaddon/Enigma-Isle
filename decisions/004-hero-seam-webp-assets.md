@@ -1,6 +1,6 @@
 # 004 — Hero seam via painted brown + WebP-only assets
 
-**Status:** Accepted  
+**Status:** Accepted (asset map updated 2026-10-24)  
 **Date:** 2026-10-18  
 
 ## Context
@@ -9,11 +9,11 @@ Hero→S2 looked like a leaf cutout: CSS wave `clipPath` + island art that did n
 
 ## Decision
 
-1. **Hero seam = painted art**, not CSS wave clip. New desktop/mobile island plates already grade into `#3c2820`; remove `hero-island-wave-cut` from `HeroWorkbench.tsx`.
+1. **Hero seam = painted art**, not CSS wave clip. Desktop/mobile island plates grade into dirt brown; no `hero-island-wave-cut` in `HeroWorkbench.tsx`.
 2. **Trees at ground level** in regen prompts — soft bottom color grade only; never a dirt silhouette in front of vegetation.
-3. **Sky headroom** like original: ~45–50% desktop, ~50–55% mobile for white UI fade.
-4. **Production images are WebP only** under `public/images/`. Convert drops → wire → delete jpeg/png masters.
-5. **Spent one-time builder prompts** under `docs/prompts/` cleared; paste prompts in chat when needed.
+3. **Sky headroom** ~45–50% desktop, ~50–55% mobile for white UI fade (`#ece0c8` plate).
+4. **Production images are WebP only** under `public/images/`.
+5. Builder prompts live in chat / design prompts — not committed `docs/prompts/`.
 
 ## Live asset map (canonical)
 
@@ -22,17 +22,21 @@ Hero→S2 looked like a leaf cutout: CSS wave `clipPath` + island art that did n
 | `nav-icon.webp` | Nav + favicon |
 | `hero-island.webp` | Desktop hero plate |
 | `hero-island-mobile.webp` | Mobile hero plate |
-| `hero-dirt.webp` | Result expand dirt |
-| `woodboard-workbench.webp` | CTA board |
-| `treasure-chest.webp` | CTA accent |
-| `mascot-enigma.webp` | How-it-works companion |
+| `misty-pastel-horizon-layers.webp` | Decrypt close → footer mist band |
+| `parchment-bridge-panel.webp` | Decrypt close CTA parchment |
 | `footer-island.webp` | Footer landscape |
+| `treasure-chest.webp` | Encrypt journey accent |
+| `mascot-enigma.webp` | Encrypt journey companion |
+| `adarna.webp` | Decrypt journey accent |
+| `strata.webp` | Result expand dirt texture |
 | `parchment-border.webp` | Parchment frame |
+
+**Removed (grep before delete):** `woodboard-workbench.webp`, `hero-dirt.webp`.
 
 ## Consequences
 
 - Smoother S1→S2 join; less clip-path maintenance.
-- Regenerate art when seam fails — do not reintroduce wave clip as the fix.
+- Regenerate hero when art direction shifts — match layered footer / bay reference style.
 - Cleanup must grep `src/` before deleting images.
 
 ## Alternatives rejected

@@ -38,14 +38,7 @@ export default function StepCards() {
         id="encrypt-journey"
         className="relative w-full bg-[#E8DDB8] text-ink pt-16 sm:pt-24 pb-40 sm:pb-28 px-4 sm:px-6 scroll-mt-20 overflow-x-clip overflow-y-visible touch-pan-y overscroll-x-none [-webkit-overflow-scrolling:touch] rounded-t-3xl rounded-b-3xl sm:rounded-t-[40px] sm:rounded-b-[40px] shadow-2xl mb-6"
       >
-          {/* Desktop flanks — section-absolute so max-w grid cannot clip */}
-          <img
-            src="/images/mascot-enigma.webp"
-            alt="Enigma Isle explorer mascot"
-            className="hidden xl:block absolute left-[-20px] bottom-6 w-52 2xl:w-60 h-auto object-contain drop-shadow-xl select-none pointer-events-none z-20"
-            width={1369}
-            height={1679}
-          />
+          {/* Desktop flank — treasure only */}
           <img
             src="/images/treasure-chest.webp"
             alt="Island treasure chest"
@@ -73,17 +66,6 @@ export default function StepCards() {
             </div>
 
             <div className="relative">
-            {/* Mobile/Tablet: mascot — tight under heading; +30px size, 20px left */}
-            <div className="xl:hidden flex items-end justify-start mb-4 px-1 overflow-visible">
-              <img
-                src="/images/mascot-enigma.webp"
-                alt="Enigma Isle explorer mascot"
-                className="w-[126px] sm:w-[142px] h-auto object-contain drop-shadow-md shrink-0 select-none -translate-x-5"
-                width={1369}
-                height={1679}
-              />
-            </div>
-
             {/* 4 Expedition Stone Tablets Row */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Tablet 1: Value Scaling (Task 8: removed cycle steps span) */}
@@ -326,6 +308,51 @@ export default function StepCards() {
             </p>
           </div>
 
+          {/* Digits first — then letter steps */}
+          <div className="mb-10 rounded-3xl border-2 border-[#2F8F6B]/35 bg-[#F8FCFA] p-6 sm:p-8 shadow-md">
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+              <div className="max-w-md space-y-2">
+                <span className="inline-block text-[11px] font-black uppercase tracking-widest text-[#1F6B4F] bg-[#2F8F6B]/10 px-2.5 py-1 rounded-md border border-[#2F8F6B]/20">
+                  Digits 0–9
+                </span>
+                <h3 className="font-display font-extrabold text-xl text-ink">Reverse number grid hop</h3>
+                <p className="text-sm text-ink-muted font-medium leading-relaxed">
+                  Undo encrypt: <strong className="text-ink">up once</strong>, then <strong className="text-ink">left once</strong> (same wraps as letters).
+                </p>
+              </div>
+              <div className="flex flex-col items-center gap-3 rounded-2xl bg-[#E4F2EC] border border-[#BCE0D1] p-4 shadow-inner">
+                <div className="grid grid-cols-5 gap-1.5 font-mono text-sm">
+                  {[
+                    ['0', '1', '2', '3', '4'],
+                    ['5', '6', '7', '8', '9'],
+                  ].flatMap((row, rIdx) =>
+                    row.map((digit) => {
+                      const demoPath = ['7', '2', '1'];
+                      const step = tick % demoPath.length;
+                      const active = demoPath[step] === digit;
+                      const visited = demoPath.slice(0, step + 1).includes(digit);
+                      return (
+                        <div
+                          key={`dec-digit-top-${rIdx}-${digit}`}
+                          className={`flex h-10 w-10 items-center justify-center rounded-lg border transition-all ${
+                            active
+                              ? 'border-[#1F6B4F] bg-[#2F8F6B] font-black text-white scale-105 shadow-md'
+                              : visited
+                                ? 'border-[#2F8F6B]/40 bg-[#2F8F6B]/20 font-bold text-[#1F6B4F]'
+                                : 'border-ink/10 bg-white text-ink/60'
+                          }`}
+                        >
+                          {digit}
+                        </div>
+                      );
+                    })
+                  )}
+                </div>
+                <p className="text-xs font-mono font-bold text-ink/70">Example decrypt: 7 → 2 → 1</p>
+              </div>
+            </div>
+          </div>
+
           {/* 4 Expedition Decrypt Stone Tablets Row */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Decrypt Tablet 1: Reverse Finisher (Task 16: removed bottom trail badge) */}
@@ -459,51 +486,6 @@ export default function StepCards() {
                 <div className="w-12 h-12 rounded-2xl bg-[#2F8F6B] text-white font-black flex items-center justify-center text-xl shadow-md border border-[#1F6B4F]">
                   ✓
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Digits — decrypt teaching band (mirror of encrypt section) */}
-          <div className="mt-10 rounded-3xl border-2 border-[#2F8F6B]/35 bg-[#F8FCFA] p-6 sm:p-8 shadow-md">
-            <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-              <div className="max-w-md space-y-2">
-                <span className="inline-block text-[11px] font-black uppercase tracking-widest text-[#1F6B4F] bg-[#2F8F6B]/10 px-2.5 py-1 rounded-md border border-[#2F8F6B]/20">
-                  Digits 0–9
-                </span>
-                <h3 className="font-display font-extrabold text-xl text-ink">Reverse number grid hop</h3>
-                <p className="text-sm text-ink-muted font-medium leading-relaxed">
-                  Undo encrypt: <strong className="text-ink">up once</strong>, then <strong className="text-ink">left once</strong> (same wraps as letters).
-                </p>
-              </div>
-              <div className="flex flex-col items-center gap-3 rounded-2xl bg-[#E4F2EC] border border-[#BCE0D1] p-4 shadow-inner">
-                <div className="grid grid-cols-5 gap-1.5 font-mono text-sm">
-                  {[
-                    ['0', '1', '2', '3', '4'],
-                    ['5', '6', '7', '8', '9'],
-                  ].flatMap((row, rIdx) =>
-                    row.map((digit) => {
-                      const demoPath = ['7', '2', '1'];
-                      const step = tick % demoPath.length;
-                      const active = demoPath[step] === digit;
-                      const visited = demoPath.slice(0, step + 1).includes(digit);
-                      return (
-                        <div
-                          key={`dec-digit-${rIdx}-${digit}`}
-                          className={`flex h-10 w-10 items-center justify-center rounded-lg border transition-all ${
-                            active
-                              ? 'border-[#1F6B4F] bg-[#2F8F6B] font-black text-white scale-105 shadow-md'
-                              : visited
-                                ? 'border-[#2F8F6B]/40 bg-[#2F8F6B]/20 font-bold text-[#1F6B4F]'
-                                : 'border-ink/10 bg-white text-ink/60'
-                          }`}
-                        >
-                          {digit}
-                        </div>
-                      );
-                    })
-                  )}
-                </div>
-                <p className="text-xs font-mono font-bold text-ink/70">Example decrypt: 7 → 2 → 1</p>
               </div>
             </div>
           </div>

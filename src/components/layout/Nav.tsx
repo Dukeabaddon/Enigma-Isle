@@ -32,28 +32,28 @@ export default function Nav() {
             href="#table"
             className="px-3.5 py-1.5 rounded-full hover:bg-black/5 hover:text-ink transition-colors"
           >
-            Letter Grid
+            Table
           </a>
           <a
             href="#encrypt-journey"
             className="px-3.5 py-1.5 rounded-full hover:bg-black/5 hover:text-ink transition-colors"
           >
-            Encryption
+            Encrypt steps
           </a>
           <a
             href="#decrypt-journey"
             className="px-3.5 py-1.5 rounded-full hover:bg-black/5 hover:text-ink transition-colors"
           >
-            Decryption
+            Decrypt steps
           </a>
         </nav>
 
         <div className="hidden md:flex items-center shrink-0">
           <a
             href="#workbench"
-            className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#1c1b18] hover:bg-[#2c2b26] text-white text-xs font-bold tracking-wide transition-all shadow-md active:scale-95 min-h-[40px]"
+            className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-encrypt hover:bg-encrypt-deep text-white text-xs font-bold tracking-wide transition-all shadow-md active:scale-95 min-h-[40px]"
           >
-            Try Cipher
+            Encrypt
           </a>
         </div>
 
@@ -82,36 +82,36 @@ export default function Nav() {
           onClick={() => setMobileMenuOpen(false)}
           className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
         >
-          Workbench
-        </a>
+            Workbench
+          </a>
         <a
           href="#table"
           onClick={() => setMobileMenuOpen(false)}
           className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
         >
-          Letter Grid
+          Table
         </a>
         <a
           href="#encrypt-journey"
           onClick={() => setMobileMenuOpen(false)}
           className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
         >
-          Encryption
+          Encrypt steps
         </a>
         <a
           href="#decrypt-journey"
           onClick={() => setMobileMenuOpen(false)}
           className="block px-4 py-2.5 rounded-xl text-sm font-semibold text-ink hover:bg-black/5 transition-colors"
         >
-          Decryption
+          Decrypt steps
         </a>
         <div className="pt-2">
           <a
             href="#workbench"
             onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center justify-center w-full py-2.5 rounded-full bg-[#1c1b18] text-white text-xs font-bold uppercase tracking-wider shadow-sm min-h-[44px]"
+            className="flex items-center justify-center w-full py-2.5 rounded-full bg-encrypt hover:bg-encrypt-deep text-white text-xs font-bold uppercase tracking-wider shadow-sm min-h-[44px]"
           >
-            Try Cipher
+            Encrypt
           </a>
         </div>
       </div>

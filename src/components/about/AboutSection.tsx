@@ -4,9 +4,17 @@ export default function AboutSection() {
   return (
     <section
       id="about-cipher"
-      className="relative text-white pt-12 pb-16 sm:pb-20 px-4 sm:px-6 overflow-hidden bg-[#342319]"
-      style={{ backgroundColor: '#342319' }}
+      className="about-cipher-section relative text-white seam-overlap pt-14 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 overflow-hidden z-[4]"
+      style={{ backgroundColor: 'var(--color-underground)' }}
     >
+      <div
+        className="absolute inset-x-0 top-0 h-8 pointer-events-none z-[1]"
+        style={{
+          background:
+            'linear-gradient(to bottom, var(--color-underground) 0%, transparent 100%)',
+        }}
+        aria-hidden
+      />
       <div
         id="table"
         className="max-w-6xl mx-auto scroll-mt-24 relative z-10"

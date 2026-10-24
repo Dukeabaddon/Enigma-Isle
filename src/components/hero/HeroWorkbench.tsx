@@ -3,8 +3,11 @@ import { ChevronsUpDown, Key } from 'lucide-react';
 import { useCipher } from '@/hooks/useCipher';
 import ResultExpand from './ResultExpand';
 import StepsModal from './StepsModal';
+import HeroSkyBirds from './HeroSkyBirds';
 
-/** Seam brown — measured hero-island bottom; ADR 004. NO CSS wave clip. */
+/** Plate top #f2ebd9 (hero art). Seam brown bottom ADR 004. NO CSS wave clip. */
+const HERO_PLATE = '#f2ebd9';
+
 export default function HeroWorkbench() {
   const {
     inputText,
@@ -53,52 +56,62 @@ export default function HeroWorkbench() {
       {/* Section 1 — Hero only. Never re-add wave clipPath. */}
       <section
         id="workbench"
-        className="relative w-full overflow-hidden min-h-[135dvh] flex flex-col"
-        style={{ backgroundColor: '#ece0c8' }}
+        className="hero-workbench-shell relative z-[6] w-full overflow-hidden min-h-[100dvh] sm:min-h-[135dvh] flex flex-col rounded-t-none rounded-b-3xl sm:rounded-b-[40px]"
+        style={{ backgroundColor: HERO_PLATE }}
       >
-        {/* Full-bleed island — bg-cover fills plate (100% auto left a hard sky cut) */}
+        {/* Desktop: full-width art + sky bridge; mobile: portrait cover fills 100dvh */}
         <div
-          className="absolute inset-0 w-full pointer-events-none select-none z-0 overflow-hidden"
-          style={{
-            background:
-              'linear-gradient(to bottom, #ece0c8 0%, #ece0c8 45%, #35231b 100%)',
-          }}
+          className="absolute inset-0 z-0 overflow-hidden rounded-t-none rounded-b-[inherit] pointer-events-none select-none"
+          style={{ backgroundColor: HERO_PLATE }}
         >
-          <div
-            className="absolute inset-0 bg-cover bg-bottom max-sm:hidden"
-            style={{
-              backgroundImage: `url('/images/hero-island.webp')`,
-              WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 22%)',
-              maskImage: 'linear-gradient(to bottom, transparent 0%, black 22%)',
-            }}
-          />
-          <div
-            className="absolute inset-0 bg-cover bg-bottom sm:hidden"
-            style={{
-              backgroundImage: `url('/images/hero-island-mobile.webp')`,
-              WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 22%)',
-              maskImage: 'linear-gradient(to bottom, transparent 0%, black 22%)',
-            }}
-          />
-          {/* Plate-top cream fade — soft sky join */}
-          <div
-            className="absolute inset-x-0 top-0 h-44 sm:h-52 pointer-events-none"
-            style={{
-              background: 'linear-gradient(to bottom, #ece0c8 0%, rgba(236,224,200,0.85) 35%, transparent 100%)',
-            }}
-            aria-hidden
-          />
+          <div className="hidden sm:flex h-full w-full flex-col justify-end">
+            <div className="min-h-16 flex-1 w-full shrink" style={{ backgroundColor: HERO_PLATE }} />
+            <div className="relative w-full leading-none">
+              <img
+                src="/images/hero-island.webp"
+                alt=""
+                width={3200}
+                height={1312}
+                decoding="async"
+                className="w-full max-w-full h-auto"
+              />
+              <div
+                className="absolute inset-x-0 top-0 h-10 pointer-events-none"
+                style={{
+                  background: `linear-gradient(to bottom, ${HERO_PLATE} 0%, transparent 100%)`,
+                }}
+                aria-hidden
+              />
+            </div>
+          </div>
+          <div className="sm:hidden absolute inset-0">
+            <img
+              src="/images/hero-island-mobile.webp"
+              alt=""
+              width={1536}
+              height={2752}
+              decoding="async"
+              className="h-full w-full object-cover object-bottom"
+            />
+            <div
+              className="absolute inset-x-0 top-0 h-28 pointer-events-none"
+              style={{
+                background: `linear-gradient(to bottom, ${HERO_PLATE} 0%, transparent 100%)`,
+              }}
+              aria-hidden
+            />
+          </div>
         </div>
 
-        {/* Soft sky veil: cream → transparent through top 50% */}
         <div
-          className="absolute inset-0 z-[1] pointer-events-none"
+          className="absolute inset-x-0 top-0 h-32 sm:h-40 z-[1] pointer-events-none"
           style={{
-            background:
-              'linear-gradient(to bottom, #ece0c8 0%, rgba(236,224,200,0.8) 20%, rgba(255,250,240,0.35) 38%, transparent 55%)',
+            background: `linear-gradient(to bottom, ${HERO_PLATE} 0%, transparent 100%)`,
           }}
           aria-hidden
         />
+
+        <HeroSkyBirds />
 
         {/* Title + input — mobile: input only +35px; ⇅ switch on all sizes */}
         <div className="relative z-10 max-w-4xl mx-auto w-full px-4 sm:px-6 flex flex-col items-center justify-start text-center flex-1 pt-28 sm:pt-36 md:pt-44 pb-16 sm:pb-20">
