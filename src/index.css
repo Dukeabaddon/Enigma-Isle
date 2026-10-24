@@ -93,12 +93,31 @@
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       transform: translateZ(0);
-      box-shadow: 0 2px 0 0 var(--color-underground);
-      margin-bottom: -2px;
+      box-shadow: 0 4px 0 0 var(--color-underground);
+      margin-bottom: -4px;
     }
 
-    .about-cipher-section {
-      margin-top: calc(-1 * var(--hero-radius-overlap) - 2px);
+    .hero-underground-seam-cap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2px;
+      height: 8px;
+      z-index: 15;
+      pointer-events: none;
+      background-color: var(--color-underground);
+      border-bottom-left-radius: inherit;
+      border-bottom-right-radius: inherit;
+      box-shadow: 0 2px 0 0 var(--color-underground);
+    }
+
+    .hero-mobile-soil-fade {
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        var(--color-underground) 85%,
+        var(--color-underground) 100%
+      );
     }
 
     #encrypt-journey {
@@ -188,6 +207,12 @@
   .about-cipher-section {
     margin-top: calc(-1 * var(--hero-radius-overlap));
     padding-top: calc(var(--about-soil-gap) + 2.5rem);
+  }
+
+  @media (max-width: 639px) {
+    .about-cipher-section {
+      margin-top: calc(-1 * var(--hero-radius-overlap) - 4px);
+    }
   }
 
   main:has(#cipher-result-section) .about-cipher-section {

@@ -56,12 +56,17 @@ export default function HeroWorkbench() {
       {/* Section 1 — Hero only. Never re-add wave clipPath. */}
       <section
         id="workbench"
-        className="hero-workbench-shell relative z-[6] w-full overflow-hidden min-h-[100dvh] sm:min-h-[135dvh] flex flex-col rounded-t-none rounded-b-3xl sm:rounded-b-[40px]"
+        className="hero-workbench-shell relative z-[6] w-full min-h-[100dvh] sm:min-h-[135dvh] flex flex-col rounded-t-none rounded-b-3xl sm:rounded-b-[40px]"
         style={{ backgroundColor: HERO_PLATE }}
       >
+        {/* Clip art/birds only — shell stays unclipped so seam cap/shadow paint on iOS */}
+        <div
+          className="hero-workbench-clip absolute inset-0 z-0 overflow-hidden rounded-t-none rounded-b-[inherit] pointer-events-none select-none"
+          aria-hidden
+        >
         {/* Desktop: full-width art + sky bridge; mobile: portrait cover fills 100dvh */}
         <div
-          className="absolute inset-0 z-0 overflow-hidden rounded-t-none rounded-b-[inherit] pointer-events-none select-none"
+          className="absolute inset-0 overflow-hidden rounded-t-none rounded-b-[inherit]"
           style={{ backgroundColor: HERO_PLATE }}
         >
           <div className="hidden sm:flex h-full w-full flex-col justify-end">
@@ -100,6 +105,10 @@ export default function HeroWorkbench() {
               }}
               aria-hidden
             />
+            <div
+              className="hero-mobile-soil-fade absolute inset-x-0 bottom-0 h-6 pointer-events-none sm:hidden"
+              aria-hidden
+            />
           </div>
         </div>
 
@@ -112,6 +121,9 @@ export default function HeroWorkbench() {
         />
 
         <HeroSkyBirds />
+        </div>
+
+        <div className="hero-underground-seam-cap sm:hidden" aria-hidden />
 
         {/* Title + input — +30px stack offset; mobile input extra mt */}
         <div className="relative z-10 max-w-4xl mx-auto w-full px-4 sm:px-6 flex flex-col items-center justify-start text-center flex-1 pt-[calc(7rem+30px)] sm:pt-[calc(9rem+30px)] md:pt-[calc(11rem+30px)] pb-16 sm:pb-20">
