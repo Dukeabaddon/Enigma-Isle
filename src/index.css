@@ -73,8 +73,12 @@
     .seam-overlap {
       margin-top: -1px;
       position: relative;
+    }
+
+    .bg-sand-seam-bottom.seam-overlap {
       z-index: 1;
     }
+
     .seam-paint-mint {
       box-shadow: 0 1px 0 0 #edf5f1;
     }
@@ -96,6 +100,9 @@
       transform: translateZ(0);
       margin-bottom: -6px;
       box-shadow: none;
+      overflow: hidden;
+      border-bottom-left-radius: calc(1.5rem * var(--site-scale));
+      border-bottom-right-radius: calc(1.5rem * var(--site-scale));
     }
 
     .hero-mobile-art-layer img {
@@ -105,14 +112,6 @@
       transform: scale(1.045) translateZ(0);
       transform-origin: center bottom;
       vertical-align: bottom;
-    }
-
-    .about-cipher-section {
-      box-shadow: 0 -3px 0 0 var(--color-underground);
-    }
-
-    .about-cipher-section.seam-paint-underground {
-      box-shadow: 0 -3px 0 0 var(--color-underground);
     }
 
     .about-cipher-section .underground-soil-backdrop {
@@ -211,6 +210,7 @@
 
   @media (max-width: 639px) {
     .about-cipher-section {
+      --hero-radius-overlap: calc(1.5rem * var(--site-scale));
       --underground-soil-pull: calc(var(--about-soil-gap) + var(--hero-radius-overlap) + 20px);
       margin-top: calc(-1 * var(--hero-radius-overlap) - 6px);
     }

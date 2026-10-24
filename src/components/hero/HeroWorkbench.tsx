@@ -56,18 +56,16 @@ export default function HeroWorkbench() {
       {/* Section 1 — Hero only. Never re-add wave clipPath. */}
       <section
         id="workbench"
-        className="hero-workbench-shell relative z-[6] w-full min-h-[100dvh] sm:min-h-[135dvh] flex flex-col rounded-t-none rounded-b-3xl sm:rounded-b-[40px]"
-        style={{ backgroundColor: HERO_PLATE }}
+        className="hero-workbench-shell relative z-[6] w-full min-h-[100dvh] sm:min-h-[135dvh] flex flex-col rounded-t-none rounded-b-3xl sm:rounded-b-[40px] bg-[var(--color-hero-plate)] max-sm:bg-[var(--color-underground)]"
       >
-        {/* Clip art/birds only — shell stays unclipped so seam cap/shadow paint on iOS */}
+        {/* Clip art/birds; shell overflow hidden on mobile for rounded bottom */}
         <div
           className="hero-workbench-clip absolute inset-0 z-0 overflow-hidden rounded-t-none rounded-b-[inherit] pointer-events-none select-none"
           aria-hidden
         >
         {/* Desktop: full-width art + sky bridge; mobile: portrait cover fills 100dvh */}
         <div
-          className="absolute inset-0 overflow-hidden rounded-t-none rounded-b-[inherit]"
-          style={{ backgroundColor: HERO_PLATE }}
+          className="hero-art-plate absolute inset-0 overflow-hidden rounded-t-none rounded-b-[inherit] bg-[var(--color-hero-plate)] max-sm:bg-[var(--color-underground)]"
         >
           <div className="hidden sm:flex h-full w-full flex-col justify-end">
             <div className="min-h-16 flex-1 w-full shrink" style={{ backgroundColor: HERO_PLATE }} />
