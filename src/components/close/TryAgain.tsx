@@ -44,7 +44,7 @@ export default function TryAgain() {
               aria-hidden
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center px-10 py-10 sm:px-14 sm:py-14 text-center">
-              <h2 className="font-hand text-[2rem] sm:text-[2.35rem] font-extrabold text-ink leading-tight tracking-tight">
+              <h2 className="font-display text-[2rem] sm:text-[2.35rem] font-extrabold text-ink leading-tight tracking-tight">
                 Ready to try?
               </h2>
               <p className="mt-2.5 text-sm sm:text-base text-ink-muted font-medium max-w-xs sm:max-w-sm">
@@ -53,7 +53,7 @@ export default function TryAgain() {
               <button
                 type="button"
                 onClick={scrollToWorkbench}
-                className="mt-5 text-lg sm:text-xl font-hand font-extrabold text-decrypt-deep underline decoration-decrypt-deep/45 underline-offset-[7px] hover:decoration-decrypt-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-decrypt-deep cursor-pointer bg-transparent border-0 p-0 min-h-11 inline-flex items-center"
+                className="mt-5 text-lg sm:text-xl font-display font-extrabold text-decrypt-deep underline decoration-decrypt-deep/45 underline-offset-[7px] hover:decoration-decrypt-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-decrypt-deep cursor-pointer bg-transparent border-0 p-0 min-h-11 inline-flex items-center"
               >
                 Try it now
               </button>
