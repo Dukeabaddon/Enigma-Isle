@@ -6,12 +6,12 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#0f1911] text-white/80 overflow-hidden">
+    <footer className="footer-site relative bg-sand-seam-bottom text-white/80 overflow-hidden sm:bg-[#0f1911]">
       {/*
         Island plate — cream only (no dark border/fade).
         9603382 border-b #0f1911 + bottom gradient re-drew the hairlines.
       */}
-      <div className="footer-island-plate relative w-full overflow-hidden leading-[0] select-none bg-sand-seam-bottom seam-overlap">
+      <div className="footer-island-plate relative w-full overflow-hidden leading-[0] select-none bg-sand-seam-bottom">
         <img
           src="/images/footer-island.webp"
           alt=""

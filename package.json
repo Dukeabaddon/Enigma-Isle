@@ -2,7 +2,7 @@
   "name": "enigma",
   "version": "1.0.0",
   "type": "module",
-  "description": "One-page college cipher landing: encrypt/decrypt demo + teaching sections. Built with **Interpretable Context Methodology (ICM)** — context lives in staged folders, not only in chat.",
+  "description": "Enigma Isle — one-page client-side invertible cipher landing (Vite, React, TypeScript).",
   "main": "index.js",
   "directories": {
     "doc": "docs"

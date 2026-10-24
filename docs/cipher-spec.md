@@ -1,8 +1,7 @@
 # Invertible Cipher Specification — Enigma Isle
 
-**Status:** APPROVED & LOCKED  
-**Stage:** 03-cipher-spec  
-**Target:** Client-side pure TypeScript (`src/lib/cipher/`)
+**Status:** Locked (matches `src/lib/cipher/`)  
+**Implementation:** Client-side pure TypeScript (`src/lib/cipher/`)
 
 ---
 

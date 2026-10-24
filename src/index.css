@@ -378,19 +378,35 @@
     min-height: 2.75rem;
   }
 
+  /* Desktop: parchment visual size = pre–site-scale (110% root does not enlarge this block) */
   @media (min-width: 640px) {
+    .parchment-mist-overlay {
+      width: min(92vw, calc(45rem / var(--site-scale)));
+      bottom: calc(3.75rem / var(--site-scale));
+    }
+
     .try-again-parchment-inner {
-      inset: 28% 11% 24% 11%;
-      gap: 0.5rem;
-      transform: translateY(3%);
+      inset: 0;
+      padding: calc(3.5rem / var(--site-scale));
+      gap: calc(0.625rem / var(--site-scale));
+      transform: none;
+    }
+
+    .try-again-parchment-title {
+      font-size: calc(2.35rem / var(--site-scale));
+      line-height: 1.15;
     }
 
     .try-again-parchment-body {
-      max-width: 18rem;
+      font-size: calc(1rem / var(--site-scale));
+      margin-top: calc(0.625rem / var(--site-scale));
+      max-width: calc(24rem / var(--site-scale));
     }
 
     .try-again-parchment-cta {
-      margin-top: 0.65rem;
+      font-size: calc(1.25rem / var(--site-scale));
+      margin-top: calc(1.25rem / var(--site-scale));
+      min-height: calc(2.75rem / var(--site-scale));
     }
   }
 
@@ -431,37 +447,58 @@
       min-height: 2.25rem;
     }
 
-    /* Sand band → footer island: overlap + one cream paint (no stacked shadows) */
+    /* Sand band → footer island: overlap cream; never expose footer dark green in the gap */
     #decrypt-close-bridge .sand-seam-bridge {
-      margin-bottom: -3px;
+      margin-bottom: -6px;
       position: relative;
       z-index: 2;
+      background: linear-gradient(
+        to bottom,
+        var(--color-sand-seam-top) 0%,
+        var(--color-sand-seam-bottom) 72%,
+        var(--color-sand-seam-bottom) 100%
+      );
     }
 
-    #decrypt-close-bridge + footer {
-      margin-top: -3px;
+    #decrypt-close-bridge + footer.footer-site {
+      margin-top: -6px;
       position: relative;
       z-index: 3;
+      background-color: var(--color-sand-seam-bottom);
     }
 
     .footer-island-plate {
-      margin-top: 0;
+      margin-top: -1px;
       box-shadow: none;
       background-color: var(--color-sand-seam-bottom);
+    }
+
+    .footer-island-plate::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 3px;
+      background: var(--color-sand-seam-bottom);
+      z-index: 2;
+      pointer-events: none;
     }
 
     .footer-island-art {
       display: block;
       width: 100%;
+      margin-top: -2px;
+      margin-bottom: -1px;
       vertical-align: bottom;
       transform: translateZ(0);
     }
 
     .footer-dark-body {
-      margin-top: -2px;
+      margin-top: -4px;
       padding-top: 2.5rem;
       background-color: #0f1911;
-      box-shadow: 0 -2px 0 0 #0f1911;
+      box-shadow: 0 -3px 0 0 #0f1911;
     }
   }
 

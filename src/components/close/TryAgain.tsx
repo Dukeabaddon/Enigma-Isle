@@ -37,8 +37,8 @@ export default function TryAgain() {
           aria-hidden
         />
 
-        <div className="parchment-mist-overlay pointer-events-none absolute left-1/2 z-20 w-[min(88vw,45rem)]">
-          <div className="pointer-events-auto relative w-full">
+        <div className="parchment-mist-overlay pointer-events-none absolute left-1/2 z-20">
+          <div className="try-again-parchment-panel pointer-events-auto relative w-full">
             <img
               src="/images/parchment-bridge-panel.webp"
               alt=""
